@@ -3,7 +3,7 @@
 # logging
 function e_header() { echo -e "\n\033[1m$@\033[0m"; }
 
-e_header "Setting up your Mac..."
+e_header "Setting up Mac..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
@@ -22,7 +22,6 @@ brew bundle --file=$HOME/.dotfiles/brew/Brewfile
 brew cleanup
 
 e_header '💾 Installed all apps and tools from Brewfile'
-
 
 e_header 'Install composer'
 curl -sS https://getcomposer.org/installer | php
@@ -45,5 +44,7 @@ ln -s $HOME/.dotfiles/mackup/.mackup.cfg $HOME/.mackup.cfg
 rm -rf $HOME/.mackup
 ln -s $HOME/.dotfiles/mackup/.mackup $HOME/.mackup
 
-e_header 'Installs Node trough n'
-sh -c "$(curl -L https://git.io/n-install)"
+if test ! $(which node); then
+    e_header 'Installing node trough tj/n'
+    sh -c "$(curl -L https://git.io/n-install)" -- -y -n
+fi;

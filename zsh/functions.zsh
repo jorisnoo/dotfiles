@@ -1,29 +1,6 @@
 #!/usr/bin/env bash
+
 alert () { echo -e "\n\033[1m$@\033[0m"; }
-
-# Brew install with backup
-# brew-install () {
-#     brew install "$@"; brew-backup; mackup backup;
-# }
-
-# Cask install with backup
-# cask-install () {
-#     brew cask install "$@"; brew-backup; mackup backup;
-# }
-
-# mas-install () {
-#     mas install "$@"; brew-backup; mackup backup;
-# }
-
-# backups installed brew's
-# brew-backup () {
-#     # saves current dir
-#     local current_dir=$PWD;
-#     # overwrite the exisiting Brewfile
-#     cd ~/.dotfiles;brew bundle dump --force;
-#     # returns to previous dir
-#     cd $current_dir;
-# }
 
 # Opens any file in MacOS Quicklook Preview
 # ql () { qlmanage -p "$*" >& /dev/null; }

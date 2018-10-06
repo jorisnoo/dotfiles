@@ -1,0 +1,81 @@
+# Taps
+tap 'homebrew/core'
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/cask-versions'
+
+# Binaries
+brew 'coreutils'
+brew 'curl'
+brew 'git'
+brew 'git-flow'
+brew 'grep'
+brew 'httpie'
+brew 'mackup'
+brew 'mas'
+brew 'openssl'
+brew 'trash'
+brew 'tree'
+brew 'wget'
+brew 'zsh'
+
+# Development
+brew 'php'
+
+# Apps
+cask '1password'
+cask 'aerial'
+cask 'evernote'
+cask 'firefox'
+cask 'firefox-developer-edition'
+cask 'flux'
+cask 'gpg-suite'
+cask 'helium'
+cask 'imageoptim'
+cask 'insomnia'
+cask 'iterm2'
+cask 'jetbrains-toolbox'
+cask 'liteicon'
+cask 'nightowl'
+cask 'protonmail-bridge'
+cask 'protonvpn'
+cask 'recordit'
+cask 'sequel-pro'
+cask 'signal'
+cask 'sketch'
+cask 'slack'
+cask 'sync'
+cask 'the-clock'
+cask 'transmit'
+cask 'transmission'
+cask 'vagrant'
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
+cask 'visual-studio-code'
+cask 'vlc'
+cask 'wavebox'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'qlstephen'
+
+# Fonts
+
+# Mac App Store
+mas 'LINE', id: 539883307
+mas 'iA Writer', id: 775737590
+mas 'LittleIpsum', id: 405772121
+mas '1Password', id: 1333542190
+mas 'Pomodoro Timer', id: 872515009
+mas 'moveAddict', id: 404213171
+mas 'Bear', id: 1091189122
+mas 'Type Fu', id: 509818877
+mas 'UlyssesMac', id: 1225570693
+mas 'SoundMate', id: 675025930
+mas 'Pocket', id: 568494494
+mas 'Numbers', id: 409203825
+mas 'Keynote', id: 409183694
+mas 'Clear', id: 504544917

@@ -1,17 +1,16 @@
+#!/usr/bin/env bash
+
 # General
 alias flushdns='sudo killall -HUP mDNSResponder'
-alias hosts='sudo nano /private/etc/hosts'
 alias ip='ipconfig getifaddr en0'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-
 
 # Homestead
 alias hu='homestead up'
 alias he='(open ~/Homestead/Homestead.yaml)'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 alias artisan='php artisan'
-
 
 # NPM
 alias nw='npm run watch'
@@ -34,7 +33,6 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gp='git push'
 alias gc='git commit -v'
-alias gcm='git commit -m'
 alias gd='git diff'
 alias go='git checkout'
 alias gom='git checkout master'

@@ -14,8 +14,8 @@ e_header '🍳 Updating homebrew'
 brew doctor
 brew update
 
-e_header '💾 Installing Applications and command line tools'
 # restore installed apps
+e_header '💾 Installing Applications and command line tools'
 brew bundle --file=$HOME/.dotfiles/brew/Brewfile
 
 ## Remove outdated versions from the cellar.
@@ -34,16 +34,16 @@ e_header 'Install global Composer packages'
 e_header 'Install Laravel Valet'
 $HOME/.composer/vendor/bin/valet install
 
-e_header 'Installing Oh-My-Zsh'
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
 e_header 'Symlink config files'
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
+rm -rf $HOME/.mackup.cfg
 ln -s $HOME/.dotfiles/mackup/.mackup.cfg $HOME/.mackup.cfg
+rm -rf $HOME/.mackup
+ln -s $HOME/.dotfiles/mackup/.mackup $HOME/.mackup
 
-e_header 'Installs Node'
+e_header 'Installs Node trough n'
 sh -c "$(curl -L https://git.io/n-install)"

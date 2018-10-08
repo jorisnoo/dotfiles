@@ -48,3 +48,9 @@ if test ! $(which node); then
     e_header 'Installing node trough tj/n'
     sh -c "$(curl -L https://git.io/n-install)" -- -y -n
 fi;
+
+e_header 'Install Laravel Homestead'
+
+vagrant box add laravel/homestead
+
+git clone https://github.com/laravel/homestead.git ~/Homestead

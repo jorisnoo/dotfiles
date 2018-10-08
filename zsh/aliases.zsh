@@ -8,12 +8,13 @@ alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 # Homestead
+function homestead() { ( cd ~/Homestead && vagrant $* ) }
 alias hu='homestead up'
 alias he='(open ~/Homestead/Homestead.yaml)'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
 # Laravel
-alias artisan='php artisan'
+function artisan() { php artisan "$@" }
 
 # NPM
 alias nw='npm run watch'
@@ -38,8 +39,9 @@ alias gs='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gp='git push'
-alias gc='git commit -v'
-alias gcm='git commit -m '
+#alias gc='git commit -v'
+#alias gcm='git commit -m '
+function gc() { git commit -v -m "$@" }
 alias gd='git diff'
 alias go='git checkout'
 alias gom='git checkout master'

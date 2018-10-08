@@ -22,6 +22,9 @@ alias nd='npm run dev'
 alias nvm='n $(cat .nvmrc)'
 #alias fix-npm='curl -0 -L https://npmjs.com/install.sh | sudo sh && sudo chown -R $USER ~/.n/lib/node_modules'
 
+# Brew
+alias brewupdate='brew update && brew upgrade && brew cleanup'
+
 # Direcories
 alias y='cd /Users/joris/Code/y7k-projects'
 alias yi='cd /Users/joris/Code/y7k-internal'
@@ -36,6 +39,7 @@ alias ga='git add'
 alias gaa='git add --all'
 alias gp='git push'
 alias gc='git commit -v'
+alias gcm='git commit -m '
 alias gd='git diff'
 alias go='git checkout'
 alias gom='git checkout master'

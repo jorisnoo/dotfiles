@@ -39,14 +39,14 @@ alias gs='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gp='git push'
-#alias gc='git commit -v'
-#alias gcm='git commit -m '
-function gc() { git commit -v -m "$@" }
+#alias gc='git commit'
+function gc() { git commit -m "$@" }
 alias gd='git diff'
 alias go='git checkout'
 alias gom='git checkout master'
 alias god='git checkout develop'
 alias gl='git log --oneline --decorate --all --graph'
+alias grhh='git reset --hard'
 
 alias publish='(git checkout develop; git push; git push --tags; git checkout master; git push; git checkout develop)'
 alias pull='(git checkout develop; git pull; git pull --tags; git checkout master; git pull; git checkout develop)'

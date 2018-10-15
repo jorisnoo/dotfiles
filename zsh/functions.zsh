@@ -193,9 +193,9 @@ o () {
 # the `.git` directory, listing directories first. The output gets piped into
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
-# tre () {
-#     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
-# }
+tre () {
+    tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
+}
 
 # display useful host related informaton
 ii () {

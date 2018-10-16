@@ -2,55 +2,133 @@
 
 # logging
 function e_header() { echo -e "\n\033[1m$@\033[0m"; }
+function ask() { dialog --yesno "$@" 6 40; }
+function alert() { dialog --msgbox "$@" 6 30; }
 
 e_header "Setting up Mac..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
+  e_header '🍳 Installing homebrew'
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-e_header '🍳 Updating homebrew'
-brew doctor
-brew update
+# Install Dialog Package
+if test ! $(which dialog); then
+  e_header '🍳 Installing dialog'
+  brew install "dialog"
+fi
 
-# restore installed apps
-e_header '💾 Installing Applications and command line tools'
-brew bundle --file=$HOME/.dotfiles/brew/Brewfile
 
-## Remove outdated versions from the cellar.
-brew cleanup
+if ( ! ask "Do you want to install the dotfiles?"); then
+    exit;
+fi
 
-e_header '💾 Installed all apps and tools from Brewfile'
 
-e_header 'Install composer'
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
+if ( ask "Do you want to install all applications?"); then
 
-e_header 'Install global Composer packages'
-/usr/local/bin/composer global require laravel/installer laravel/valet
+    e_header '🍳 Updating homebrew'
+    brew update
 
-e_header 'Install Laravel Valet'
-$HOME/.composer/vendor/bin/valet install
+    # restore installed apps
+    e_header '💾 Installing Applications and command line tools'
+    brew bundle --file=$HOME/.dotfiles/brew/Brewfile
 
-e_header 'Symlink config files'
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
+    ## Remove outdated versions from the cellar.
+    brew cleanup
 
-# Symlink the Mackup config file to the home directory
-rm -rf $HOME/.mackup.cfg
-ln -s $HOME/.dotfiles/mackup/.mackup.cfg $HOME/.mackup.cfg
-rm -rf $HOME/.mackup
-ln -s $HOME/.dotfiles/mackup/.mackup $HOME/.mackup
+    alert '💾 Installed all apps and tools from Brewfile'
+fi
 
-if test ! $(which node); then
-    e_header 'Installing node trough tj/n'
-    sh -c "$(curl -L https://git.io/n-install)" -- -y -n
-fi;
 
-e_header 'Install Laravel Homestead'
 
-vagrant box add laravel/homestead
 
-git clone https://github.com/laravel/homestead.git ~/Homestead
+if ( ask "Do you want to install composer?"); then
+
+    e_header 'Installing composer'
+    curl -sS https://getcomposer.org/installer | php
+    mv composer.phar /usr/local/bin/composer
+
+    e_header 'Installing global composer packages'
+    /usr/local/bin/composer global require laravel/installer laravel/valet
+
+    alert 'Composer was installed!'
+fi
+
+
+if ( ask "Do you want to install Laravel Valet?"); then
+
+    e_header 'Install Laravel Valet'
+    $HOME/.composer/vendor/bin/valet install
+
+    alert 'Laravel Valet was installed!'
+fi
+
+
+
+if ( ask "Do you want to install node?"); then
+
+    if test ! $(which node); then
+        e_header 'Installing node trough tj/n'
+        sh -c "$(curl -L https://git.io/n-install)" -- -y -n
+
+        alert 'Installed node!'
+    else
+        alert 'Node is already installed!'
+    fi
+
+fi
+
+
+if ( ask "Do you want to install Laravel Homestead?"); then
+
+    e_header 'Installing Laravel Homestead'
+    vagrant box add laravel/homestead
+    git clone https://github.com/laravel/homestead.git $HOME/Homestead
+
+    alert 'Installed Laravel Homestead!'
+fi
+
+
+if ( ask "Do you want to symlink Laravel Homestead config files?"); then
+
+    e_header 'Symlink Homestead config files'
+    rm -rf $HOME/Homestead/after.sh $HOME/Homestead/aliases
+    ln -s $HOME/.dotfiles/Homestead/after.sh $HOME/Homestead/after.sh
+    ln -s $HOME/.dotfiles/Homestead/aliases $HOME/Homestead/aliases
+
+    alert 'Symlinked Laravel Homestead config files!'
+fi
+
+
+if ( ask "Do you want to symlink zsh configuration fils?"); then
+
+    e_header 'Symlink ZSH config files'
+    # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+    rm -rf $HOME/.zshrc
+    ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
+
+    alert 'Symlinked ZSH config files!'
+fi
+
+if ( ask "Do you want to symlink Mackup configuration fils?"); then
+
+    e_header 'Symlink Mackup config files'
+    # Symlink the Mackup config file to the home directory
+    rm -rf $HOME/.mackup.cfg $HOME/.mackup
+    ln -s $HOME/.dotfiles/mackup/.mackup.cfg $HOME/.mackup.cfg
+    ln -s $HOME/.dotfiles/mackup/.mackup $HOME/.mackup
+
+    alert 'Symlinked Mackup config files!'
+fi
+
+
+if ( ask "Do you want to apply the .macos settings?"); then
+
+    bash macos/.macos
+
+    alert 'Applied .macos settings!'
+fi
+
+
+alert '🍺 YAY! 🍺'

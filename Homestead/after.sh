@@ -7,6 +7,9 @@
 # ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 
 sudo apt-get update
-sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php7.1-mcrypt php-imagick
-sudo service php7.1-fpm restart
-sudo service php7.2-fpm restart
+sudo apt-get install cachefilesd --yes
+sudo echo "RUN=yes" > /etc/default/cachefilesd
+
+#sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php7.1-mcrypt php-imagick
+#sudo service php7.1-fpm restart
+#sudo service php7.2-fpm restart

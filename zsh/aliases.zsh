@@ -41,6 +41,7 @@ alias gaa='git add --all'
 alias gp='git push'
 #alias gc='git commit'
 function gc() { git commit -m "$@" }
+function gca() { git add --all; git commit -m "$@" }
 alias gd='git diff'
 alias go='git checkout'
 alias gom='git checkout master'

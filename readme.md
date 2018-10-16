@@ -22,7 +22,7 @@ After going through the checklist above and making sure you backed everything up
 4. Copy your public and private SSH keys to `~/.ssh` and make sure they're set to `600`
 5. Clone this repo to `~/.dotfiles`
 6. Install [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) by running 
-7. Run `fresh-install.sh` to start the installation
+7. Run `. ./fresh-install.sh` to start the installation
 8. Setup Sync.com and locate folder at `~/Sync`
 9. Restore preferences by running `mackup restore`
 10. Restart computer to finalize the process

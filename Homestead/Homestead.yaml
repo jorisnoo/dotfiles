@@ -1,6 +1,6 @@
 ip: "192.168.10.10"
 memory: 2048
-cpus: 2
+cpus: 1
 provider: virtualbox
 mariadb: true
 backup: false
@@ -8,24 +8,26 @@ backup: false
 authorize: ~/.ssh/id_rsa.pub
 
 keys:
-- ~/.ssh/id_rsa
+    - ~/.ssh/id_rsa
 
 folders:
-- map: ~/Sites/projects
-  to: /home/vagrant/projects
-  type: "nfs"
-  options:
-    mount_options: [ 'rw', 'vers=3', 'tcp', 'fsc' ,'actimeo=2' ]
+    - map: ~/Code/y7k-projects
+      to: /home/vagrant/y7k-projects
+      type: "nfs"
+      options:
+         mount_options: [ 'rw', 'vers=3', 'tcp', 'fsc' ,'actimeo=2' ]
 #         linux__nfs_options: [ 'rw', 'no_subtree_check', 'all_squash', 'async' ]
 
 
 sites:
-# - map: pj01.test
-#   to: /home/vagrant/projects/pj01/public
-#   php: "7.1"
+
+    - map: pj01.test
+      to: /home/vagrant/y7k-projects/pj01/public
+      php: "7.2"
+
 
 databases:
-- homestead
+    - homestead
 
 # blackfire:
 #     - id: foo

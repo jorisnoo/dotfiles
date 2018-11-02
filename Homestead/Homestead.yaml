@@ -11,20 +11,19 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Code/y7k-projects
-      to: /home/vagrant/y7k-projects
+    - map: ~/Code/projects
+      to: /home/vagrant/code
       type: "nfs"
+      mount_options: [ 'rw', 'vers=3', 'tcp', 'actimeo=2', 'nolock', 'fsc' ]
       options:
-         mount_options: [ 'rw', 'vers=3', 'tcp', 'fsc' ,'actimeo=2' ]
-#         linux__nfs_options: [ 'rw', 'no_subtree_check', 'all_squash', 'async' ]
-
+        linux__nfs_options: [ 'rw', 'no_subtree_check', 'all_squash', 'async' ]
 
 sites:
 
     - map: pj01.test
-      to: /home/vagrant/y7k-projects/pj01/public
+      to: /home/vagrant/code/pj01/public
       php: "7.2"
-
+      
 
 databases:
     - homestead

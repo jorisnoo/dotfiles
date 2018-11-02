@@ -18,18 +18,18 @@ brew 'mackup'
 brew 'mas'
 brew 'readline'
 brew 'openssl'
+brew 'php'
 brew 'trash'
 brew 'tree'
 brew 'wget'
 brew 'zsh'
 
-# Development
-brew 'php'
-
 # Apps
 cask '1password'
 cask 'aerial'
+cask 'amethyst'
 cask 'cleanmymac'
+cask 'choosy'
 cask 'evernote'
 cask 'firefox'
 cask 'firefox-developer-edition'
@@ -44,6 +44,7 @@ cask 'jetbrains-toolbox'
 cask 'liteicon'
 cask 'neofinder'
 cask 'nightowl'
+cask 'notion'
 cask 'protonmail-bridge'
 cask 'protonvpn'
 cask 'recordit'
@@ -86,3 +87,5 @@ mas 'Pocket', id: 568494494
 mas 'Numbers', id: 409203825
 mas 'Keynote', id: 409183694
 mas 'Clear', id: 504544917
+mas 'Magnet', id: 441258766
+

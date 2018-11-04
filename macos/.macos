@@ -81,6 +81,9 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 # Disable automatic termination of inactive apps
 defaults write NSGlobalDomain NSDisableAutomaticTermination -bool true
 
+# Disable Captive Portal (use browser instead)
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
+
 # Disable the crash reporter
 defaults write com.apple.CrashReporter DialogType -string "none"
 

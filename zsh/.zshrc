@@ -65,7 +65,7 @@ ZSH_CUSTOM=$DOTFILES/zsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git, git-flow, brew, npm, zsh-syntax-highlighting
+  git, git-flow, brew, npm, sudo
 )
 
 source $ZSH/oh-my-zsh.sh

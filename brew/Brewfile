@@ -28,7 +28,9 @@ brew 'zsh'
 # Apps
 cask '1password'
 cask 'aerial'
+cask 'alfred'
 cask 'amethyst'
+cask 'bartender'
 cask 'cleanmymac'
 cask 'choosy'
 cask 'cryptomator'
@@ -37,13 +39,13 @@ cask 'evernote'
 cask 'firefox'
 cask 'firefox-developer-edition'
 cask 'flux'
-cask 'gpg-suite'
-cask 'helium'
+# cask 'gpg-suite'
 cask 'imageoptim'
 cask 'insomnia'
 cask 'iconjar'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
+cask 'keepingyouawake' 
 cask 'liteicon'
 cask 'neofinder'
 cask 'nightowl'
@@ -55,8 +57,6 @@ cask 'signal'
 cask 'sketch'
 cask 'slack'
 cask 'sync'
-cask 'the-clock'
-cask 'transmit'
 cask 'transmission'
 cask 'vagrant'
 cask 'virtualbox'
@@ -78,9 +78,6 @@ cask 'qlstephen'
 mas 'LINE', id: 539883307
 mas 'iA Writer', id: 775737590
 mas 'LittleIpsum', id: 405772121
-mas '1Password', id: 1333542190
-mas 'Pomodoro Timer', id: 872515009
-mas 'moveAddict', id: 404213171
 mas 'Bear', id: 1091189122
 mas 'Type Fu', id: 509818877
 mas 'UlyssesMac', id: 1225570693
@@ -90,4 +87,4 @@ mas 'Numbers', id: 409203825
 mas 'Keynote', id: 409183694
 mas 'Clear', id: 504544917
 mas 'Magnet', id: 441258766
-
+mas 'The Clock', id: 488764545

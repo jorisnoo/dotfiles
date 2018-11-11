@@ -11,17 +11,17 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: ~/Code/projects
-      to: /home/vagrant/code
+    - map: ~/Sites/projects
+      to: /home/vagrant/projects
       type: "nfs"
-      mount_options: [ 'rw', 'vers=3', 'tcp', 'actimeo=2', 'nolock', 'fsc' ]
-      options:
-        linux__nfs_options: [ 'rw', 'no_subtree_check', 'all_squash', 'async' ]
+    #   mount_options: [ 'rw', 'vers=3', 'tcp', 'actimeo=2', 'nolock', 'fsc' ]
+    #   options:
+    #     linux__nfs_options: [ 'rw', 'no_subtree_check', 'all_squash', 'async' ]
 
 sites:
 
     - map: pj01.test
-      to: /home/vagrant/code/pj01/public
+      to: /home/vagrant/projects/pj01/public
       php: "7.2"
       
 

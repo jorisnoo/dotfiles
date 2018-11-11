@@ -2,45 +2,55 @@
 
 # logging
 function e_header() { echo -e "\n\033[1m$@\033[0m"; }
-function ask() { dialog --yesno "$@" 6 40; }
-function alert() { dialog --msgbox "$@" 6 30; }
 
 e_header "Setting up Mac..."
 
 # Check for Homebrew and install if we don't have it
-if test ! $(which brew); then
+if [[ $(command -v brew) == "" ]]; then
   e_header '🍳 Installing homebrew'
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install Dialog Package
-if test ! $(which dialog); then
-  e_header '🍳 Installing dialog'
-  brew install "dialog"
-fi
+brew install "dialog"
+
+# Make dialog available as function
+function ask() { dialog --yesno "$@" 6 40; }
+function alert() { dialog --msgbox "$@" 6 30; }
 
 
-if ( ! ask "Do you want to install the dotfiles?"); then
+if (! ask "Do you want to install the dotfiles?"); then
     exit;
 fi
 
 
-if ( ask "Do you want to install all applications?"); then
+# Ask for the administrator password upfront
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+if (ask "Do you want to install all applications?"); then
 
     e_header '🍳 Updating homebrew'
     brew update
 
-    # restore installed apps
     e_header '💾 Installing Applications and command line tools'
     brew bundle --file=$HOME/.dotfiles/brew/Brewfile
 
-    ## Remove outdated versions from the cellar.
+    # Remove outdated versions from the cellar.
     brew cleanup
+
+
+    # Install vagrant plugins
+    if [[ $(command -v vagrant) != "" ]]; then
+        vagrant plugin install vagrant-bindfs
+        vagrant plugin install vagrant-hostsupdater
+    fi
 
     alert '💾 Installed all apps and tools from Brewfile'
 fi
-
-
 
 
 if ( ask "Do you want to install composer?"); then
@@ -66,17 +76,12 @@ fi
 
 
 
-if ( ask "Do you want to install node?"); then
+if ( ask "Do you want to install node (tj/n)?"); then
 
-    if test ! $(which node); then
-        e_header 'Installing node trough tj/n'
-        sh -c "$(curl -L https://git.io/n-install)" -- -y -n
+    e_header 'Installing node trough tj/n'
+    sh -c "$(curl -L https://git.io/n-install)" -- -y -n
 
-        alert 'Installed node!'
-    else
-        alert 'Node is already installed!'
-    fi
-
+    alert 'Installed node!'
 fi
 
 
@@ -87,10 +92,6 @@ if ( ask "Do you want to install Laravel Homestead?"); then
     git clone https://github.com/laravel/homestead.git $HOME/Homestead
 
     alert 'Installed Laravel Homestead!'
-fi
-
-
-if ( ask "Do you want to symlink Laravel Homestead config files?"); then
 
     e_header 'Symlink Homestead config files'
     rm -rf $HOME/Homestead/after.sh $HOME/Homestead/aliases
@@ -101,7 +102,7 @@ if ( ask "Do you want to symlink Laravel Homestead config files?"); then
 fi
 
 
-if ( ask "Do you want to symlink zsh configuration fils?"); then
+if ( ask "Do you want to symlink zsh and mackup configuration files?"); then
 
     e_header 'Symlink ZSH config files'
     # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
@@ -109,9 +110,6 @@ if ( ask "Do you want to symlink zsh configuration fils?"); then
     ln -s $HOME/.dotfiles/zsh/.zshrc $HOME/.zshrc
 
     alert 'Symlinked ZSH config files!'
-fi
-
-if ( ask "Do you want to symlink Mackup configuration fils?"); then
 
     e_header 'Symlink Mackup config files'
     # Symlink the Mackup config file to the home directory
@@ -125,7 +123,7 @@ fi
 
 if ( ask "Do you want to apply the .macos settings?"); then
 
-    bash macos/.macos
+    sh macos/.macos
 
     alert 'Applied .macos settings!'
 fi

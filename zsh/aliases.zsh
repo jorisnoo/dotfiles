@@ -3,7 +3,7 @@
 # General
 alias flushdns='sudo killall -HUP mDNSResponder'
 alias ip='ipconfig getifaddr en0'
-alias myip='curl ip.appspot.com'
+alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
@@ -27,9 +27,9 @@ alias nvm='n $(cat .nvmrc)'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
 
 # Direcories
-alias y='cd /Users/joris/Code/y7k-projects'
-alias yi='cd /Users/joris/Code/y7k-internal'
-alias yc='cd /Users/joris/Code/y7k-craft'
+alias y='cd /Users/joris/Sites/y7k-projects'
+alias yi='cd /Users/joris/Sites/y7k-internal'
+alias p='cd /Users/joris/Sites/projects'
 
 # SSH
 alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.")'
@@ -39,7 +39,6 @@ alias gs='git status'
 alias ga='git add'
 alias gaa='git add --all'
 alias gp='git push'
-#alias gc='git commit'
 function gc() { git commit -m "$@" }
 function gca() { git add --all; git commit -m "$@" }
 alias gd='git diff'

@@ -56,7 +56,8 @@ cask 'recordit'
 cask 'sequel-pro'
 cask 'signal'
 cask 'sketch'
-cask 'slack'
+cask 'soundmate'
+cask 'spotify'
 cask 'sync'
 cask 'transmission'
 cask 'vagrant'
@@ -89,3 +90,4 @@ mas 'Keynote', id: 409183694
 mas 'Clear', id: 504544917
 mas 'Magnet', id: 441258766
 mas 'The Clock', id: 488764545
+mas 'Pages', id: 409201541

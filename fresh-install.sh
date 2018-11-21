@@ -47,6 +47,7 @@ if (ask "Do you want to install all applications?"); then
     if [[ $(command -v vagrant) != "" ]]; then
         vagrant plugin install vagrant-bindfs
         vagrant plugin install vagrant-hostsupdater
+        vagrant plugin install vagrant-vbguest
     fi
 
     alert '💾 Installed all apps and tools from Brewfile'

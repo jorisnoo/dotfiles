@@ -53,7 +53,6 @@ cask 'logitech-options'
 cask 'neofinder'
 cask 'nightowl'
 cask 'protonmail-bridge'
-cask 'protonvpn'
 cask 'recordit'
 cask 'sequel-pro'
 cask 'signal'
@@ -79,17 +78,18 @@ cask 'qlstephen'
 # Fonts
 
 # Mac App Store
-mas 'LINE', id: 539883307
-mas 'iA Writer', id: 775737590
-mas 'LittleIpsum', id: 405772121
-mas 'Bear', id: 1091189122
+mas 'Clear', id: 504544917
+mas 'Xcode', id: 497799835
+mas 'Magnet', id: 441258766
+mas 'Keynote', id: 409183694
 mas 'Type Fu', id: 509818877
 mas 'UlyssesMac', id: 1225570693
-mas 'SoundMate', id: 675025930
+mas 'iA Writer', id: 775737590
+mas 'Bear', id: 1091189122
 mas 'Pocket', id: 568494494
-mas 'Numbers', id: 409203825
-mas 'Keynote', id: 409183694
-mas 'Clear', id: 504544917
-mas 'Magnet', id: 441258766
-mas 'The Clock', id: 488764545
 mas 'Pages', id: 409201541
+mas 'SoundMate', id: 675025930
+mas 'LittleIpsum', id: 405772121
+mas 'LINE', id: 539883307
+mas 'Numbers', id: 409203825
+mas 'The Clock', id: 488764545

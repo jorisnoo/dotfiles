@@ -65,7 +65,10 @@ ZSH_CUSTOM=$DOTFILES/zsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git, git-flow, brew, npm, sudo
+  git
+  git-flow
+  npm
+  sudo
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -96,5 +99,5 @@ export LC_ALL=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-source ~/.dotfiles/zsh/functions.zsh
+source $DOTFILES/zsh/functions.zsh
 

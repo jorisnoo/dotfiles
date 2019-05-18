@@ -2,7 +2,6 @@ ip: "192.168.10.10"
 memory: 2048
 cpus: 1
 provider: virtualbox
-mariadb: true
 backup: false
 
 authorize: ~/.ssh/id_rsa.pub
@@ -14,15 +13,11 @@ folders:
     - map: ~/Sites/projects
       to: /home/vagrant/projects
       type: "nfs"
-    #   mount_options: [ 'rw', 'vers=3', 'tcp', 'actimeo=2', 'nolock', 'fsc' ]
-    #   options:
-    #     linux__nfs_options: [ 'rw', 'no_subtree_check', 'all_squash', 'async' ]
 
 sites:
 
     - map: pj01.test
       to: /home/vagrant/projects/pj01/public
-      php: "7.2"
       
 
 databases:

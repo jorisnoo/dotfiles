@@ -33,8 +33,6 @@ alias nvm='n $(cat .nvmrc)'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
 
 # Direcories
-alias y='cd /Users/joris/Sites/y7k-projects'
-alias yi='cd /Users/joris/Sites/y7k-internal'
 alias p='cd /Users/joris/Sites/projects'
 
 # SSH

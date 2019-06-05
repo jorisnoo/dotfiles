@@ -86,6 +86,22 @@ cask 'qlstephen'
 cask 'canon-imagerunner-printer-driver-ufrii' # UZH Printer
 
 # Fonts
+cask 'font-hack'
+cask 'font-hack-nerd-font'
+cask 'font-fira-code'
+cask 'font-fira-mono'
+cask 'font-fira-sans'
+cask 'font-firacode-nerd-font'
+cask 'font-firacode-nerd-font-mono'
+cask 'font-ia-writer-duo'
+cask 'font-ia-writer-mono'
+cask 'font-ia-writer-quattro'
+cask 'font-ia-writer-duospace'
+cask 'font-public-sans'
+cask 'font-saira'
+cask 'font-lato'
+cask 'font-roboto'
+cask 'font-playfair-display'
 
 # Mac App Store
 mas 'Clear', id: 504544917

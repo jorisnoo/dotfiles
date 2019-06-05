@@ -1,7 +1,8 @@
 #!/bin/sh
 
-export PATH=/usr/local/bin:/usr/local/sbin:$HOME/.node/bin:$HOME/.composer/vendor/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$HOME/.node/bin:$HOME/.composer/vendor/bin:./vendor/bin:$PATH
 
-export PATH=$HOME/Sites/y7k-internal/cli:$PATH
+# export PATH=$HOME/Sites/internal/spark-installer:$PATH
+# export PATH=$HOME/Sites/internal/project-cli:$PATH
 
 export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

@@ -8,6 +8,10 @@ alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias run_maintenance="brewupdate; upgrade_oh_my_zsh; cd ~/Homestead && git pull"
 
+# Cli tools
+function spark() { php ~/Sites/internal/spark-installer/spark $* }
+function pc() { php ~/Sites/internal/project-cli/project-cli $* }
+
 # Homestead
 function homestead() { ( cd ~/Homestead && vagrant $* ) }
 alias hu='homestead up'

@@ -33,7 +33,9 @@ alias nvm='n $(cat .nvmrc)'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
 
 # Direcories
-alias p='cd /Users/joris/Sites/projects'
+alias h='cd ~'
+alias s='cd ~/Sites'
+alias p='cd ~/Sites/projects'
 
 # SSH
 alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.")'

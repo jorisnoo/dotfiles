@@ -6,7 +6,7 @@ alias ip='ipconfig getifaddr en0'
 alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias run_maintenance="brewupdate; upgrade_oh_my_zsh; cd ~/Homestead && git pull"
+alias mtnc="brewupdate; upgrade_oh_my_zsh; cd ~/Homestead && git pull; composer global update"
 
 # Cli tools
 function spark() { php ~/Sites/internal/spark-installer/spark $* }

@@ -50,3 +50,10 @@ alias god='git checkout develop'
 alias publish='(git checkout develop; git push; git push --tags; git checkout master; git push; git checkout develop)'
 alias pullm='(git fetch --all --prune; git checkout develop; git pull; git pull --tags; git checkout master; git pull; git checkout develop)'
 alias pull='(git fetch --all --prune; git checkout develop; git pull --rebase; git pull --tags; git checkout master; git pull --rebase; git checkout develop)'
+
+#LSD
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'

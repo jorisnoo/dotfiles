@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
 # Taps
-tap 'homebrew/core'
-tap 'homebrew/bundle'
-tap 'homebrew/cask'
-tap 'homebrew/cask-versions'
-tap 'homebrew/cask-drivers'
-tap 'buo/cask-upgrade'
+tap "buo/cask-upgrade"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
 
 # Binaries
 brew 'coreutils'
@@ -42,8 +44,9 @@ cask 'evernote'
 cask 'firefox'
 cask 'firefox-developer-edition'
 cask 'flux'
+cask 'gitfox'
 # cask 'gpg-suite'
-cask 'imageoptim'
+# cask 'gpg-suite-nightly'
 cask 'insomnia'
 cask 'iconjar'
 cask 'iterm2'
@@ -57,6 +60,7 @@ cask 'nightowl'
 cask 'nordvpn'
 cask 'notion'
 cask 'numi'
+cask 'optimage'
 cask 'protonmail-bridge'
 cask 'raindropio'
 cask 'recordit'
@@ -86,36 +90,37 @@ cask 'qlstephen'
 cask 'canon-imagerunner-printer-driver-ufrii' # UZH Printer
 
 # Fonts
-cask 'font-hack'
-cask 'font-hack-nerd-font'
-cask 'font-fira-code'
-cask 'font-fira-mono'
-cask 'font-fira-sans'
-cask 'font-firacode-nerd-font'
-cask 'font-firacode-nerd-font-mono'
-cask 'font-ia-writer-duo'
-cask 'font-ia-writer-mono'
-cask 'font-ia-writer-quattro'
-cask 'font-ia-writer-duospace'
-cask 'font-public-sans'
-cask 'font-saira'
-cask 'font-lato'
-cask 'font-roboto'
-cask 'font-playfair-display'
+cask "font-fira-code"
+cask "font-fira-mono"
+cask "font-fira-sans"
+cask "font-firacode-nerd-font"
+cask "font-firacode-nerd-font-mono"
+cask "font-hack"
+cask "font-hack-nerd-font"
+cask "font-ia-writer-duo"
+cask "font-ia-writer-duospace"
+cask "font-ia-writer-mono"
+cask "font-ia-writer-quattro"
+cask "font-lato"
+cask "font-playfair-display"
+cask "font-public-sans"
+cask "font-roboto"
+cask "font-saira"
 
 # Mac App Store
-mas 'Clear', id: 504544917
-mas 'Xcode', id: 497799835
-mas 'Magnet', id: 441258766
-mas 'Keynote', id: 409183694
-mas 'Type Fu', id: 509818877
-mas 'UlyssesMac', id: 1225570693
-mas 'iA Writer', id: 775737590
-mas 'Bear', id: 1091189122
-mas 'Pocket', id: 568494494
-mas 'Pages', id: 409201541
-mas 'SoundMate', id: 675025930
-mas 'LittleIpsum', id: 405772121
-mas 'LINE', id: 539883307
-mas 'Numbers', id: 409203825
-mas 'The Clock', id: 488764545
+mas "Bear", id: 1091189122
+mas "Clear", id: 504544917
+mas "iA Writer", id: 775737590
+mas "Keynote", id: 409183694
+mas "LINE", id: 539883307
+mas "LittleIpsum", id: 405772121
+mas "Magnet", id: 441258766
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pocket", id: 568494494
+mas "SoundMate", id: 675025930
+mas "Tadam", id: 531349534
+mas "The Clock", id: 488764545
+mas "Type Fu", id: 509818877
+mas "Ulysses", id: 1225570693
+mas "Xcode", id: 497799835

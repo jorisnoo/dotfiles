@@ -18,6 +18,13 @@ alias hu='homestead up'
 alias he='(open ~/Homestead/Homestead.yaml)'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
+# Laravel
+alias t="phpunit"
+alias td="php artisan dusk"
+alias tdf="php artisan dusk:fails"
+alias ta="phpunit && php artisan dusk"
+alias ads="php artisan dump-server"
+
 # NPM
 alias nw='npm run watch'
 alias np='npm run prod'

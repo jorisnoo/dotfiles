@@ -27,7 +27,6 @@ alias nh='npm run hot'
 alias nl='npm run lint'
 alias nlf='npm run lintfix'
 alias nvm='n $(cat .nvmrc)'
-#alias fix-npm='curl -0 -L https://npmjs.com/install.sh | sudo sh && sudo chown -R $USER ~/.n/lib/node_modules'
 
 # Brew
 alias brewupdate='brew update && brew upgrade && brew cleanup'

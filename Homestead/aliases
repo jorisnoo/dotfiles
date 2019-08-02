@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Custom
+alias ads="php artisan dump-server"
+alias t="phpunit"
+
 alias ..="cd .."
 alias ...="cd ../.."
 

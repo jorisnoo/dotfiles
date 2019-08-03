@@ -14,7 +14,7 @@ tap "homebrew/services"
 brew 'coreutils'
 brew 'curl'
 brew 'git'
-brew 'git-flow-ahv'
+brew 'git-flow-avh'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'

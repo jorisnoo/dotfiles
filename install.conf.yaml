@@ -1,14 +1,12 @@
-- defaults:
-    link:
-      relink: true
-
 - clean: ['~','~/Homestead']
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
 
 - brewfile:
     - homebrew/Brewfile
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
     - ["(curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer)", Installing composer]
     - ["sh -c $(curl -L https://git.io/n-install) -- -y -n", Installing node]
     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]

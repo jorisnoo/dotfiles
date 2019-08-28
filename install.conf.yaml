@@ -4,23 +4,17 @@
 
 - clean: ['~','~/Homestead']
 
+- brewfile:
+    - homebrew/Brewfile
+
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-
-# - brewfile:
-#     - homebrew/Brewfile
-  
-# - shell:
-    # - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
-#     - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
-#     - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]
-#     - [vagrant plugin install vagrant-vbguest, Installing vagrant vbguest plugin]
-
-- shell:
     - ["(curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer)", Installing composer]
     - ["sh -c $(curl -L https://git.io/n-install) -- -y -n", Installing node]
-    - ["[ -d $HOME/.qfc ] || git clone https://github.com/pindexis/qfc $HOME/.qfc", Installing qfc]
-    - ["cd $HOME/.qfc && git pull", Updating qfc]
+    - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
+    - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
+    - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]
+    - [vagrant plugin install vagrant-vbguest, Installing vagrant vbguest plugin]
     - ["[ -d $HOME/Homestead ] || git clone https://github.com/laravel/homestead $HOME/Homestead", Installing Laravel Homestead]
     - ["cd $HOME/Homestead && git pull", Updating Homestead]
 
@@ -36,7 +30,8 @@
 - shell:
     - [touch $HOME/.hushlogin]
     - [chsh -s $(which zsh), 'Switch to ZSH']
+    - [mackup restore, 'Restore config from mackup']
 
 - shell:
     - [composer global install, Installing global composer packages]
-    # - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]
+    - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]

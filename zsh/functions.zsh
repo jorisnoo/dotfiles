@@ -3,7 +3,7 @@
 alert () { echo -e "\n\033[1m$@\033[0m"; }
 
 # Opens any file in MacOS Quicklook Preview
-# ql () { qlmanage -p "$*" >& /dev/null; }
+ql () { qlmanage -p "$*" >& /dev/null; }
 
 # Create a new directory and enter it
 mkd () {
@@ -102,13 +102,13 @@ if [ $? -eq 0 ]; then
 fi;
 
 # Create a data URL from a file
-# dataurl () {
-#     local mimeType=$(file -b --mime-type "$1");
-#     if [[ $mimeType == text/* ]]; then
-#         mimeType="${mimeType};charset=utf-8";
-#     fi
-#     echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')";
-# }
+dataurl () {
+    local mimeType=$(file -b --mime-type "$1");
+    if [[ $mimeType == text/* ]]; then
+        mimeType="${mimeType};charset=utf-8";
+    fi
+    echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')";
+}
 
 # Create a git.io short URL
 # gitio () {

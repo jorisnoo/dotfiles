@@ -6,11 +6,11 @@ alias ip='ipconfig getifaddr en0'
 alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias mtnc="brewupdate; upgrade_oh_my_zsh; cd ~/Homestead && git pull; composer global update"
+alias mtnc='. ~/.dotfiles/maintenance.sh'
 
-# Cli tools
-function spark() { php ~/Sites/internal/spark-installer/spark $* }
-function pc() { php ~/Sites/internal/project-cli/project-cli $* }
+# CLI tools
+function spark() { php ~/Sites/cli/spark-installer/spark $* }
+function pc() { php ~/Sites/cli/project-cli/project-cli $* }
 
 # Homestead
 function homestead() { ( cd ~/Homestead && vagrant $* ) }
@@ -19,24 +19,23 @@ alias he='(open ~/Homestead/Homestead.yaml)'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
 # Laravel
-alias t="phpunit"
-alias td="php artisan dusk"
-alias tdf="php artisan dusk:fails"
-alias ta="phpunit && php artisan dusk"
-alias ads="php artisan dump-server"
+alias art='artisan'
+alias t='phpunit'
+alias td='php artisan dusk'
+alias tdf='php artisan dusk:fails'
+alias ta='phpunit && php artisan dusk'
+alias ads='php artisan dump-server'
 
 # NPM
 alias nw='npm run watch'
 alias np='npm run prod'
 alias nd='npm run dev'
+alias nb='npm run build'
 alias ng='npm run generate'
 alias nh='npm run hot'
 alias nl='npm run lint'
 alias nlf='npm run lintfix'
 alias nvm='n $(cat .nvmrc)'
-
-# Brew
-alias brewupdate='brew update && brew upgrade && brew cleanup'
 
 # Direcories
 alias h='cd ~'

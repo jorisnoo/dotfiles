@@ -9,10 +9,13 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+# tap "nektos/tap"
 
 # Binaries
+# brew 'nektos/tap/act'
 brew 'coreutils'
 brew 'curl'
+brew 'ffmpeg'
 brew 'git'
 brew 'git-flow-avh'
 brew 'git-lfs'
@@ -25,6 +28,7 @@ brew 'mas'
 brew 'readline'
 brew 'openssl'
 brew 'php'
+brew 'tig'
 brew 'trash'
 brew 'tree'
 brew 'starship'
@@ -122,6 +126,7 @@ mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "SoundMate", id: 675025930
 mas "Tadam", id: 531349534
+mas "Take a Break", id: 1457158844
 mas "The Clock", id: 488764545
 mas "Type Fu", id: 509818877
 mas "Ulysses", id: 1225570693

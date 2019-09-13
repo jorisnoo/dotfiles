@@ -7,6 +7,8 @@ alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias mtnc='. ~/.dotfiles/maintenance.sh'
+alias brewupdate='brew update && brew upgrade && brew cleanup'
+alias dot='code ~/.dotfiles'
 
 # CLI tools
 function spark() { php ~/Sites/cli/spark-installer/spark $* }

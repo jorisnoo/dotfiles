@@ -98,3 +98,6 @@ source $DOTFILES/zsh/functions.zsh
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris/.netlify/helper/path.zsh.inc'; fi
+
+# Load Starship
+eval "$(starship init zsh)"

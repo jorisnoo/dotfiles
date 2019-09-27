@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-alert () { echo -e "\n\033[1m$@\033[0m"; }
-
 # Opens any file in MacOS Quicklook Preview
 ql () { qlmanage -p "$*" >& /dev/null; }
 
@@ -22,6 +20,128 @@ mkd () {
 
 # To create a ZIP archive of a folder
 zipf () { zip -r "$1".zip "$1" ; }
+
+# Determine size of a file or total size of a directory
+fs () {
+    if du -b /dev/null > /dev/null 2>&1; then
+        local arg=-sbh;
+    else
+        local arg=-sh;
+    fi
+    if [[ -n "$@" ]]; then
+        du $arg -- "$@";
+    else
+        du $arg .[^.]* ./*;
+    fi;
+}
+
+# Use Git’s colored diff when available
+hash git &>/dev/null;
+if [ $? -eq 0 ]; then
+    function diff() {
+        git diff --no-index --color-words "$@";
+    }
+fi;
+
+# Create a data URL from a file
+dataurl () {
+    local mimeType=$(file -b --mime-type "$1");
+    if [[ $mimeType == text/* ]]; then
+        mimeType="${mimeType};charset=utf-8";
+    fi
+    echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')";
+}
+
+# Syntax-highlight JSON strings or files
+# Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
+json () {
+    if [ -t 0 ]; then # argument
+        python -mjson.tool <<< "$*" | pygmentize -l javascript;
+    else # pipe
+        python -mjson.tool | pygmentize -l javascript;
+    fi;
+}
+
+# Run `dig` and display the most useful info
+digga () {
+    dig +nocmd "$1" any +multiline +noall +answer;
+}
+
+
+# `o` with no arguments opens the current directory, otherwise opens the given
+# location
+o () {
+    if [ $# -eq 0 ]; then
+        open .;
+    else
+        open "$@";
+    fi;
+}
+
+# `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
+# the `.git` directory, listing directories first. The output gets piped into
+# `less` with options to preserve color and line numbers, unless the output is
+# small enough for one screen.
+tre () {
+    tree -aC -I '.git|node_modules|bower_components|.idea' --dirsfirst "$@" | less -FRNX;
+}
+
+# display useful host related informaton
+ii () {
+    echo -e "\nYou are logged on ${RED}$HOST"
+    echo -e "\nAdditionnal information:$NC " ; uname -a
+    echo -e "\n${RED}Users logged on:$NC " ; w -h
+    echo -e "\n${RED}Current date :$NC " ; date
+    echo -e "\n${RED}Machine stats :$NC " ; uptime
+    echo -e "\n${RED}Current network location :$NC " ; scselect
+    echo -e "\n${RED}Public facing IP Address :$NC " ; myip
+    # echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
+    echo
+}
+
+# remove all local branches that are already merged in the current active branch
+cleangit () {
+    echo -e "WARNING: If you're on, say, a development branch that was branched off of master, you'll lose your master branch";
+    echo -e "still want to do this? [y/N]";
+    read REMOVE
+    if [ "$REMOVE" = "y" ] || [ "$REMOVE" = "Y" ]; then
+        git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
+    fi
+}
+
+# display git branch name
+# parse_git_branch() {
+#      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+# }
+
+
+# Create a git.io short URL
+# gitio () {
+#     if [ -z "${1}" -o -z "${2}" ]; then
+#         echo "Usage: \`gitio slug url\`";
+#         return 1;
+#     fi;
+#     curl -i https://git.io/ -F "url=${2}" -F "code=${1}";
+# }
+
+# Start an HTTP server from a directory, optionally specifying the port
+# server () {
+#     local port="${1:-8000}";
+#     sleep 1 && open "http://localhost:${port}/" &
+#     # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
+#     # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
+#     python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
+# }
+
+# Compare original and gzipped file size
+# gz () {
+#     local origsize=$(wc -c < "$1");
+#     local gzipsize=$(gzip -c "$1" | wc -c);
+#     local ratio=$(echo "$gzipsize * 100 / $origsize" | bc -l);
+#     printf "orig: %d bytes\n" "$origsize";
+#     printf "gzip: %d bytes (%2.2f%%)\n" "$gzipsize" "$ratio";
+# }
+
 
 # Create a .tar.gz archive, using `zopfli`, `pigz` or `gzip` for compression
 # targz () {
@@ -79,78 +199,6 @@ zipf () { zip -r "$1".zip "$1" ; }
 #  fi
 # }
 
-# Determine size of a file or total size of a directory
-fs () {
-    if du -b /dev/null > /dev/null 2>&1; then
-        local arg=-sbh;
-    else
-        local arg=-sh;
-    fi
-    if [[ -n "$@" ]]; then
-        du $arg -- "$@";
-    else
-        du $arg .[^.]* ./*;
-    fi;
-}
-
-# Use Git’s colored diff when available
-hash git &>/dev/null;
-if [ $? -eq 0 ]; then
-    function diff() {
-        git diff --no-index --color-words "$@";
-    }
-fi;
-
-# Create a data URL from a file
-dataurl () {
-    local mimeType=$(file -b --mime-type "$1");
-    if [[ $mimeType == text/* ]]; then
-        mimeType="${mimeType};charset=utf-8";
-    fi
-    echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')";
-}
-
-# Create a git.io short URL
-# gitio () {
-#     if [ -z "${1}" -o -z "${2}" ]; then
-#         echo "Usage: \`gitio slug url\`";
-#         return 1;
-#     fi;
-#     curl -i https://git.io/ -F "url=${2}" -F "code=${1}";
-# }
-
-# Start an HTTP server from a directory, optionally specifying the port
-# server () {
-#     local port="${1:-8000}";
-#     sleep 1 && open "http://localhost:${port}/" &
-#     # Set the default Content-Type to `text/plain` instead of `application/octet-stream`
-#     # And serve everything as UTF-8 (although not technically correct, this doesn’t break anything for binary files)
-#     python -c $'import SimpleHTTPServer;\nmap = SimpleHTTPServer.SimpleHTTPRequestHandler.extensions_map;\nmap[""] = "text/plain";\nfor key, value in map.items():\n\tmap[key] = value + ";charset=UTF-8";\nSimpleHTTPServer.test();' "$port";
-# }
-
-# Compare original and gzipped file size
-# gz () {
-#     local origsize=$(wc -c < "$1");
-#     local gzipsize=$(gzip -c "$1" | wc -c);
-#     local ratio=$(echo "$gzipsize * 100 / $origsize" | bc -l);
-#     printf "orig: %d bytes\n" "$origsize";
-#     printf "gzip: %d bytes (%2.2f%%)\n" "$gzipsize" "$ratio";
-# }
-
-# Syntax-highlight JSON strings or files
-# Usage: `json '{"foo":42}'` or `echo '{"foo":42}' | json`
-# json () {
-#     if [ -t 0 ]; then # argument
-#         python -mjson.tool <<< "$*" | pygmentize -l javascript;
-#     else # pipe
-#         python -mjson.tool | pygmentize -l javascript;
-#     fi;
-# }
-
-# Run `dig` and display the most useful info
-# digga () {
-#     dig +nocmd "$1" any +multiline +noall +answer;
-# }
 
 # UTF-8-encode a string of Unicode symbols
 # escape () {
@@ -177,50 +225,4 @@ dataurl () {
 #     if [ -t 1 ]; then
 #         echo ""; # newline
 #     fi;
-# }
-
-# `o` with no arguments opens the current directory, otherwise opens the given
-# location
-o () {
-    if [ $# -eq 0 ]; then
-        open .;
-    else
-        open "$@";
-    fi;
-}
-
-# `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
-# the `.git` directory, listing directories first. The output gets piped into
-# `less` with options to preserve color and line numbers, unless the output is
-# small enough for one screen.
-tre () {
-    tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
-}
-
-# display useful host related informaton
-ii () {
-    echo -e "\nYou are logged on ${RED}$HOST"
-    echo -e "\nAdditionnal information:$NC " ; uname -a
-    echo -e "\n${RED}Users logged on:$NC " ; w -h
-    echo -e "\n${RED}Current date :$NC " ; date
-    echo -e "\n${RED}Machine stats :$NC " ; uptime
-    echo -e "\n${RED}Current network location :$NC " ; scselect
-    echo -e "\n${RED}Public facing IP Address :$NC " ;ip
-    #echo -e "\n${RED}DNS Configuration:$NC " ; scutil --dns
-    echo
-}
-
-# remove all local branches that are already merged in the current active branch
-cleangit () {
-    echo -e "WARNING: If you're on, say, a development branch that was branched off of master, you'll lose your master branch";
-    echo -e "still want to do this? [y/N]";
-    read REMOVE
-    if [ "$REMOVE" = "y" ] || [ "$REMOVE" = "Y" ]; then
-        git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d
-    fi
-}
-
-# display git branch name
-# parse_git_branch() {
-#      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 # }

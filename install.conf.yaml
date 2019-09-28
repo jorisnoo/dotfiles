@@ -20,8 +20,8 @@
     ~/.zshrc: zsh/.zshrc
     ~/.composer/composer.json: composer/composer.json
     ~/.gitignore_global: git/gitignore
-    ~/Homestead/after.sh: Homestead/after.sh
-    ~/Homestead/aliases: Homestead/aliases
+    ~/Homestead/after.sh: homestead/after.sh
+    ~/Homestead/aliases: homestead/aliases
     ~/.mackup.cfg: mackup/.mackup.cfg
     ~/.mackup: mackup/.mackup
 

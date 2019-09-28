@@ -9,10 +9,12 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-# tap "nektos/tap"
+
+# GitHub Actions
+# tap "nektos/tap" 
+# brew 'nektos/tap/act'
 
 # Binaries
-# brew 'nektos/tap/act'
 brew 'coreutils'
 brew 'curl'
 brew 'ffmpeg'
@@ -40,7 +42,6 @@ brew 'zsh'
 cask '1password'
 cask 'aerial'
 cask 'alfred'
-# cask 'amethyst'
 cask 'bartender'
 cask 'cleanmymac'
 cask 'choosy'
@@ -51,8 +52,8 @@ cask 'firefox'
 cask 'firefox-developer-edition'
 cask 'flux'
 cask 'gitfox'
+cask 'google-chrome'
 # cask 'gpg-suite'
-# cask 'gpg-suite-nightly'
 cask 'insomnia'
 cask 'iconjar'
 cask 'iterm2'
@@ -92,8 +93,8 @@ cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
 
-# Drivers
-cask 'canon-imagerunner-printer-driver-ufrii' # UZH Printer
+# UZH Printer
+cask 'canon-imagerunner-printer-driver-ufrii'
 
 # Fonts
 cask "font-fira-code"
@@ -114,8 +115,8 @@ cask "font-roboto"
 cask "font-saira"
 
 # Mac App Store
+mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
-mas "Clear", id: 504544917
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
@@ -124,9 +125,7 @@ mas "Magnet", id: 441258766
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
-mas "SoundMate", id: 675025930
-mas "Tadam", id: 531349534
-mas "Take a Break", id: 1457158844
+mas "Tadama", id: 1415817706
 mas "The Clock", id: 488764545
 mas "Type Fu", id: 509818877
 mas "Ulysses", id: 1225570693

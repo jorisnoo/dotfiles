@@ -6,6 +6,6 @@ upgrade_oh_my_zsh
 (cd ~/Homestead && git pull)
 (cd ~/Sites/cli/spark-installer && git pull)
 composer global update
-npm -g upgrade
+yarn global upgrade
 brew cu -y
 cd $cwd

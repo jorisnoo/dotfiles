@@ -25,6 +25,7 @@ brew 'gnupg'
 brew 'grep'
 brew 'httpie'
 brew 'lsd'
+brew 'n'
 brew 'mackup'
 brew 'mas'
 brew 'readline'
@@ -35,7 +36,6 @@ brew 'trash'
 brew 'tree'
 brew 'starship'
 brew 'wget'
-brew 'yarn'
 brew 'youtube-dl'
 brew 'zsh'
 brew 'zsh-syntax-highlighting'
@@ -78,6 +78,7 @@ cask 'signal'
 cask 'sketch'
 cask 'spotify'
 cask 'sync'
+cask 'the-unarchiver'
 cask 'transmission'
 cask 'transmit'
 cask 'vagrant'
@@ -96,7 +97,7 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 # UZH Printer
-cask 'canon-imagerunner-printer-driver-ufrii'
+# cask 'canon-imagerunner-printer-driver-ufrii'
 
 # Fonts
 cask "font-fira-code"
@@ -117,6 +118,7 @@ cask "font-roboto"
 cask "font-saira"
 
 # Mac App Store
+mas "1Blocker", id: 1107421413
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
 mas "iA Writer", id: 775737590

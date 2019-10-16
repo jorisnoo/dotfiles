@@ -1,11 +1,25 @@
 cwd=$(pwd)
+
 brew update
 brew upgrade
+
+# Delete git completion in order for git flow completion to work
+rm -f /usr/local/share/zsh/site-functions/_git
+
+brew cu -y
+mas upgrade
+
 brew cleanup
+
 upgrade_oh_my_zsh
+
 (cd ~/Homestead && git pull)
 (cd ~/Sites/cli/spark-installer && git pull)
+
 composer global update
-yarn global upgrade
-brew cu -y
+
+npm -g upgrade
+
+vagrant plugin update
+
 cd $cwd

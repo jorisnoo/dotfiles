@@ -8,7 +8,6 @@
 
 - shell:
     - ["(curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer)", Installing composer]
-    - ["sh -c $(curl -L https://git.io/n-install) -- -y -n", Installing node]
     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
     - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
     - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]

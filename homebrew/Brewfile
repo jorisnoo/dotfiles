@@ -15,6 +15,7 @@ tap "homebrew/services"
 # brew 'nektos/tap/act'
 
 # Binaries
+brew 'bluetoothconnector'
 brew 'coreutils'
 brew 'curl'
 brew 'ffmpeg'

@@ -11,8 +11,8 @@ alias brewupdate='brew update && brew upgrade && brew cleanup'
 alias dot='code ~/.dotfiles'
 
 # CLI tools
-function spark() { php ~/Sites/cli/spark-installer/spark $* }
-function pc() { php ~/Sites/cli/project-cli/project-cli $* }
+function spark() { php ~/Sites/internal/spark-installer/spark $* }
+function pc() { php ~/Sites/internal/project-cli/project-cli $* }
 
 # Homestead
 function homestead() { ( cd ~/Homestead && vagrant $* ) }

@@ -23,6 +23,7 @@ After going through the checklist above and making sure you backed everything up
 5. Clone this repo to `~/.dotfiles`
 6. Install [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) by running `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 7. Run `./install` to start the installation
+7. Configure Sync and wait for the 'Backup' folder to download
 8. Restore preferences by running `mackup restore`
 9. Run `./macos/.macos` to apply "sensible macOS default" settings
 10. Restart computer to finalize the process

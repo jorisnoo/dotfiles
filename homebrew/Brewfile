@@ -26,7 +26,7 @@ brew 'gnupg'
 brew 'grep'
 brew 'httpie'
 brew 'lsd'
-brew 'n'
+# brew 'n'
 brew 'mackup'
 brew 'mas'
 brew 'readline'
@@ -45,11 +45,16 @@ brew 'zsh-syntax-highlighting'
 cask '1password'
 cask 'aerial'
 cask 'alfred'
+cask 'airbar'
+cask 'atext'
 cask 'bartender'
+cask 'basecamp'
+cask 'carbon-copy-cloner'
 cask 'cleanmymac'
 cask 'choosy'
 cask 'cryptomator'
 cask 'dash'
+# cask 'deckset'
 cask 'evernote'
 cask 'firefox'
 cask 'firefox-developer-edition'
@@ -57,6 +62,7 @@ cask 'flux'
 cask 'gitfox'
 cask 'google-chrome'
 # cask 'gpg-suite'
+cask 'hazel'
 cask 'insomnia'
 cask 'iconjar'
 cask 'iterm2'
@@ -65,8 +71,10 @@ cask 'jetbrains-toolbox'
 cask 'keepingyouawake' 
 cask 'liteicon'
 cask 'logitech-options'
+cask 'mountain-duck'
 cask 'neofinder'
 cask 'nightowl'
+# cask 'noizio'
 cask 'nordvpn'
 cask 'notion'
 cask 'numi'
@@ -79,6 +87,7 @@ cask 'signal'
 cask 'sketch'
 cask 'spotify'
 cask 'sync'
+cask 'telegram'
 cask 'the-unarchiver'
 cask 'transmission'
 cask 'transmit'
@@ -127,9 +136,13 @@ mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "LittleIpsum", id: 405772121
 mas "Magnet", id: 441258766
+# mas "Name Mangler", id: 603637384
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
+mas "Raindrop.io for Safari", id: 957810159
+mas "Save to Pocket", id: 1477385213
+# mas "SiteSucker", id: 442168834
 mas "Tadama", id: 1415817706
 mas "The Clock", id: 488764545
 mas "Type Fu", id: 509818877

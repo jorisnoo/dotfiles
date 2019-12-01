@@ -102,7 +102,7 @@ if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris
 # Load Starship
 eval "$(starship init zsh)"
 
-# Syntax
+# ZSH Syntax Highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # iTerm Shell integration

@@ -18,7 +18,7 @@ upgrade_oh_my_zsh
 
 composer global update
 
-npm -g upgrade
+# npm -g upgrade
 
 vagrant plugin update
 

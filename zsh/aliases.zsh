@@ -37,8 +37,15 @@ alias ng='npm run generate'
 alias nh='npm run hot'
 alias nl='npm run lint'
 alias nlf='npm run lintfix'
+alias nlg='npm -g list --depth=0'
+alias ncs='npm-check --skip-unused'
+
+# Node
 alias nvm='n $(cat .nvmrc)'
-alias npm-lg='npm -g list --depth=0'
+alias nvm='cat .nvmrc'
+alias vin='volta install node@$(cat .nvmrc)'
+alias vpn='volta pin node@$(cat .nvmrc)'
+alias vl='volta list --format=plain'
 
 # Direcories
 alias h='cd ~'

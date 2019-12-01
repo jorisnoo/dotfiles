@@ -26,9 +26,9 @@
 
 - shell:
     - [touch $HOME/.hushlogin]
-    - [chsh -s $(which zsh), 'Switch to ZSH']
     - [mackup restore, 'Restore config from mackup']
 
 - shell:
     - [composer global install, Installing global composer packages]
     - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]
+    - [curl -sSLf https://get.volta.sh | bash, Installing Volta]

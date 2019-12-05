@@ -6,9 +6,9 @@ alias ip='ipconfig getifaddr en0'
 alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
-alias mtnc='. ~/.dotfiles/maintenance.sh'
+alias mtnc='. $DOTFILES/maintenance.sh'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
-alias dot='code ~/.dotfiles'
+alias dot='code $DOTFILES'
 
 # CLI tools
 function spark() { php ~/Sites/internal/spark-installer/spark $* }
@@ -41,8 +41,8 @@ alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
 
 # Node
-alias nvm='n $(cat .nvmrc)'
-alias nvm='cat .nvmrc'
+# alias nvm='n $(cat .nvmrc)'
+alias nvm='volta pin node@$(cat .nvmrc)'
 alias vin='volta install node@$(cat .nvmrc)'
 alias vpn='volta pin node@$(cat .nvmrc)'
 alias vl='volta list --format=plain'

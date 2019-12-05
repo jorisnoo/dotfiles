@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Path to your dotfiles installation.
+# Path to dotfiles installation.
 export DOTFILES=$HOME/.dotfiles
 
-# Path to your oh-my-zsh installation.
+# Path to oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
@@ -94,15 +94,13 @@ export LC_ALL=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+# Load custom functions
 source $DOTFILES/zsh/functions.zsh
-
-# The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris/.netlify/helper/path.zsh.inc'; fi
 
 # Load Starship
 eval "$(starship init zsh)"
 
-# ZSH Syntax Highlighting
+# Enable zsh Syntax Highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # iTerm Shell integration

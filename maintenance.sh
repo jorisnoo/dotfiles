@@ -22,4 +22,6 @@ composer global update
 
 vagrant plugin update
 
+(cd $DOTFILES && git submodule update --recursive --remote)
+
 cd $cwd

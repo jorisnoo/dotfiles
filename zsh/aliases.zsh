@@ -13,11 +13,12 @@ alias dot='code $DOTFILES'
 # CLI tools
 function spark() { php ~/Sites/internal/spark-installer/spark $* }
 function pc() { php ~/Sites/internal/project-cli/project-cli $* }
+function c2a() { ~/Sites/internal/csv2actual/bin/run $* }
 
 # Homestead
 function homestead() { ( cd ~/Homestead && vagrant $* ) }
 alias hu='homestead up'
-alias he='(open ~/Homestead/Homestead.yaml)'
+alias he='(code ~/Homestead/Homestead.yaml)'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
 # Laravel
@@ -30,7 +31,7 @@ alias ads='php artisan dump-server'
 
 # NPM
 alias nw='npm run watch'
-alias np='npm run prod'
+alias nprod='npm run prod'
 alias nd='npm run dev'
 alias nb='npm run build'
 alias ng='npm run generate'
@@ -41,8 +42,8 @@ alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
 
 # Node
-# alias nvm='n $(cat .nvmrc)'
-alias nvm='volta pin node@$(cat .nvmrc)'
+alias nvm='$(cat .nvmrc)'
+# alias nvm='volta pin node@$(cat .nvmrc)'
 alias vin='volta install node@$(cat .nvmrc)'
 alias vpn='volta pin node@$(cat .nvmrc)'
 alias vl='volta list --format=plain'
@@ -51,6 +52,7 @@ alias vl='volta list --format=plain'
 alias h='cd ~'
 alias s='cd ~/Sites'
 alias p='cd ~/Sites/projects'
+alias i='cd ~/Sites/internal'
 
 # SSH
 alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.")'

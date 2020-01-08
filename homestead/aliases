@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
 # Custom
-alias ads="php artisan dump-server"
-alias t="phpunit"
+alias t='phpunit'
+alias tu='phpunit --testsuite Unit'
+alias tf='phpunit --testsuite Feature'
+alias ads='php artisan dump-server'
 
 alias ..="cd .."
 alias ...="cd ../.."
 
 alias h='cd ~'
 alias c='clear'
-alias art=artisan
+alias art='artisan'
 
 alias phpspec='vendor/bin/phpspec'
 alias phpunit='vendor/bin/phpunit'

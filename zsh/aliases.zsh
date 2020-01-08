@@ -12,7 +12,7 @@ alias dot='code $DOTFILES'
 
 # CLI tools
 function spark() { php ~/Sites/internal/spark-installer/spark $* }
-function pc() { php ~/Sites/internal/project-cli/project-cli $* }
+# function pc() { php ~/Sites/internal/project-cli/project-cli $* }
 function c2a() { ~/Sites/internal/csv2actual/bin/run $* }
 
 # Homestead
@@ -24,10 +24,16 @@ alias vm='ssh vagrant@127.0.0.1 -p 2222'
 # Laravel
 alias art='artisan'
 alias t='phpunit'
+alias tu='phpunit --testsuite Unit'
+alias tf='phpunit --testsuite Feature'
 alias td='php artisan dusk'
 alias tdf='php artisan dusk:fails'
 alias ta='phpunit && php artisan dusk'
 alias ads='php artisan dump-server'
+
+# Composer
+alias cup='composer update'
+alias cda='composer dump-autoload'
 
 # NPM
 alias nw='npm run watch'
@@ -37,7 +43,7 @@ alias nb='npm run build'
 alias ng='npm run generate'
 alias nh='npm run hot'
 alias nl='npm run lint'
-alias nlf='npm run lintfix'
+alias nlf='npm run lint-fix'
 alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
 
@@ -67,9 +73,34 @@ alias gupp='git pull --rebase && git push'
 alias grh1='git reset HEAD~1 --soft'
 alias grhh1='git reset HEAD~1 --hard'
 
-alias publish='(git checkout develop; git push; git push --tags; git checkout master; git push; git checkout develop)'
-alias pullm='(git fetch --all --prune; git checkout develop; git pull; git pull --tags; git checkout master; git pull; git checkout develop)'
-alias pull='(git fetch --all --prune; git checkout develop; git pull --rebase; git pull --tags; git checkout master; git pull --rebase; git checkout develop)'
+# Merge develop into master
+alias mtm='( 
+    git checkout master;
+    git pull --rebase;
+    git merge --no-ff --no-edit develop; 
+    git checkout develop;
+    git merge --no-edit master)'
+
+# Push master and develop
+alias publish='(
+    git checkout develop; git push; git push --tags; 
+    git checkout master; git push; git checkout develop)'
+
+alias mtmp='mtm && publish'
+
+#  Pull and rebase
+alias pull='(
+    git fetch --all --prune;
+    git checkout develop; git pull --rebase; git pull --tags; 
+    git checkout master; git pull --rebase;
+    git checkout develop)'
+
+# Pull and merge
+alias pullm='(
+    git fetch --all --prune;
+    git checkout develop; git pull; git pull --tags;
+    git checkout master; git pull;
+    git checkout develop)'
 
 #LSD
 alias ls='lsd'

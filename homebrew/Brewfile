@@ -10,10 +10,6 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 
-# GitHub Actions
-# tap "nektos/tap" 
-# brew 'nektos/tap/act'
-
 # Binaries
 brew 'bluetoothconnector'
 brew 'coreutils'
@@ -24,6 +20,7 @@ brew 'git-flow-avh'
 brew 'git-lfs'
 brew 'gnupg'
 brew 'grep'
+brew 'htop'
 brew 'httpie'
 brew 'lsd'
 # brew 'n'
@@ -35,6 +32,7 @@ brew 'php'
 brew 'tig'
 brew 'trash'
 brew 'tree'
+brew 'speedtest-cli'
 brew 'starship'
 brew 'wget'
 brew 'youtube-dl'
@@ -47,6 +45,7 @@ cask 'aerial'
 cask 'alfred'
 cask 'airbar'
 cask 'atext'
+cask 'backblaze'
 cask 'bartender'
 cask 'basecamp'
 cask 'carbon-copy-cloner'
@@ -73,7 +72,7 @@ cask 'liteicon'
 cask 'logitech-options'
 cask 'mountain-duck'
 cask 'neofinder'
-cask 'nightowl'
+# cask 'nightowl'
 # cask 'noizio'
 cask 'nordvpn'
 cask 'notion'
@@ -131,6 +130,7 @@ cask "font-saira"
 mas "1Blocker", id: 1107421413
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122
+mas "Endel", id: 1484348796
 mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307

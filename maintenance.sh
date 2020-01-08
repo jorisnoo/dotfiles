@@ -1,11 +1,20 @@
-# Ask for the administrator password upfront
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until the script has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 # Store the current directory
 cwd=$(pwd)
+
+# Check for --full flag
+if [[ $* == *-f || $* == *--full ]]; then
+    full=true
+else
+    full=false
+fi
+
+if $full; then
+    # Ask for the administrator password upfront
+    sudo -v
+
+    # Keep-alive: update existing `sudo` time stamp until the script has finished
+    while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+fi
 
 # Upgrade Brew packages
 brew update
@@ -32,14 +41,16 @@ upgrade_oh_my_zsh
 # Update global composer packages
 composer global update
 
-# Update Laravel Valet
-valet install
+if $full; then
+    # Update Laravel Valet
+    valet install
 
-# Update vagrant plugins
-vagrant plugin update
+    # Update vagrant plugins
+    vagrant plugin update
 
-# Check for homestead updates
-(cd ~/Homestead && vagrant box update)
+    # Check for homestead updates
+    (cd ~/Homestead && vagrant box update)
+fi
 
 # Update volta
 curl https://get.volta.sh | bash

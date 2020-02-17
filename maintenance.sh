@@ -49,7 +49,7 @@ if $full; then
     vagrant plugin update
 
     # Check for homestead updates
-    (cd ~/Homestead && vagrant box update)
+    # (cd ~/Homestead && vagrant box update)
 fi
 
 # Update volta

@@ -43,7 +43,7 @@ alias nb='npm run build'
 alias ng='npm run generate'
 alias nh='npm run hot'
 alias nl='npm run lint'
-alias nlf='npm run lint-fix'
+alias nlf='npm run lintfix'
 alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
 

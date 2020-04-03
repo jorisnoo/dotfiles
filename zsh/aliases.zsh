@@ -48,8 +48,7 @@ alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
 
 # Node
-alias nvm='$(cat .nvmrc)'
-# alias nvm='n $(cat .nvmrc)'
+alias nvm='n $(cat .nvmrc)'
 
 # Direcories
 alias h='cd ~'
@@ -60,7 +59,7 @@ alias i='cd ~/Sites/internal'
 # SSH
 alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.")'
 
-# GIT
+# git
 alias gs='git status -s'
 alias gcm='git commit -m'
 alias go='git checkout'
@@ -69,6 +68,10 @@ alias god='git checkout develop'
 alias gupp='git pull --rebase && git push'
 alias grh1='git reset HEAD~1 --soft'
 alias grhh1='git reset HEAD~1 --hard'
+
+# git flow
+function fstart() { git checkout -b feature/$* develop }
+function ffinish() { (git checkout develop && git merge --no-ff feature/$* && git branch -d feature/$*) }
 
 # Merge develop into master
 alias release='( 
@@ -82,8 +85,6 @@ alias release='(
 alias publish='(
     git checkout develop; git push; git push --tags; 
     git checkout master; git push; git checkout develop)'
-
-alias mtmp='mtm && publish'
 
 #  Pull and rebase
 alias pull='(

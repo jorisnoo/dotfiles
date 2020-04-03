@@ -20,9 +20,6 @@ fi
 brew update
 brew upgrade
 
-# Delete git completion in order for git flow completion to work
-rm -f /usr/local/share/zsh/site-functions/_git
-
 # Upgrade Applications
 brew cu -y
 mas upgrade
@@ -38,6 +35,9 @@ upgrade_oh_my_zsh
 (cd ~/Sites/internal/spark-installer && git pull)
 (cd $DOTFILES && git pull --recurse-submodules)
 
+# Update composer
+composer self-update
+
 # Update global composer packages
 composer global update
 
@@ -52,11 +52,8 @@ if $full; then
     # (cd ~/Homestead && vagrant box update)
 fi
 
-# Update volta
-curl https://get.volta.sh | bash
-
 # Upgrade global npm modules?
-# npm -g upgrade
+npm -g upgrade
 
 # Change back to the original directory
 cd $cwd

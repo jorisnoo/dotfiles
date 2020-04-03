@@ -16,23 +16,19 @@ brew 'coreutils'
 brew 'curl'
 brew 'ffmpeg'
 brew 'git'
-brew 'git-flow-avh'
 brew 'git-lfs'
+brew 'github/gh/gh'
 brew 'gnupg'
 brew 'grep'
 brew 'htop'
 brew 'httpie'
 brew 'lsd'
-# brew 'n'
+brew 'n'
 brew 'mackup'
 brew 'mas'
-brew 'readline'
 brew 'openssl'
-brew 'php'
 brew 'tig'
-brew 'trash'
 brew 'tree'
-brew 'speedtest-cli'
 brew 'starship'
 brew 'wget'
 brew 'youtube-dl'
@@ -41,7 +37,7 @@ brew 'zsh-syntax-highlighting'
 
 # Apps
 cask '1password'
-cask 'aerial'
+# cask 'aerial'
 cask 'alfred'
 cask 'airbar'
 cask 'atext'
@@ -74,18 +70,16 @@ cask 'mountain-duck'
 cask 'neofinder'
 # cask 'nightowl'
 # cask 'noizio'
-cask 'nordvpn'
 cask 'notion'
 cask 'numi'
 cask 'optimage'
-cask 'protonmail-bridge'
 cask 'raindropio'
 cask 'recordit'
-cask 'sequel-pro'
 cask 'signal'
 cask 'sketch'
 cask 'spotify'
 cask 'sync'
+cask 'tableplus'
 cask 'telegram'
 cask 'the-unarchiver'
 cask 'transmission'
@@ -142,8 +136,8 @@ mas "Pages", id: 409201541
 mas "Pocket", id: 568494494
 mas "Raindrop.io for Safari", id: 957810159
 mas "Save to Pocket", id: 1477385213
-# mas "SiteSucker", id: 442168834
-mas "Tadama", id: 1415817706
+mas "SiteSucker", id: 442168834
+# mas "Tadama", id: 1415817706
 mas "The Clock", id: 488764545
 mas "Type Fu", id: 509818877
 mas "Ulysses", id: 1225570693

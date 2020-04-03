@@ -23,12 +23,12 @@ alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
 # Laravel
 alias art='artisan'
-alias t='phpunit'
-alias tu='phpunit --testsuite Unit'
-alias tf='phpunit --testsuite Feature'
+alias t='artisan test'
+alias tu='artisan test --group=unit'
+alias tf='artisan test --group=feature'
 alias td='php artisan dusk'
 alias tdf='php artisan dusk:fails'
-alias ta='phpunit && php artisan dusk'
+alias ta='artisan test && php artisan dusk'
 alias ads='php artisan dump-server'
 
 # Composer
@@ -49,10 +49,7 @@ alias ncs='npm-check --skip-unused'
 
 # Node
 alias nvm='$(cat .nvmrc)'
-# alias nvm='volta pin node@$(cat .nvmrc)'
-alias vin='volta install node@$(cat .nvmrc)'
-alias vpn='volta pin node@$(cat .nvmrc)'
-alias vl='volta list --format=plain'
+# alias nvm='n $(cat .nvmrc)'
 
 # Direcories
 alias h='cd ~'
@@ -74,7 +71,7 @@ alias grh1='git reset HEAD~1 --soft'
 alias grhh1='git reset HEAD~1 --hard'
 
 # Merge develop into master
-alias mtm='( 
+alias release='( 
     git checkout master;
     git pull --rebase;
     git merge --no-ff --no-edit develop; 

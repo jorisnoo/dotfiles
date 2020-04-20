@@ -114,6 +114,9 @@ cask "font-ia-writer-duo"
 cask "font-ia-writer-duospace"
 cask "font-ia-writer-mono"
 cask "font-ia-writer-quattro"
+cask "font-jetbrains-mono"
+cask "font-jetbrainsmono-nerd-font"
+cask "font-jetbrainsmono-nerd-font-mono"
 cask "font-lato"
 cask "font-playfair-display"
 cask "font-public-sans"
@@ -131,6 +134,7 @@ mas "LINE", id: 539883307
 mas "LittleIpsum", id: 405772121
 mas "Magnet", id: 441258766
 # mas "Name Mangler", id: 603637384
+mas "NextDNS", id: 1464122853
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pocket", id: 568494494

@@ -98,13 +98,18 @@ export LC_ALL=en_US.UTF-8
 source $DOTFILES/zsh/functions.zsh
 
 # Load Starship
-eval "$(starship init zsh)"
+#eval "$(starship init zsh)"
+
+# Load pure prompt
+autoload -U promptinit; promptinit
+prompt pure
 
 # Enable zsh Syntax Highlighting
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Path
 export PATH="/usr/local/sbin:$HOME/.node/bin:$HOME/.composer/vendor/bin:./vendor/bin:$PATH"
+export PATH="$PATH:$HOME/Sites/internal/spark-installer"
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris/.netlify/helper/path.zsh.inc'; fi

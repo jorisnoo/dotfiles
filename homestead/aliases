@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
 # Custom
-alias t='artisan test'
-alias tu='artisan test --group=unit'
-alias tf='artisan test --group=feature'
-alias ta='artisan test && php artisan dusk'
+alias t='php artisan test'
 alias ads='php artisan dump-server'
 
 # Homestead

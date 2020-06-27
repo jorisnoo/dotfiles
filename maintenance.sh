@@ -21,8 +21,10 @@ brew update
 brew upgrade
 
 # Upgrade Applications
-brew cu -y
-mas upgrade
+if $full; then
+  brew cu -y
+  mas upgrade
+fi
 
 # Cleanup Brew packages
 brew cleanup
@@ -33,13 +35,11 @@ upgrade_oh_my_zsh
 # Update git repositories
 (cd ~/Homestead && git pull)
 (cd ~/Sites/internal/spark-installer && git pull)
-(cd $DOTFILES && git pull --recurse-submodules)
-
-# Update composer
-composer self-update
+(cd "$DOTFILES" && git pull --recurse-submodules)
 
 # Update global composer packages
 composer global update
+
 
 if $full; then
     # Update Laravel Valet
@@ -56,4 +56,4 @@ fi
 npm -g upgrade
 
 # Change back to the original directory
-cd $cwd
+cd "$cwd" || exit

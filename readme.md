@@ -1,25 +1,30 @@
 # my dotfiles 🦚
 
-A home for my mac configuration and installer when setting up a new machine.
+A home for my mac configuration.
+
+This repository contains:
+- a list of [software I use](homebrew/Brewfile) — installed through [Homebrew](https://brew.sh/)
+- globally installed [composer](https://getcomposer.org/) [packages](composer/composer.json)
+- my [aliases](zsh/aliases.zsh), [functions](zsh/functions.zsh) and [configuration](zsh/.zshrc) for [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [aliases](homestead/aliases) and [software](homestead/after.sh) installed on [Laravel Homestead](https://laravel.com/docs/master/homestead)
+- [configuration](mackup) for [mackup](https://github.com/lra/mackup)
+- [adjusted](macos/.macos) list of [sensible macOS defaults](https://mths.be/macos)
+- an [install script](install.conf.yaml) to set up all the above on a new machine using [dotbot](https://github.com/anishathalye/dotbot)
+
+## Usage: Setting up a new machine
 
 ### Before the re-install
 
-First, go through the checklist below to make sure you didn't forget anything before you wipe your hard drive.
-
-- Did you commit and push any changes/branches to your git repositories?
-- Did you remember to save all important documents from non-iCloud/Sync directories?
-- Did you update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
+- Did I commit and push any changes/branches to my git repositories?
+- Did I save all important documents from non-iCloud/Sync directories?
+- Did I update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
 
 ### Installing a clean copy of macOS
-
-After going through the checklist above and making sure you backed everything up, [install macOS](https://www.imore.com/how-do-clean-install-macos) with the latest release.
-
-### Setting up the Mac
 
 1. Update macOS to the latest version
 2. Log into the App Store and download Xcode, open it and accept the license agreement
 3. Install macOS Command Line Tools by running `xcode-select --install`
-4. Copy your public and private SSH keys to `~/.ssh` and make sure they're set to `600`
+4. Copy my public and private SSH keys to `~/.ssh` and make sure they're set to `600`
 5. Clone this repo to `~/.dotfiles`
 6. Install [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) by running `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 7. Run `./install` to start the installation
@@ -33,7 +38,7 @@ After going through the checklist above and making sure you backed everything up
 * [Hardening macOS](https://blog.bejarano.io/hardening-macos.html)
 * [macOS Security and Privacy Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
 
-## Thanks To... 💙
+## Thanks 💙
 
 - [medoai](https://github.com/meodai/dotfiles)
 - [driesvints](https://github.com/driesvints/dotfiles)

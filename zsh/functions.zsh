@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+composer-link() {
+    composer config repositories.local '{"type": "path", "url": "'$1'"}' --file composer.json
+}
+
 # Opens any file in MacOS Quicklook Preview
 ql () { qlmanage -p "$*" >& /dev/null; }
 
@@ -10,9 +14,9 @@ mkd () {
 
 # Change working directory to the top-most Finder window location
 cdf () {
-    target=`osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)'`
+    target=$(osascript -e 'tell application "Finder" to if (count of Finder windows) > 0 then get POSIX path of (target of front Finder window as text)')
     if [ "$target" != "" ]; then
-        cd "$target"; pwd
+        cd "$target" || exit; pwd
     else
         echo 'No Finder window found' >&2
     fi

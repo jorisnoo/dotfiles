@@ -1,10 +1,8 @@
 {
     "require": {
-        "laravel/installer": "^2.0",
-        "laravel/valet": "^2.5",
-        "spatie/phpunit-watcher": "^1.12",
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "icanhazstring/composer-unused": "^0.7.1",
-        "laravel-zero/installer": "^2.3"
+        "laravel/installer": "^3.1",
+        "laravel/valet": "^2.10",
+        "icanhazstring/composer-unused": "^0.7.3",
+        "laravel-zero/installer": "^2.4"
     }
 }

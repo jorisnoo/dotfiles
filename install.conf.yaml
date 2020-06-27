@@ -31,4 +31,4 @@
 - shell:
     - [composer global install, Installing global composer packages]
     - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]
-    - [curl -sSLf https://get.volta.sh | bash, Installing Volta]
+    - [$HOME/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/ksinstall --nuke, Uninstall Google Update]

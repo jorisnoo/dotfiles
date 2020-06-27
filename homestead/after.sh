@@ -7,8 +7,4 @@
 # ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 
 sudo apt-get update
-sudo apt-get install libxrender1 inkscape --yes
-
-#sudo DEBIAN_FRONTEND=noninteractive apt-get --yes install php7.1-mcrypt php-imagick
-#sudo service php7.1-fpm restart
-#sudo service php7.2-fpm restart
+sudo apt-get install -y librsvg2-bin

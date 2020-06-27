@@ -18,6 +18,7 @@ This repository contains:
 - [ ] Did I commit and push any changes/branches to my git repositories?
 - [ ] Did I save all important documents from non-iCloud/Sync directories?
 - [ ] Did I update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
+- [ ] Did I back up my [Cookie-AutoDelete](https://github.com/Cookie-AutoDelete/Cookie-AutoDelete) settings?
 
 ### Installing a clean copy of macOS
 

@@ -42,6 +42,6 @@ This repository contains:
 
 ## Thanks 💙
 
-- [medoai](https://github.com/meodai/dotfiles)
-- [driesvints](https://github.com/driesvints/dotfiles)
-- [mathiasbynens](https://mths.be/macos)
+- [@medoai](https://github.com/meodai/dotfiles)
+- [@driesvints](https://github.com/driesvints/dotfiles)
+- [@mathiasbynens](https://mths.be/macos)

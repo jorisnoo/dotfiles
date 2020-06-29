@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Custom
-alias t='./vendor/bin/pest'
+alias t='composer test'
 alias ads='php artisan dump-server'
 
 # Homestead

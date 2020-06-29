@@ -11,45 +11,40 @@ alias brewupdate='brew update && brew upgrade && brew cleanup'
 alias dot='phpstorm $DOTFILES'
 
 # Homestead
-function homestead() { (cd ~/Homestead && vagrant $*) }
+homestead() {(cd ~/Homestead && vagrant $*)}
 alias hu='homestead up'
 alias he='phpstorm ~/Homestead/Homestead.yaml'
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 
 # Laravel
 alias art='nocorrect artisan'
-alias t='artisan test'
-alias tu='artisan test --group=unit'
-alias tf='artisan test --group=feature'
+alias t='composer test'
 alias td='php artisan dusk'
 alias tdf='php artisan dusk:fails'
-alias ta='artisan test && php artisan dusk'
+alias ta='t; td'
 alias ads='php artisan dump-server'
 
 # Composer
+#alias composer='php -d memory_limit=-1 `which composer`'
 alias cup='composer update'
 alias cda='composer dump-autoload'
 
 # NPM
+alias nvm='n $(cat .nvmrc)'
 alias nw='npm run watch'
-alias nprod='npm run prod'
+alias np='npm run prod'
 alias nd='npm run dev'
 alias nb='npm run build'
 alias ng='npm run generate'
 alias nh='npm run hot'
 alias nl='npm run lint'
-alias nlf='npm run lint-fix'
 alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
-
-# Node
-alias nvm='n $(cat .nvmrc)'
 
 # Directories
 alias h='cd ~'
 alias s='cd ~/Sites'
 alias p='cd ~/Sites/projects'
-alias i='cd ~/Sites/internal'
 
 # SSH
 alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.")'
@@ -82,9 +77,10 @@ release() {(
 )}
 
 # Push stable and develop
-alias publish='(
+publish() {(
     git checkout develop; git push; git push --tags;
-    git checkout stable; git push; git checkout develop)'
+    git checkout stable; git push; git checkout develop
+)}
 
 alias rnpublish='(release; publish)'
 
@@ -96,31 +92,33 @@ remerge-stable() {(
 )}
 
 #  Pull and rebase
-alias pull='(
+pull() {(
     git fetch --all --prune;
     git checkout develop; git pull --rebase; git pull --tags;
     git checkout stable; git pull --rebase;
-    git checkout develop)'
+    git checkout develop
+)}
 
 # Pull and merge
-alias pullmerge='(
+pullmerge() {(
     git fetch --all --prune;
     git checkout develop; git pull; git pull --tags;
     git checkout stable; git pull;
-    git checkout develop)'
+    git checkout develop
+)}
 
-function ncu-commit() { (
+ncu-commit() { (
     ncu -u;
     npm i;
     git add package*;
     git commit -m 'Upgrade: Node modules';
-) }
+)}
 
-function cu-commit() { (
+cu-commit() { (
     composer update;
     git add composer.lock;
     git commit -m 'Upgrade: Composer packages';
-) }
+)}
 
 #LSD
 alias ls='lsd'

@@ -7,4 +7,4 @@
 # ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 
 sudo apt-get update
-sudo apt-get install -y librsvg2-bin
+sudo apt-get install -y librsvg2-bin poppler-utils

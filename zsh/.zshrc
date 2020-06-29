@@ -66,7 +66,7 @@ ZSH_CUSTOM=$DOTFILES/zsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git laravel brew sudo)
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH"/oh-my-zsh.sh
 
 # User configuration
 
@@ -95,7 +95,7 @@ export LC_ALL=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 
 # Load custom functions
-source $DOTFILES/zsh/functions.zsh
+source "$DOTFILES"/zsh/functions.zsh
 
 # Load Starship
 #eval "$(starship init zsh)"
@@ -105,7 +105,8 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # Enable zsh Syntax Highlighting
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# shellcheck disable=SC1090
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # Path
 export PATH="/usr/local/sbin:$HOME/.node/bin:$HOME/.composer/vendor/bin:./vendor/bin:$PATH"
@@ -116,3 +117,6 @@ if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris
 
 # Added by n-install (see http://git.io/n-install-repo).
 export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
+
+# Secretive
+#export SSH_AUTH_SOCK="$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"

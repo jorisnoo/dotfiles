@@ -8,6 +8,8 @@
 
 - shell:
     - ["(curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer)", Installing composer]
+
+- shell:
     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
     - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
     - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]
@@ -26,9 +28,10 @@
 
 - shell:
     - [touch $HOME/.hushlogin]
-    - [mackup restore, 'Restore config from mackup']
-
-- shell:
-    - [composer global install, Installing global composer packages]
-    - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]
     - [$HOME/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/ksinstall --nuke, Uninstall Google Update]
+
+# Run these after Sync is installed and files have downloaded
+#- shell:
+#    - [mackup restore, 'Restore config from mackup']
+#    - [composer global install, Installing global composer packages]
+#    - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]

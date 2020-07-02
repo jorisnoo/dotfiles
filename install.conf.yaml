@@ -1,21 +1,19 @@
-- clean: ['~','~/Homestead']
+#- clean: ['~','~/Homestead']
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [touch $HOME/.hushlogin]
 
-- brewfile:
-    - homebrew/Brewfile
+ - brewfile:
+     - homebrew/Brewfile
 
-- shell:
-    - ["(curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer)", Installing composer]
-
-- shell:
-    - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
-    - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
-    - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]
-    - [vagrant plugin install vagrant-vbguest, Installing vagrant vbguest plugin]
-    - ["[ -d $HOME/Homestead ] || git clone https://github.com/laravel/homestead $HOME/Homestead", Installing Laravel Homestead]
-    - ["cd $HOME/Homestead && git pull", Updating Homestead]
+ - shell:
+     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
+     - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
+     - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]
+     - [vagrant plugin install vagrant-vbguest, Installing vagrant vbguest plugin]
+     - ["[ -d $HOME/Homestead ] || git clone https://github.com/laravel/homestead $HOME/Homestead", Installing Laravel Homestead]
+     - ["cd $HOME/Homestead && git pull", Updating Homestead]
 
 - link:
     ~/.zshrc: zsh/.zshrc
@@ -27,11 +25,20 @@
     ~/.mackup: mackup/.mackup
 
 - shell:
-    - [touch $HOME/.hushlogin]
-    - [$HOME/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/ksinstall --nuke, Uninstall Google Update]
+    - ["(curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer)", Installing composer]
+    - [composer global install, Installing global composer packages]
+    - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]
+
+- shell:
+    - [n stable, Install node]
+    - [npm install pure --global]
+    - [npm install npm-check-updates --global]
+    - [npm install npm-check --global]
+    - [npm install netlify-cli --global]
 
 # Run these after Sync is installed and files have downloaded
 #- shell:
 #    - [mackup restore, 'Restore config from mackup']
-#    - [composer global install, Installing global composer packages]
-#    - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]
+
+#- shell:
+# - [$HOME/Library/Google/GoogleSoftwareUpdate/GoogleSoftwareUpdate.bundle/Contents/Resources/ksinstall --nuke, Uninstall Google Update]

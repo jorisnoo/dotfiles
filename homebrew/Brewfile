@@ -27,6 +27,9 @@ brew 'n'
 brew 'mackup'
 brew 'mas'
 brew 'openssl'
+brew 'php'
+brew 'pinentry'
+brew 'svn'
 brew 'tig'
 brew 'tree'
 #brew 'starship'
@@ -40,7 +43,6 @@ cask '1password'
 # cask 'aerial'
 cask 'adobe-creative-cloud'
 cask 'alfred'
-cask 'airbar'
 cask 'atext'
 cask 'backblaze'
 cask 'bartender'
@@ -52,9 +54,9 @@ cask 'cryptomator'
 cask 'dash'
 # cask 'deckset'
 cask 'evernote'
+cask 'figma'
 cask 'firefox'
 cask 'firefox-developer-edition'
-#cask 'flux'
 cask 'gitfox'
 cask 'google-chrome'
 cask 'gpg-suite'
@@ -73,6 +75,7 @@ cask 'neofinder'
 cask 'notion'
 cask 'numi'
 cask 'optimage'
+cask 'pixelsnap'
 cask 'raindropio'
 cask 'recordit'
 cask 'secretive'
@@ -85,6 +88,7 @@ cask 'spotify'
 cask 'sync'
 cask 'tableplus'
 cask 'telegram'
+cask 'tinkerwell'
 #cask 'the-unarchiver'
 cask 'transmission'
 cask 'transmit'
@@ -115,8 +119,7 @@ cask 'qlvideo'
 cask 'font-fira-code'
 cask 'font-fira-mono'
 cask 'font-fira-sans'
-cask 'font-firacode-nerd-font'
-cask 'font-firacode-nerd-font-mono'
+cask 'font-fira-code-nerd-font'
 cask 'font-hack'
 cask 'font-hack-nerd-font'
 cask 'font-ia-writer-duo'
@@ -125,17 +128,18 @@ cask 'font-ia-writer-mono'
 cask 'font-ia-writer-quattro'
 cask 'font-jetbrains-mono'
 cask 'font-jetbrainsmono-nerd-font'
-cask 'font-jetbrainsmono-nerd-font-mono'
-cask 'font-lato'
-cask 'font-playfair-display'
 cask 'font-public-sans'
-cask 'font-roboto'
+
+cask 'font-playfair-display'
+cask 'font-lato'
+cask 'font-dm-sans'
 
 # Mac App Store
 mas '1Blocker', id: 1107421413
 mas 'Amphetamine', id: 937984704
 mas 'Bear', id: 1091189122
 mas 'Endel', id: 1484348796
+mas 'Harvest', id: 506189836
 mas 'iA Writer', id: 775737590
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
@@ -149,7 +153,6 @@ mas 'Pocket', id: 568494494
 mas 'Raindrop.io for Safari', id: 957810159
 mas 'Save to Pocket', id: 1477385213
 mas 'SiteSucker', id: 442168834
-# mas 'Tadama', id: 1415817706
 mas 'The Clock', id: 488764545
 mas 'Type Fu', id: 509818877
 mas 'Ulysses', id: 1225570693

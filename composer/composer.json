@@ -3,6 +3,8 @@
         "laravel/installer": "^3.1",
         "laravel/valet": "^2.10",
         "icanhazstring/composer-unused": "^0.7.3",
-        "laravel-zero/installer": "^2.4"
+        "laravel-zero/installer": "^2.4",
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "hirak/prestissimo": "^0.3.10"
     }
 }

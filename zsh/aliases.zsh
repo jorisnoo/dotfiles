@@ -26,6 +26,7 @@ alias ads='php artisan dump-server'
 
 # Composer
 #alias composer='php -d memory_limit=-1 `which composer`'
+alias composer='COMPOSER_MEMORY_LIMIT=-1 composer'
 alias cup='composer update'
 alias cda='composer dump-autoload'
 
@@ -53,49 +54,49 @@ alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard
 alias gs='git status -s'
 alias gcm='git commit -m'
 alias go='git checkout'
-alias gos='git checkout stable'
+alias gom='git checkout main'
 alias god='git checkout develop'
 alias gupp='git pull --rebase && git push'
 alias grh1='git reset HEAD~1 --soft'
 alias grhh1='git reset HEAD~1 --hard'
 
-rename-master-to-stable() {
-    git branch -m master stable
+rename-master-to-main() {
+    git branch -m master main
 }
 
 # git flow
 fstart() { (git checkout -b feature/"$*" develop) }
 ffinish() { (git checkout develop && git merge --no-ff feature/"$*" && git branch -d feature/"$*") }
 
-# Merge develop into stable
+# Merge develop into main
 release() {(
-    git checkout stable;
+    git checkout main;
     git pull --rebase;
     git merge --no-ff --no-edit develop;
     git checkout develop;
-    git merge --no-edit stable
+    git merge --no-edit main
 )}
 
-# Push stable and develop
+# Push main and develop
 publish() {(
     git checkout develop; git push; git push --tags;
-    git checkout stable; git push; git checkout develop
+    git checkout main; git push; git checkout develop
 )}
 
 alias rnpublish='(release; publish)'
 
-remerge-stable() {(
-    git checkout stable;
+remerge-main() {(
+    git checkout main;
     git pull --rebase;
     git checkout develop;
-    git merge stable
+    git merge main
 )}
 
 #  Pull and rebase
 pull() {(
     git fetch --all --prune;
     git checkout develop; git pull --rebase; git pull --tags;
-    git checkout stable; git pull --rebase;
+    git checkout main; git pull --rebase;
     git checkout develop
 )}
 
@@ -103,7 +104,7 @@ pull() {(
 pullmerge() {(
     git fetch --all --prune;
     git checkout develop; git pull; git pull --tags;
-    git checkout stable; git pull;
+    git checkout main; git pull;
     git checkout develop
 )}
 

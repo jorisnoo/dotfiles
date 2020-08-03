@@ -8,12 +8,11 @@
      - homebrew/Brewfile
 
  - shell:
-     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
+#     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
      - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
      - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]
      - [vagrant plugin install vagrant-vbguest, Installing vagrant vbguest plugin]
      - ["[ -d $HOME/Homestead ] || git clone https://github.com/laravel/homestead $HOME/Homestead", Installing Laravel Homestead]
-     - ["cd $HOME/Homestead && git pull", Updating Homestead]
 
 - link:
     ~/.zshrc: zsh/.zshrc

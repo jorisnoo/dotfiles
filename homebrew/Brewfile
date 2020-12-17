@@ -40,8 +40,8 @@ brew 'zsh-syntax-highlighting'
 
 # Apps
 cask '1password'
-# cask 'aerial'
-cask 'adobe-creative-cloud'
+ cask 'aerial'
+# cask 'adobe-creative-cloud'
 cask 'alfred'
 cask 'atext'
 cask 'backblaze'
@@ -52,6 +52,7 @@ cask 'cleanmymac'
 cask 'choosy'
 cask 'cryptomator'
 cask 'dash'
+cask 'docker'
 # cask 'deckset'
 cask 'evernote'
 cask 'figma'
@@ -70,7 +71,6 @@ cask 'liteicon'
 cask 'logitech-options'
 cask 'mountain-duck'
 cask 'neofinder'
-# cask 'nightowl'
 # cask 'noizio'
 cask 'notion'
 cask 'numi'
@@ -78,6 +78,7 @@ cask 'optimage'
 cask 'pixelsnap'
 cask 'raindropio'
 cask 'recordit'
+cask 'rightfont'
 cask 'secretive'
 cask 'selfcontrol'
 cask 'shifty'
@@ -108,7 +109,6 @@ cask 'quicklook-json'
 cask 'quicklook-csv'
 cask 'qlstephen'
 cask 'qlimagesize'
-cask 'suspicious-package'
 cask 'quicklookase'
 cask 'qlvideo'
 
@@ -122,10 +122,10 @@ cask 'font-fira-sans'
 cask 'font-fira-code-nerd-font'
 cask 'font-hack'
 cask 'font-hack-nerd-font'
-cask 'font-ia-writer-duo'
-cask 'font-ia-writer-duospace'
-cask 'font-ia-writer-mono'
-cask 'font-ia-writer-quattro'
+#cask 'font-ia-writer-duo'
+#cask 'font-ia-writer-duospace'
+#cask 'font-ia-writer-mono'
+#cask 'font-ia-writer-quattro'
 cask 'font-jetbrains-mono'
 cask 'font-jetbrainsmono-nerd-font'
 cask 'font-public-sans'
@@ -135,9 +135,10 @@ cask 'font-lato'
 cask 'font-dm-sans'
 
 # Mac App Store
-mas '1Blocker', id: 1107421413
+#mas '1Blocker', id: 1107421413
 mas 'Amphetamine', id: 937984704
 mas 'Bear', id: 1091189122
+mas 'Cookie', id: 1473091386
 mas 'Endel', id: 1484348796
 mas 'Harvest', id: 506189836
 mas 'iA Writer', id: 775737590
@@ -153,7 +154,9 @@ mas 'Pocket', id: 568494494
 mas 'Raindrop.io for Safari', id: 957810159
 mas 'Save to Pocket', id: 1477385213
 mas 'SiteSucker', id: 442168834
+mas 'Tampermonkey', id: 1482490089
 mas 'The Clock', id: 488764545
 mas 'Type Fu', id: 509818877
 mas 'Ulysses', id: 1225570693
+mas 'Wipr', id: 1320666476
 mas 'Xcode', id: 497799835

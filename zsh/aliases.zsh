@@ -4,8 +4,6 @@
 alias flushdns='sudo killall -HUP mDNSResponder'
 alias ip='ipconfig getifaddr en0'
 alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
-alias showfiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hidefiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 alias mtnc='. $DOTFILES/maintenance.sh'
 alias brewupdate='brew update && brew upgrade && brew cleanup'
 alias dot='phpstorm $DOTFILES'
@@ -23,10 +21,12 @@ alias td='php artisan dusk'
 alias tdf='php artisan dusk:fails'
 alias ta='t; td'
 alias ads='php artisan dump-server'
+alias sail='bash vendor/bin/sail'
+alias sart='sail artisan'
 
 # Composer
 #alias composer='php -d memory_limit=-1 `which composer`'
-alias composer='COMPOSER_MEMORY_LIMIT=-1 composer'
+#alias composer='COMPOSER_MEMORY_LIMIT=-1 composer'
 alias cup='composer update'
 alias cda='composer dump-autoload'
 
@@ -50,11 +50,16 @@ alias p='cd ~/Sites/projects'
 # SSH
 alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.")'
 
+# Use `valet use php@7.4`  instead!
+#alias php74='{ brew unlink php@8.0; brew link php@7.4 --force --overwrite; } &> /dev/null && php -v'
+#alias php80='{ brew unlink php@7.4; brew link php@8.0 --force --overwrite; } &> /dev/null && php -v'
+
 # git
 alias gs='git status -s'
 alias gcm='git commit -m'
 alias go='git checkout'
 alias gom='git checkout main'
+alias gomas='git checkout master'
 alias god='git checkout develop'
 alias gupp='git pull --rebase && git push'
 alias grh1='git reset HEAD~1 --soft'
@@ -77,10 +82,23 @@ release() {(
     git merge --no-edit main
 )}
 
+release-into-master() {(
+    git checkout master;
+    git pull;
+    git merge --no-ff --no-edit develop;
+    git checkout develop;
+    git merge --no-edit master
+)}
+
 # Push main and develop
 publish() {(
     git checkout develop; git push; git push --tags;
     git checkout main; git push; git checkout develop
+)}
+
+publish-master() {(
+    git checkout develop; git push; git push --tags;
+    git checkout master; git push; git checkout develop
 )}
 
 alias rnpublish='(release; publish)'

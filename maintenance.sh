@@ -30,7 +30,7 @@ fi
 brew cleanup
 
 # Upgrade Oh-My-Zsh
-upgrade_oh_my_zsh
+omz update
 
 # Update git repositories
 (cd ~/Homestead && git pull)
@@ -40,10 +40,10 @@ upgrade_oh_my_zsh
 # Update global composer packages
 composer global update
 
+# Update Laravel Valet
+valet install
 
 if $full; then
-    # Update Laravel Valet
-    valet install
 
     # Update vagrant plugins
     vagrant plugin update

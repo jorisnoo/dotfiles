@@ -109,8 +109,8 @@ prompt pure
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # Path
-export PATH="/usr/local/sbin:$HOME/.node/bin:$HOME/.composer/vendor/bin:./vendor/bin:$PATH"
-export PATH="$PATH:$HOME/Sites/internal/spark-installer"
+export PATH="$PATH:/usr/local/sbin:$HOME/.composer/vendor/bin:./vendor/bin:$HOME/.node/bin"
+#export PATH="$PATH:$HOME/Sites/internal/spark-installer"
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris/.netlify/helper/path.zsh.inc'; fi

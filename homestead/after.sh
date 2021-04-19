@@ -7,6 +7,7 @@
 # ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
 
 sudo apt-get update
-sudo apt-get install -y librsvg2-bin poppler-utils
+#sudo apt-get install -y librsvg2-bin poppler-utils
+#libssl1.0-dev
 
-sed -i '/http {/a client_max_body_size 100M;' /etc/nginx/nginx.conf
+#sudo sed -i '/http {/a client_max_body_size 100M;' /etc/nginx/nginx.conf

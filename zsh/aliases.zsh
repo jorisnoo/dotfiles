@@ -129,6 +129,7 @@ pullmerge() {(
 ncu-commit() { (
     ncu -u;
     npm i;
+    npm audit fix;
     git add package*;
     git commit -m 'Upgrade: Node modules';
 )}

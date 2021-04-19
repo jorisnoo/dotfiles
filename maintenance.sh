@@ -8,13 +8,13 @@ else
     full=false
 fi
 
-if $full; then
-    # Ask for the administrator password upfront
-    sudo -v
-
-    # Keep-alive: update existing `sudo` time stamp until the script has finished
-    while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-fi
+#if $full; then
+#    # Ask for the administrator password upfront
+#    sudo -v
+#
+#    # Keep-alive: update existing `sudo` time stamp until the script has finished
+#    while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+#fi
 
 # Upgrade Brew packages
 brew update
@@ -28,9 +28,6 @@ fi
 
 # Cleanup Brew packages
 brew cleanup
-
-# Upgrade Oh-My-Zsh
-omz update
 
 # Update git repositories
 (cd ~/Homestead && git pull)
@@ -54,6 +51,9 @@ fi
 
 # Upgrade global npm modules?
 npm -g upgrade
+
+# Upgrade Oh-My-Zsh
+omz update
 
 # Change back to the original directory
 cd "$cwd" || exit

@@ -4,11 +4,10 @@
 tap 'buo/cask-upgrade'
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
-#tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
 tap 'homebrew/core'
 tap 'homebrew/services'
+tap 'netlify/git-credential-netlify'
 
 # Binaries
 brew 'bluetoothconnector'
@@ -16,6 +15,7 @@ brew 'coreutils'
 brew 'curl'
 brew 'ffmpeg'
 brew 'git'
+brew 'git-credential-netlify'
 brew 'git-lfs'
 brew 'github/gh/gh'
 brew 'gitui'
@@ -33,7 +33,6 @@ brew 'pinentry'
 brew 'svn'
 brew 'tig'
 brew 'tree'
-#brew 'starship'
 brew 'wget'
 brew 'youtube-dl'
 brew 'zsh'
@@ -41,40 +40,38 @@ brew 'zsh-syntax-highlighting'
 
 # Apps
 cask '1password'
-# cask 'aerial'
-# cask 'adobe-creative-cloud'
+#cask 'aerial'
+#cask 'adobe-creative-cloud'
+#cask 'aldente-pro'
+#cask 'around'
 cask 'alfred'
 cask 'atext'
 cask 'backblaze'
 cask 'bartender'
-cask 'basecamp'
 cask 'bunch'
 cask 'carbon-copy-cloner'
 cask 'choosy'
 cask 'cleanmymac'
-# cask 'cryptomator'
+#cask 'cryptomator'
 cask 'dash'
 cask 'dbngin'
-cask 'discord'
-cask 'docker'
-# cask 'deckset'
+#cask 'discord'
+#cask 'docker'
+#cask 'deckset'
 cask 'evernote'
-cask 'figma'
+#cask 'figma'
 cask 'firefox'
 cask 'firefox-developer-edition'
-cask 'gitfox'
+#cask 'gitfox'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'hazel'
-cask 'iconjar'
+#cask 'iconjar'
 cask 'insomnia'
 cask 'iterm2'
-cask 'jaxx-liberty'
 cask 'jetbrains-toolbox'
-cask 'liteicon'
 cask 'logitech-options'
 # cask 'microsoft-teams'
-# cask 'microsoft-word'
 cask 'monitorcontrol'
 cask 'mountain-duck'
 cask 'neofinder'
@@ -86,12 +83,9 @@ cask 'pixelsnap'
 cask 'raindropio'
 cask 'rightfont'
 cask 'recordit'
-cask 'rightfont'
-# cask 'secretive'
 cask 'selfcontrol'
 cask 'shifty'
 cask 'signal'
-cask 'sketch'
 cask 'smoothscroll'
 cask 'soundcleod'
 cask 'spotify'
@@ -99,7 +93,7 @@ cask 'sync'
 cask 'tableplus'
 cask 'telegram'
 cask 'tinkerwell'
-#cask 'the-archive'
+cask 'the-archive'
 #cask 'the-unarchiver'
 cask 'transmission'
 cask 'transmit'
@@ -123,9 +117,6 @@ cask 'qlimagesize'
 cask 'quicklookase'
 cask 'qlvideo'
 
-# Printer
-# cask 'canon-imagerunner-printer-driver-ufrii'
-
 # Fonts
 cask 'font-fira-code'
 cask 'font-fira-mono'
@@ -146,28 +137,32 @@ cask 'font-lato'
 cask 'font-dm-sans'
 
 # Mac App Store
-#mas '1Blocker', id: 1107421413
 mas 'Amphetamine', id: 937984704
-mas 'Bear', id: 1091189122
+#mas 'Bear', id: 1091189122
 mas 'Cookie', id: 1473091386
 mas 'Endel', id: 1484348796
+mas 'Gifski', id: 1351639930
 mas 'Harvest', id: 506189836
+mas 'Hue Menu Bar', id: 1500678169
 mas 'iA Writer', id: 775737590
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
-mas 'LittleIpsum', id: 405772121
+#mas 'LittleIpsum', id: 405772121
 mas 'Magnet', id: 441258766
 # mas 'Name Mangler', id: 603637384
 mas 'NextDNS', id: 1464122853
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Pocket', id: 568494494
+mas 'Pomy', id: 1422640635
 mas 'Raindrop.io for Safari', id: 957810159
 mas 'Save to Pocket', id: 1477385213
 mas 'SiteSucker', id: 442168834
 mas 'Tampermonkey', id: 1482490089
 mas 'The Clock', id: 488764545
+mas 'ToothFairy', id: 1191449274
 mas 'Type Fu', id: 509818877
 mas 'Ulysses', id: 1225570693
+mas 'WiFi Explorer', id: 494803304
 mas 'Wipr', id: 1320666476
 mas 'Xcode', id: 497799835

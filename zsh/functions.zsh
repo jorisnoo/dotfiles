@@ -73,7 +73,6 @@ digga () {
     dig +nocmd "$1" +multiline +noall +answer;
 }
 
-
 # `o` with no arguments opens the current directory, otherwise opens the given
 # location
 o () {
@@ -89,7 +88,7 @@ o () {
 # `less` with options to preserve color and line numbers, unless the output is
 # small enough for one screen.
 tre () {
-    tree -aC -I '.git|node_modules|bower_components|.idea' --dirsfirst "$@" | less -FRNX;
+    tree -aC -I '.git|node_modules|.idea' --dirsfirst "$@" | less -FRNX;
 }
 
 # display useful host related informaton

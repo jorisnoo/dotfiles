@@ -5,14 +5,14 @@ alias flushdns='sudo killall -HUP mDNSResponder'
 alias ip='ipconfig getifaddr en0'
 alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
 alias mtnc='. $DOTFILES/maintenance.sh'
-alias brewupdate='brew update && brew upgrade && brew cleanup'
+alias brewupdate='brew update; brew upgrade; brew cleanup'
 alias dot='phpstorm $DOTFILES'
 
 # Homestead
 homestead() {(cd ~/Homestead && vagrant $*)}
 alias hu='homestead up'
 alias he='phpstorm ~/Homestead/Homestead.yaml'
-alias vm='ssh vagrant@127.0.0.1 -p 2222'
+alias vm='ssh vagrant@127.0.0.1 -p 2222 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 
 # Laravel
 alias art='nocorrect artisan'
@@ -29,6 +29,7 @@ alias sart='sail artisan'
 #alias composer='COMPOSER_MEMORY_LIMIT=-1 composer'
 alias cup='composer update'
 alias cda='composer dump-autoload'
+alias cod='composer outdated -D'
 
 # NPM
 alias nvm='n $(cat .nvmrc)'
@@ -43,20 +44,15 @@ alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
 
 # Directories
-alias h='cd ~'
-alias s='cd ~/Sites'
 alias p='cd ~/Sites/projects'
 
 # SSH
 alias sshkey='(cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.")'
 
-# Use `valet use php@7.4`  instead!
-#alias php74='{ brew unlink php@8.0; brew link php@7.4 --force --overwrite; } &> /dev/null && php -v'
-#alias php80='{ brew unlink php@7.4; brew link php@8.0 --force --overwrite; } &> /dev/null && php -v'
-
 # git
 alias gs='git status -s'
 alias gcm='git commit -m'
+alias gpp='git pull && git push'
 alias go='git checkout'
 alias gom='git checkout main'
 alias gomas='git checkout master'
@@ -69,10 +65,6 @@ rename-master-to-main() {
     git branch -m master main
 }
 
-# git flow
-fstart() { (git checkout -b feature/"$*" develop) }
-ffinish() { (git checkout develop && git merge --no-ff feature/"$*" && git branch -d feature/"$*") }
-
 # Merge develop into main
 release() {(
     git checkout main;
@@ -82,13 +74,13 @@ release() {(
     git merge --no-edit main
 )}
 
-release-into-master() {(
-    git checkout master;
-    git pull;
-    git merge --no-ff --no-edit develop;
-    git checkout develop;
-    git merge --no-edit master
-)}
+#release-into-master() {(
+#    git checkout master;
+#    git pull;
+#    git merge --no-ff --no-edit develop;
+#    git checkout develop;
+#    git merge --no-edit master
+#)}
 
 # Push main and develop
 publish() {(
@@ -96,10 +88,10 @@ publish() {(
     git checkout main; git push; git checkout develop
 )}
 
-publish-master() {(
-    git checkout develop; git push; git push --tags;
-    git checkout master; git push; git checkout develop
-)}
+#publish-master() {(
+#    git checkout develop; git push; git push --tags;
+#    git checkout master; git push; git checkout develop
+#)}
 
 alias rnpublish='(release; publish)'
 
@@ -126,19 +118,19 @@ pullmerge() {(
     git checkout develop
 )}
 
-ncu-commit() { (
-    ncu -u;
-    npm i;
-    npm audit fix;
-    git add package*;
-    git commit -m 'Upgrade: Node modules';
-)}
-
-cu-commit() { (
-    composer update;
-    git add composer.lock;
-    git commit -m 'Upgrade: Composer packages';
-)}
+#ncu-commit() { (
+#    ncu -u;
+#    npm i;
+#    npm audit fix;
+#    git add package*;
+#    git commit -m 'Upgrade: Node modules';
+#)}
+#
+#cu-commit() { (
+#    composer update;
+#    git add composer.lock;
+#    git commit -m 'Upgrade: Composer packages';
+#)}
 
 #LSD
 alias ls='lsd'

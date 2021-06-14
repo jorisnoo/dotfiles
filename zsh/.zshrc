@@ -78,7 +78,7 @@ export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
+export EDITOR='nano'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -110,7 +110,6 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 
 # Path
 export PATH="$PATH:/usr/local/sbin:$HOME/.composer/vendor/bin:./vendor/bin:$HOME/.node/bin"
-#export PATH="$PATH:$HOME/Sites/internal/spark-installer"
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris/.netlify/helper/path.zsh.inc'; fi
@@ -120,3 +119,6 @@ export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_P
 
 # Secretive
 #export SSH_AUTH_SOCK="$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh"
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/Users/joris/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/joris/Library/Preferences/netlify/helper/path.zsh.inc'

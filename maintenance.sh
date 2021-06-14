@@ -17,21 +17,22 @@ fi
 #fi
 
 # Upgrade Brew packages
-brew update
-brew upgrade
+brewupdate
+brewupdate
+brewupdate
+brewupdate
 
 # Upgrade Applications
-if $full; then
+#if $full; then
   brew cu -y
   mas upgrade
-fi
+#fi
 
 # Cleanup Brew packages
 brew cleanup
 
 # Update git repositories
 (cd ~/Homestead && git pull)
-(cd ~/Sites/internal/spark-installer && git pull)
 (cd "$DOTFILES" && git pull --recurse-submodules)
 
 # Update global composer packages
@@ -40,14 +41,14 @@ composer global update
 # Update Laravel Valet
 valet install
 
-if $full; then
+#if $full; then
 
     # Update vagrant plugins
     vagrant plugin update
 
     # Check for homestead updates
     # (cd ~/Homestead && vagrant box update)
-fi
+#fi
 
 # Upgrade global npm modules?
 npm -g upgrade

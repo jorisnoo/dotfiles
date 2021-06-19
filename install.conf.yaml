@@ -8,14 +8,13 @@
      - homebrew/Brewfile
 
  - shell:
-#     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
      - [vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin]
      - [vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin]
      - [vagrant plugin install vagrant-vbguest, Installing vagrant vbguest plugin]
      - ["[ -d $HOME/Homestead ] || git clone https://github.com/laravel/homestead $HOME/Homestead", Installing Laravel Homestead]
+#     - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
 
 - link:
-#    ~/.zshrc: zsh/.zshrc
     ~/.config/fish: fish
     ~/.composer/composer.json: composer/composer.json
     ~/.gitignore_global: git/gitignore
@@ -23,6 +22,7 @@
     ~/Homestead/aliases: homestead/aliases
     ~/.mackup.cfg: mackup/.mackup.cfg
     ~/.mackup: mackup/.mackup
+#    ~/.zshrc: zsh/.zshrc
 
 - shell:
     - ["./composer/install.sh", Installing composer]

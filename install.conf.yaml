@@ -26,6 +26,7 @@
 
 - shell:
     - ["./composer/install.sh", Installing composer]
+    - ["curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher", Installing fisher]
     - ["composer global install", Installing global composer packages]
     - ["$HOME/.composer/vendor/bin/valet install", Installing laravel valet]
 

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Set global configuration arguments
+cask_args appdir: "~/Applications"
 
 # Taps
 tap 'buo/cask-upgrade'
@@ -13,12 +15,12 @@ tap 'netlify/git-credential-netlify'
 brew 'bluetoothconnector'
 brew 'coreutils'
 brew 'curl'
-brew 'ffmpeg'
+#brew 'ffmpeg'
 brew 'fish'
 brew 'git'
 brew 'git-credential-netlify'
 brew 'git-lfs'
-brew 'github/gh/gh'
+brew 'gh'
 brew 'gitui'
 brew 'gnupg'
 brew 'grep'

@@ -15,13 +15,13 @@
 #   - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
 
 - link:
-  ~/.config/fish: fish
-  ~/.composer/composer.json: composer/composer.json
-  ~/.gitignore_global: git/gitignore
-  ~/Homestead/after.sh: homestead/after.sh
-  ~/Homestead/aliases: homestead/aliases
-  ~/.mackup.cfg: mackup/.mackup.cfg
-  ~/.mackup: mackup/.mackup
+    ~/.config/fish: fish
+    ~/.composer/composer.json: composer/composer.json
+    ~/.gitignore_global: git/gitignore
+    ~/Homestead/after.sh: homestead/after.sh
+    ~/Homestead/aliases: homestead/aliases
+    ~/.mackup.cfg: mackup/.mackup.cfg
+    ~/.mackup: mackup/.mackup
 #  ~/.zshrc: zsh/.zshrc
 
 - shell:

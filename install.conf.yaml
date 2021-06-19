@@ -15,7 +15,8 @@
      - ["[ -d $HOME/Homestead ] || git clone https://github.com/laravel/homestead $HOME/Homestead", Installing Laravel Homestead]
 
 - link:
-    ~/.zshrc: zsh/.zshrc
+#    ~/.zshrc: zsh/.zshrc
+    ~/.config/fish: fish
     ~/.composer/composer.json: composer/composer.json
     ~/.gitignore_global: git/gitignore
     ~/Homestead/after.sh: homestead/after.sh
@@ -24,16 +25,15 @@
     ~/.mackup: mackup/.mackup
 
 - shell:
-    - ["(curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer)", Installing composer]
-    - [composer global install, Installing global composer packages]
-    - [$HOME/.composer/vendor/bin/valet install, Installing laravel valet]
+    - ["./composer/install.sh", Installing composer]
+    - ["composer global install", Installing global composer packages]
+    - ["$HOME/.composer/vendor/bin/valet install", Installing laravel valet]
 
 - shell:
-    - [n stable, Install node]
-    - [npm install pure --global]
-    - [npm install npm-check-updates --global]
-    - [npm install npm-check --global]
-    - [npm install netlify-cli --global]
+    - ["n stable", Install node]
+    - ["npm install npm-check-updates --global"]
+    - ["npm install npm-check --global"]
+    - ["npm install netlify-cli --global"]
 
 # Run these after Sync is installed and files have downloaded
 #- shell:

@@ -112,7 +112,7 @@ source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.z
 export PATH="$PATH:/usr/local/sbin:$HOME/.composer/vendor/bin:./vendor/bin:$HOME/.node/bin"
 
 # The next line updates PATH for Netlify's Git Credential Helper.
-if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris/.netlify/helper/path.zsh.inc'; fi
+#if [ -f '/Users/joris/.netlify/helper/path.zsh.inc' ]; then source '/Users/joris/.netlify/helper/path.zsh.inc'; fi
 
 # Added by n-install (see http://git.io/n-install-repo).
 export N_PREFIX="$HOME/.n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"

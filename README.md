@@ -17,23 +17,25 @@ This repository contains:
 ### Before the re-install
 
 - [ ] Did I commit and push any changes/branches to my git repositories?
-- [ ] Did I save all important documents from non-iCloud/Sync directories?
+- [ ] Did I save all important documents from local directories?
 - [ ] Did I update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
 - [ ] Did I back up my [Wavebox](https://wavebox.io) settings?
 
 ### Installing a clean copy of macOS
 
+1. Setup macOS with an admin and a non-privileged user
 1. Update macOS to the latest version
-2. Log into the App Store and download Xcode, open it and accept the license agreement
-3. Install macOS Command Line Tools by running `xcode-select --install`
-4. Copy my public and private SSH keys to `~/.ssh` and make sure they're set to `600`
-5. Clone this repo to `~/.dotfiles`
-6. Install [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh) by running `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-7. Run `./install` to start the installation
-7. Configure Sync and wait for the 'Backup' folder to download
-8. Restore preferences by running `mackup restore`
-9. Run `./macos/.macos` to apply "sensible macOS default" settings
-10. Restart computer to finalize the process
+1. Turn on FileVault and Firewall
+1. Set a [firmware password](https://support.apple.com/en-au/HT204455)
+1. Log into the App Store and download Xcode, open it and accept the license agreement
+1. Install macOS Command Line Tools by running `xcode-select --install`
+1. Copy my public and private SSH keys to `~/.ssh` and make sure they're set to `600`
+1. Clone this repo to `~/.dotfiles`
+1. Run `./install` to start the installation
+1. Configure Sync and wait for the 'Backup' folder to download
+1. Restore preferences by running `mackup restore`
+1. Run `./macos/.macos` to apply "sensible macOS default" settings
+1. Restart computer to finalize the process
 
 ## Reading
 

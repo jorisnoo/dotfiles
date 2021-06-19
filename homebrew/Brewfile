@@ -35,8 +35,8 @@ brew 'tig'
 brew 'tree'
 brew 'wget'
 brew 'youtube-dl'
-brew 'zsh'
-brew 'zsh-syntax-highlighting'
+#brew 'zsh'
+#brew 'zsh-syntax-highlighting'
 
 # Apps
 cask '1password'

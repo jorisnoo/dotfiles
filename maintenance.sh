@@ -20,7 +20,6 @@ fi
 brewupdate
 brewupdate
 brewupdate
-brewupdate
 
 # Upgrade Applications
 #if $full; then
@@ -54,7 +53,7 @@ valet install
 npm -g upgrade
 
 # Upgrade Oh-My-Zsh
-omz update
+#omz update
 
 # Change back to the original directory
 cd "$cwd" || exit

@@ -24,17 +24,15 @@
     ~/.mackup: mackup/.mackup
 #  ~/.zshrc: zsh/.zshrc
 
-- shell:
-    - [ "./composer/install.sh", Installing composer ]
-    - [ "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher", Installing fisher ]
-    - [ "composer global install", Installing global composer packages ]
-    - [ "$HOME/.composer/vendor/bin/valet install", Installing laravel valet ]
+#- shell:
+#    - [ "composer global install", Installing global composer packages ]
+#    - [ "$HOME/.composer/vendor/bin/valet install", Installing laravel valet ]
 
-- shell:
-    - [ "n stable", Install node ]
-    - [ "npm install npm-check-updates --global" ]
-    - [ "npm install npm-check --global" ]
-    - [ "npm install netlify-cli --global" ]
+#- shell:
+#    - [ "n stable", Install node ]
+#    - [ "npm install npm-check-updates --global" ]
+#    - [ "npm install npm-check --global" ]
+#    - [ "npm install netlify-cli --global" ]
 
 # Run these after Sync is installed and files have downloaded
 #- shell:

@@ -1,0 +1,171 @@
+#!/usr/bin/env bash
+
+# Taps
+tap 'homebrew/bundle'
+tap 'homebrew/cask'
+tap 'homebrew/cask-fonts'
+tap 'homebrew/cask-drivers'
+tap 'homebrew/cask-versions'
+tap 'homebrew/services'
+tap 'nicoverbruggen/homebrew-cask'
+
+# Binaries
+brew 'bluetoothconnector'
+brew 'coreutils'
+brew 'curl'
+brew 'ffmpeg'
+brew 'fish'
+brew 'git'
+brew 'git-lfs'
+brew 'gh'
+brew 'gitui'
+brew 'gnupg'
+brew 'grep'
+brew 'htop'
+brew 'httpie'
+brew 'lsd'
+brew 'n'
+brew 'mackup'
+brew 'mas'
+brew 'openssl'
+brew 'php'
+brew 'pinentry'
+brew 'svn'
+brew 'tig'
+brew 'tree'
+brew 'wget'
+brew 'youtube-dl'
+
+# Apps
+cask '1password'
+#cask 'aerial'
+#cask 'adobe-creative-cloud'
+#cask 'aldente-pro'
+#cask 'around'
+cask 'alfred'
+cask 'atext'
+cask 'backblaze'
+cask 'bartender'
+cask 'bunch'
+cask 'carbon-copy-cloner'
+cask 'choosy'
+cask 'cleanmymac'
+#cask 'cryptomator'
+cask 'dash'
+#cask 'dbngin'
+cask 'dictcc-en-de-dictionary-plugin'
+#cask 'discord'
+cask 'docker'
+#cask 'deckset'
+cask 'evernote'
+#cask 'figma'
+cask 'firefox'
+cask 'firefox-developer-edition'
+#cask 'gitfox'
+cask 'google-chrome'
+cask 'gpg-suite'
+cask 'hazel'
+#cask 'iconjar'
+cask 'insomnia'
+cask 'iterm2'
+cask 'jetbrains-toolbox'
+cask 'logitech-options'
+cask 'loom'
+# cask 'microsoft-teams'
+cask 'mmhmm'
+cask 'monitorcontrol'
+cask 'mountain-duck'
+cask 'neofinder'
+cask 'notion'
+cask 'numi'
+cask 'optimage'
+# cask 'obsidian'
+cask 'phpmon'
+cask 'pixelsnap'
+cask 'raindropio'
+cask 'rightfont'
+cask 'recordit'
+cask 'selfcontrol'
+cask 'shifty'
+cask 'signal'
+#cask 'slack'
+cask 'smoothscroll'
+cask 'soundcleod'
+cask 'spotify'
+cask 'sync'
+cask 'tableplus'
+cask 'telegram'
+cask 'tinkerwell'
+cask 'the-archive'
+#cask 'the-unarchiver'
+cask 'transmission'
+cask 'transmit'
+#cask 'tripmode'
+#cask 'vagrant'
+#cask 'virtualbox'
+#cask 'virtualbox-extension-pack'
+cask 'visual-studio-code'
+cask 'vlc'
+cask 'wavebox'
+# cask 'zoom'
+cask 'zotero'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'quicklook-csv'
+cask 'qlstephen'
+cask 'qlimagesize'
+cask 'quicklookase'
+cask 'qlvideo'
+
+# Fonts
+cask 'font-fira-code'
+cask 'font-fira-mono'
+cask 'font-fira-sans'
+cask 'font-fira-code-nerd-font'
+cask 'font-hack'
+cask 'font-hack-nerd-font'
+#cask 'font-ia-writer-duo'
+#cask 'font-ia-writer-duospace'
+#cask 'font-ia-writer-mono'
+#cask 'font-ia-writer-quattro'
+cask 'font-jetbrains-mono'
+cask 'font-jetbrains-mono-nerd-font'
+cask 'font-public-sans'
+
+cask 'font-playfair-display'
+cask 'font-lato'
+cask 'font-dm-sans'
+
+# Mac App Store
+mas 'Amphetamine', id: 937984704
+# mas 'Bear', id: 1091189122
+mas 'Cookie', id: 1473091386
+mas 'Endel', id: 1484348796
+mas 'Gifski', id: 1351639930
+mas 'Harvest', id: 506189836
+mas 'Hue Menu Bar', id: 1500678169
+mas 'iA Writer', id: 775737590
+mas 'Keynote', id: 409183694
+mas 'LINE', id: 539883307
+# mas 'LittleIpsum', id: 405772121
+mas 'Magnet', id: 441258766
+# mas 'Name Mangler', id: 603637384
+mas 'NextDNS', id: 1464122853
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Pocket', id: 568494494
+mas 'Pomy', id: 1422640635
+mas 'Save to Pocket', id: 1477385213
+mas 'Save to Raindrop.io', id: 1549370672
+mas 'SiteSucker', id: 442168834
+mas 'Tampermonkey', id: 1482490089
+mas 'The Clock', id: 488764545
+mas 'ToothFairy', id: 1191449274
+mas 'Type Fu', id: 509818877
+mas 'Ulysses', id: 1225570693
+mas 'WiFi Explorer', id: 494803304
+mas 'Wipr', id: 1320666476
+mas 'Xcode', id: 497799835

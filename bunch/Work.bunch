@@ -1,0 +1,11 @@
+# Use @@ to hide all visible apps. Usually used at the top of the file
+# before launching the rest of the bunch
+@@
+
+PhpStorm
+iTerm
+Harvest
+Firefox Developer Edition
+
+!Calendar
+

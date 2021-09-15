@@ -1,0 +1,8 @@
+alias art='php artisan'
+alias t='composer test'
+alias td='php artisan dusk'
+alias tdf='php artisan dusk:fails'
+alias ta='t; td'
+alias ads='php artisan dump-server'
+#alias sail='bash vendor/bin/sail'
+alias sart='sail artisan'

@@ -1,0 +1,11 @@
+- brewfile:
+    - Brewfile
+
+- tap:
+    - homebrew/cask-fonts
+
+- brew:
+    - git
+    - bash
+
+- brew: [ack, ag]

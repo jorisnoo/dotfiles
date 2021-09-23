@@ -1,11 +1,12 @@
 # Store the current directory
-cwd=$(pwd)
+set cwd (pwd)
 
 # Upgrade Brew packages
 brewupdate
 
 # Update Applications
 brew cu -y
+mas outdated
 mas upgrade
 
 # Cleanup Brew packages
@@ -13,7 +14,7 @@ brew cleanup
 
 # Update git repositories
 #(cd ~/Homestead && git pull)
-(cd "$DOTFILES" && git pull --recurse-submodules)
+cd ~/.dotfiles && git pull --recurse-submodules
 
 # Update global composer packages
 composer global update

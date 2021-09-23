@@ -8,7 +8,7 @@ This repository contains:
 - my [aliases](fish/aliases) for [fish shell](https://fishshell.com)
 - [configuration](mackup) for [mackup](https://github.com/lra/mackup)
 - [adjusted](macos/.macos) list of [sensible macOS defaults](https://mths.be/macos)
-- a [maintenance script](maintenance.sh) that updates installed packages 
+- a [maintenance script](maintenance.fish) that updates installed packages 
 - an [install script](install.conf.yaml) to set up all the above on a new machine using [dotbot](https://github.com/anishathalye/dotbot)
 
 ## Usage: Setting up a new machine

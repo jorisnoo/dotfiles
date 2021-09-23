@@ -4,7 +4,7 @@
 alias flushdns='sudo killall -HUP mDNSResponder'
 alias ip='ipconfig getifaddr en0'
 alias myip='curl -s http://checkip.dyndns.org | sed "s/[a-zA-Z<>/ :]//g"'
-alias mtnc='. $DOTFILES/maintenance.sh'
+alias mtnc='. $DOTFILES/maintenance.fish'
 alias brewupdate='brew update; brew upgrade; brew cleanup'
 alias dot='phpstorm $DOTFILES'
 

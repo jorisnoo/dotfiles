@@ -6,6 +6,8 @@ PhpStorm
 iTerm
 Harvest
 Firefox Developer Edition
+Docker
 
 !Calendar
 
+$ sleep 5 && nitro start

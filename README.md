@@ -5,8 +5,7 @@ A home for my mac configuration.
 This repository contains:
 - a list of [software I use](homebrew/Brewfile) — installed through [Homebrew](https://brew.sh/)
 - globally installed [composer](https://getcomposer.org/) [packages](composer/composer.json)
-- my [aliases](zsh/aliases.zsh), [functions](zsh/functions.zsh) and [configuration](zsh/.zshrc) for [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [aliases](homestead/aliases) and [software](homestead/after.sh) installed on [Laravel Homestead](https://laravel.com/docs/master/homestead)
+- my [aliases](fish/aliases) for [fish shell](https://fishshell.com)
 - [configuration](mackup) for [mackup](https://github.com/lra/mackup)
 - [adjusted](macos/.macos) list of [sensible macOS defaults](https://mths.be/macos)
 - a [maintenance script](maintenance.sh) that updates installed packages 

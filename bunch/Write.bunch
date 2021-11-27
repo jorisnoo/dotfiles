@@ -1,0 +1,21 @@
+# Use @@ to hide all visible apps. Usually used at the top of the file
+# before launching the rest of the bunch
+@@
+
+Endel
+Dictionary
+SelfControl
+
+(do not disturb on)
+
+Finder
+- ~/Sync/Documents/UZH/21HS/SA Cavell/Texte
+
+!Mail
+!Calendar
+!Wavebox
+!Firefox Developer Edition
+
+# Start a line with @ to "focus" that app (hide others)
+# Focus commands should be the last item in the Bunch
+@Ulysses

@@ -6,8 +6,21 @@ PhpStorm
 iTerm
 Harvest
 Firefox Developer Edition
-Docker
+DBngin
+Ray
 
 !Calendar
 
-$ sleep 5 && nitro start
+# $ nitro start ~10
+
+# Close when closing bunch
+!!!Slack
+!!!TablePlus
+!!!Transmit
+!!!Wavebox
+!!!JetBrains Toolbox
+!!!PixelSnap 2
+!!!Tinkerwell
+!!!Ray
+!!!DBngin
+!!!Visual Studio Code

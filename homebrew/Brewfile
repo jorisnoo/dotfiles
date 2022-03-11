@@ -43,7 +43,6 @@ cask '1password'
 #cask 'adobe-creative-cloud'
 #cask 'aldente-pro'
 #cask 'around'
-cask 'alfred'
 cask 'atext'
 cask 'backblaze'
 cask 'bartender'
@@ -56,10 +55,10 @@ cask 'dash'
 cask 'dbngin'
 cask 'dictcc-en-de-dictionary-plugin'
 #cask 'discord'
-#cask 'docker'
+cask 'docker'
 #cask 'deckset'
-cask 'evernote'
-#cask 'figma'
+#cask 'evernote'
+cask 'figma'
 cask 'firefox'
 cask 'firefox-developer-edition'
 #cask 'gitfox'
@@ -72,8 +71,7 @@ cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'logitech-options'
 #cask 'loom'
-# cask 'microsoft-teams'
-cask 'miro'
+#cask 'microsoft-teams'
 #cask 'mmhmm'
 cask 'monitorcontrol'
 cask 'mountain-duck'
@@ -85,12 +83,15 @@ cask 'optimage'
 cask 'phpmon'
 cask 'pixelsnap'
 cask 'raindropio'
+cask 'ray'
+cask 'raycast'
 cask 'rightfont'
 cask 'recordit'
+cask 'safari-technology-preview'
 cask 'selfcontrol'
 cask 'shifty'
 cask 'signal'
-#cask 'slack'
+cask 'slack'
 cask 'smoothscroll'
 cask 'soundcleod'
 cask 'spotify'
@@ -100,12 +101,10 @@ cask 'telegram'
 cask 'tinkerwell'
 cask 'the-archive'
 #cask 'the-unarchiver'
+cask 'tower'
 cask 'transmission'
 cask 'transmit'
-#cask 'tripmode'
-#cask 'vagrant'
-#cask 'virtualbox'
-#cask 'virtualbox-extension-pack'
+cask 'tripmode'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'wavebox'
@@ -135,7 +134,6 @@ cask 'font-hack-nerd-font'
 #cask 'font-ia-writer-quattro'
 cask 'font-jetbrains-mono'
 cask 'font-jetbrains-mono-nerd-font'
-#cask 'font-kanjistrokeorders'
 cask 'font-public-sans'
 
 cask 'font-playfair-display'
@@ -144,26 +142,31 @@ cask 'font-dm-sans'
 
 # Mac App Store
 mas 'Amphetamine', id: 937984704
-# mas 'Bear', id: 1091189122
 mas 'Cookie', id: 1473091386
+mas 'Dark Mode Wallpaper', id: 1488154568
+mas 'EasyLetter', id: 1495179755
 mas 'Endel', id: 1484348796
+mas 'Final Cut Pro', id: 424389933
 mas 'Gifski', id: 1351639930
 mas 'Harvest', id: 506189836
 mas 'Hue Menu Bar', id: 1500678169
+mas 'Hush', id: 1544743900
 mas 'iA Writer', id: 775737590
+mas 'Jiffy', id: 1502527999
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
-# mas 'LittleIpsum', id: 405772121
 mas 'Magnet', id: 441258766
 # mas 'Name Mangler', id: 603637384
 mas 'NextDNS', id: 1464122853
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
+mas 'PDFify', id: 1435055351
 mas 'Pocket', id: 568494494
 mas 'Pomy', id: 1422640635
 mas 'Save to Pocket', id: 1477385213
 mas 'Save to Raindrop.io', id: 1549370672
 mas 'SiteSucker', id: 442168834
+mas 'Speediness', id: 1596706466
 mas 'Tampermonkey', id: 1482490089
 mas 'The Clock', id: 488764545
 mas 'ToothFairy', id: 1191449274

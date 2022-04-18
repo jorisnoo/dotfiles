@@ -5,7 +5,6 @@ set cwd (pwd)
 brewupdate
 
 # Update Applications
-brew cu -y
 mas outdated
 mas upgrade
 

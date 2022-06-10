@@ -8,6 +8,8 @@ alias publish='git push origin --all'
 alias rnpublish='release && publish'
 
 function release
+    git switch develop
+    git pull
     git switch main
     git pull
     git merge --no-ff --no-edit develop

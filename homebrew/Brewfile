@@ -7,7 +7,6 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-drivers'
 tap 'homebrew/cask-versions'
 tap 'homebrew/services'
-tap 'nicoverbruggen/homebrew-cask'
 
 # Binaries
 brew 'bluetoothconnector'
@@ -27,7 +26,6 @@ brew 'lsd'
 brew 'n'
 brew 'mackup'
 brew 'mas'
-brew 'mysql-client'
 brew 'openssl'
 brew 'php'
 brew 'pinentry'
@@ -48,7 +46,7 @@ cask 'backblaze'
 cask 'bartender'
 cask 'bunch'
 cask 'carbon-copy-cloner'
-cask 'choosy'
+#cask 'choosy'
 cask 'cleanmymac'
 #cask 'cryptomator'
 cask 'dash'
@@ -100,7 +98,6 @@ cask 'tableplus'
 cask 'telegram'
 cask 'tinkerwell'
 cask 'the-archive'
-#cask 'the-unarchiver'
 cask 'tower'
 cask 'transmission'
 cask 'transmit'
@@ -108,7 +105,7 @@ cask 'tripmode'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'wavebox'
-# cask 'zoom'
+cask 'zoom'
 cask 'zotero'
 
 # Quicklook
@@ -125,15 +122,15 @@ cask 'qlvideo'
 cask 'font-fira-code'
 cask 'font-fira-mono'
 cask 'font-fira-sans'
-cask 'font-fira-code-nerd-font'
+#cask 'font-fira-code-nerd-font'
 cask 'font-hack'
-cask 'font-hack-nerd-font'
+#cask 'font-hack-nerd-font'
 #cask 'font-ia-writer-duo'
 #cask 'font-ia-writer-duospace'
 #cask 'font-ia-writer-mono'
 #cask 'font-ia-writer-quattro'
 cask 'font-jetbrains-mono'
-cask 'font-jetbrains-mono-nerd-font'
+#cask 'font-jetbrains-mono-nerd-font'
 cask 'font-public-sans'
 
 cask 'font-playfair-display'
@@ -142,6 +139,7 @@ cask 'font-dm-sans'
 
 # Mac App Store
 mas 'Amphetamine', id: 937984704
+mas 'Color Picker', id: 1545870783
 mas 'Cookie', id: 1473091386
 mas 'Dark Mode Wallpaper', id: 1488154568
 mas 'EasyLetter', id: 1495179755
@@ -169,9 +167,11 @@ mas 'SiteSucker', id: 442168834
 mas 'Speediness', id: 1596706466
 mas 'Tampermonkey', id: 1482490089
 mas 'The Clock', id: 488764545
+mas 'Things', id: 904280696
 mas 'ToothFairy', id: 1191449274
 mas 'Type Fu', id: 509818877
 mas 'Ulysses', id: 1225570693
+mas 'Velja', id: 1607635845
 mas 'WiFi Explorer', id: 494803304
 mas 'Wipr', id: 1320666476
 mas 'Xcode', id: 497799835

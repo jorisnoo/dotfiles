@@ -1,7 +1,7 @@
 alias serve='valet php -S localhost:8000'
 
-alias php='valet php'
-alias composer='valet composer'
+alias vphp='valet php'
+alias vcomposer='valet composer'
 alias which-php='valet which-php'
 
 alias cup='valet composer update'

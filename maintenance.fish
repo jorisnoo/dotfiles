@@ -2,26 +2,27 @@
 set cwd (pwd)
 
 # Upgrade Brew packages
-brewupdate
+brew update
+brew upgrade
+brew cleanup
 
 # Update Applications
 mas outdated
 mas upgrade
 
-# Cleanup Brew packages
-brew cleanup
-
 # Update git repositories
 cd ~/.dotfiles && git pull --recurse-submodules
 
 # Update global composer packages
+sudo composer self-update
 composer global update
 
 # Update Laravel Valet
 valet install
 
 # Upgrade global npm modules
-npm -g upgrade
+ncu -g -u
+npm upgrade --location=global
 
 # Change back to the original directory
 cd "$cwd" || exit

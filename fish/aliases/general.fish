@@ -5,5 +5,6 @@ alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy; echo "Copied SSH Key to clipboard.
 alias mtnc='fish ~/.dotfiles/maintenance.fish'
 alias hash='htpasswd -nbBC 10 USER '
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
+alias weather='curl wttr.in'
 
 alias docker-prune='docker system prune'

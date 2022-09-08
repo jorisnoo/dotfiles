@@ -2,18 +2,18 @@
 # before launching the rest of the bunch
 @@
 
-_PhpStorm
+# _PhpStorm
 iTerm
 Harvest
 _Firefox Developer Edition
 DBngin
 _Ray
-PHP Monitor
+# PHP Monitor
 # Tinkerwell
 
 @iTerm
 
-< Docker.snippet ?"Start Docker?"
+# < Docker.snippet ?"Start Docker?"
 
 !Calendar
 
@@ -33,8 +33,8 @@ PHP Monitor
 !!!iTerm
 !!!Google Chrome
 !!!Firefox Developer Edition
+!!!Safari Technology Preview
 !!!PhpStorm
 !!!Harvest
-!!!Cliq
 !!!Insomnia
 !!!HELO

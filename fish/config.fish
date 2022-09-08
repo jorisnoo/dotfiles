@@ -8,8 +8,9 @@ fish_add_path -a $HOME/.composer/vendor/bin
 fish_add_path -a "$HOME/Library/Preferences/netlify/helper/bin"
 fish_add_path /opt/homebrew/opt/mysql-client/bin
 
-set -gx PROJECT_PATHS ~/Sites/projects ~/Sites/projects/deinadieu/ ~/Sites/projects/manythingsandlife/
+set -gx PROJECT_PATHS ~/Sites/projects ~/Sites/projects/manythingsandlife/
 set -x HOMEBREW_CASK_OPTS "--appdir=/Applications --fontdir=/Library/Fonts"
+set -x GPG_TTY $(tty)
 
 for aliasfile in ~/.dotfiles/fish/aliases/*.fish
     source $aliasfile

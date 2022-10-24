@@ -3,7 +3,7 @@ set cwd (pwd)
 
 # Upgrade Brew packages
 brew update
-brew upgrade
+brew upgrade #--greedy
 brew cleanup
 
 # Update Applications
@@ -14,7 +14,7 @@ mas upgrade
 cd ~/.dotfiles && git pull --recurse-submodules
 
 # Update global composer packages
-sudo composer self-update
+# sudo composer self-update
 composer global update
 
 # Update Laravel Valet

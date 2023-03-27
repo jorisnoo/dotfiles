@@ -5,6 +5,7 @@ alias vcomposer='valet composer'
 alias which-php='valet which-php'
 
 alias cup='valet composer update'
+alias cb='valet composer bump'
 alias cod='valet composer outdated -D'
 alias ci='valet composer install'
 alias cda='valet composer dump-autoload'

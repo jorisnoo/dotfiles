@@ -24,5 +24,8 @@ valet install
 ncu -g -u
 npm upgrade --location=global
 
+# Cleanup node versions
+n prune
+
 # Change back to the original directory
 cd "$cwd" || exit

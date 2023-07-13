@@ -7,16 +7,13 @@ iTerm
 Harvest
 _Firefox Developer Edition
 DBngin
-#_Ray
-# PHP Monitor
+Ray
 # Tinkerwell
 _PixelSnap 2
-
 @iTerm
+!Calendar
 
 # < Docker.snippet ?"Start Docker?"
-
-!Calendar
 
 # Close when closing bunch
 !!!Slack

@@ -6,6 +6,8 @@ brew update
 brew upgrade #--greedy
 brew cleanup
 
+brew uninstall node
+
 # Update Applications
 mas outdated
 mas upgrade

@@ -150,11 +150,14 @@ mas 'Jiffy', id: 1502527999
 mas 'Kagi Inc.', id: 1622835804
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
+mas 'Little Snitch Mini', id: 1629008763
 mas 'Magnet', id: 441258766
+mas 'Mela', id: 1568924476
 mas 'Muse', id: 1501563902
 # mas 'Name Mangler', id: 603637384
 mas 'NextDNS', id: 1464122853
 mas 'Numbers', id: 409203825
+mas 'Noteship', id: 1571711347
 mas 'Pages', id: 409201541
 mas 'Pandan', id: 1569600264
 mas 'PDFify', id: 1435055351
@@ -163,11 +166,13 @@ mas 'Pocket', id: 568494494
 mas 'Poolsuite FM', id: 1514817810
 mas 'Pomy', id: 1422640635
 mas 'Pure Paste', id: 1611378436
+mas 'Reeder', id: 1529448980
 mas 'Save to Pocket', id: 1477385213
-#mas 'Save to Raindrop.io', id: 1549370672
 mas 'SiteSucker', id: 442168834
 mas 'Speediness', id: 1596706466
+mas 'Tailscale', id: 1475387142
 mas 'Tampermonkey', id: 1482490089
+mas 'TestFlight', id: 899247664
 mas 'The Clock', id: 488764545
 mas 'Things', id: 904280696
 mas 'ToothFairy', id: 1191449274

@@ -7,23 +7,15 @@
 - brewfile:
     - homebrew/Brewfile
 
-#- shell:
-#    - [ vagrant plugin install vagrant-bindfs, Installing vagrant bindfs plugin ]
-#    - [ vagrant plugin install vagrant-hostsupdater, Installing vagrant hostsupdater plugin ]
-#    - [ vagrant plugin install vagrant-vbguest, Installing vagrant vbguest plugin ]
-#    - [ "[ -d $HOME/Homestead ] || git clone https://github.com/laravel/homestead $HOME/Homestead", Installing Laravel Homestead ]
-##   - ["vagrant box add laravel/homestead", Installing vagrant Homestead box]
-
 - link:
     ~/.config/fish/aliases: fish/aliases
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/fish_plugins: fish/fish_plugins
     ~/.composer/composer.json: composer/composer.json
     ~/.gitignore_global: git/gitignore
-    ~/Homestead/after.sh: homestead/after.sh
-    ~/Homestead/aliases: homestead/aliases
     ~/.mackup.cfg: mackup/.mackup.cfg
     ~/.mackup: mackup/.mackup
+    ~/.config/karabiner: karabiner
 
 # - shell:
     # - [ "./composer/install.sh", Installing composer ]
@@ -36,15 +28,11 @@
     # - [ "npm install npm-check-updates --global" ]
     # - [ "npm install npm-check --global" ]
     # - [ "npm install netlify-cli --global" ]
+
 #- shell:
 #    - [ "composer global install", Installing global composer packages ]
 #    - [ "$HOME/.composer/vendor/bin/valet install", Installing laravel valet ]
 
-#- shell:
-#    - [ "n stable", Install node ]
-#    - [ "npm install npm-check-updates --global" ]
-#    - [ "npm install npm-check --global" ]
-#    - [ "npm install netlify-cli --global" ]
 
 # Run these after Sync is installed and files have downloaded
 #- shell:

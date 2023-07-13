@@ -6,5 +6,5 @@ alias mtnc='fish ~/.dotfiles/maintenance.fish'
 alias hash='htpasswd -nbBC 10 USER '
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 alias weather='curl wttr.in'
-
-alias docker-prune='docker system prune'
+alias o='open .'
+# alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"

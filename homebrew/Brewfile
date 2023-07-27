@@ -27,7 +27,7 @@ brew 'n'
 brew 'mackup'
 brew 'mas'
 brew 'openssl'
-brew 'php'
+#brew 'php'
 brew 'pinentry'
 brew 'supervisor'
 brew 'svn'
@@ -75,7 +75,7 @@ cask 'neofinder'
 cask 'notion'
 cask 'numi'
 cask 'optimage'
-cask 'phpmon'
+#cask 'phpmon'
 cask 'pixelsnap'
 cask 'ray'
 cask 'raycast'
@@ -87,48 +87,49 @@ cask 'shifty'
 cask 'signal'
 cask 'slack'
 cask 'smoothscroll'
-cask 'soundcleod'
+#cask 'soundcleod'
 cask 'spotify'
 cask 'sync'
 cask 'tableplus'
 cask 'telegram'
 cask 'tinkerwell'
-cask 'the-archive'
+#cask 'the-archive'
 cask 'tower'
 cask 'transmission'
 cask 'transmit'
-cask 'tripmode'
-cask 'visual-studio-code'
+#cask 'tripmode'
+#cask 'visual-studio-code'
 cask 'vlc'
 cask 'wavebox'
 cask 'zoom'
 cask 'zotero'
 
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
-cask 'qlimagesize'
-cask 'quicklookase'
-cask 'qlvideo'
+# Quicklook: Check which ones are still working
+#cask 'qlcolorcode'
+#cask 'qlmarkdown'
+#cask 'quicklook-json'
+#cask 'quicklook-csv'
+#cask 'qlstephen'
+#cask 'qlimagesize'
+#cask 'quicklookase'
+#cask 'qlvideo'
 
 # Fonts
 cask 'font-fira-code'
 cask 'font-fira-mono'
 cask 'font-fira-sans'
 cask 'font-hack'
-#cask 'font-ia-writer-duo'
-#cask 'font-ia-writer-duospace'
-#cask 'font-ia-writer-mono'
-#cask 'font-ia-writer-quattro'
 cask 'font-jetbrains-mono'
 cask 'font-public-sans'
 
 cask 'font-playfair-display'
 cask 'font-lato'
 cask 'font-dm-sans'
+
+#cask 'font-ia-writer-duo'
+#cask 'font-ia-writer-duospace'
+#cask 'font-ia-writer-mono'
+#cask 'font-ia-writer-quattro'
 
 # Mac App Store
 mas '1Password for Safari', id: 1569813296
@@ -139,14 +140,15 @@ mas 'Cookie', id: 1473091386
 mas 'Dark Mode Wallpaper', id: 1488154568
 mas 'EasyLetter', id: 1495179755
 mas 'Endel', id: 1484348796
-mas 'Final Cut Pro', id: 424389933
-mas 'Gestimer', id: 990588172
-mas 'Gifski', id: 1351639930
+#mas 'Final Cut Pro', id: 424389933
+#mas 'Gestimer', id: 990588172
+#mas 'Gifski', id: 1351639930
 mas 'Harvest', id: 506189836
 mas 'Hue Menu Bar', id: 1500678169
 mas 'Hush', id: 1544743900
 mas 'iA Writer', id: 775737590
-mas 'Jiffy', id: 1502527999
+mas 'Infuse', id: 1136220934
+#mas 'Jiffy', id: 1502527999
 mas 'Kagi Inc.', id: 1622835804
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307

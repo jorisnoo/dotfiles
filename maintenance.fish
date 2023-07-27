@@ -17,10 +17,10 @@ cd ~/.dotfiles && git pull --recurse-submodules
 
 # Update global composer packages
 # sudo composer self-update
-composer global update
+# composer global update
 
 # Update Laravel Valet
-valet install
+# valet install
 
 # Upgrade global npm modules
 ncu -g -u

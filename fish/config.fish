@@ -9,7 +9,7 @@ fish_add_path -a "$HOME/Library/Preferences/netlify/helper/bin"
 fish_add_path -a "$HOME/Library/Application Support/Herd/bin"
 # fish_add_path -a "/opt/homebrew/opt/mysql-client/bin"
 
-set -gx PROJECT_PATHS "$HOME/Sites/projects" "$HOME/Sites/projects/manythingsandlife/"
+set -gx PROJECT_PATHS "$HOME/Sites/projects" "$HOME/Sites/packages" "$HOME/Sites/projects/manythingsandlife"
 set -gx PHP_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/"
 # set -gx HOMEBREW_CASK_OPTS "--appdir=/Applications --fontdir=/Library/Fonts"
 # set -gx GPG_TTY $(tty)

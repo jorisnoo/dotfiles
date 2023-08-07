@@ -18,6 +18,9 @@
     ~/.config/karabiner: karabiner
 
 # - shell:
+    # - [ "curl https://get.volta.sh | bash", Installing Volta ]
+
+# - shell:
     # - [ "./composer/install.sh", Installing composer ]
     # - [ "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher", Installing fisher ]
     # - [ "composer global install", Installing global composer packages ]

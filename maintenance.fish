@@ -6,7 +6,7 @@ brew update
 brew upgrade #--greedy
 brew cleanup
 
-brew uninstall node
+# brew uninstall node --ignore-dependencies
 
 # Update Applications
 mas outdated
@@ -27,7 +27,7 @@ ncu -g -u
 npm upgrade --location=global
 
 # Cleanup node versions
-n prune
+# n prune
 
 # Change back to the original directory
 cd "$cwd" || exit

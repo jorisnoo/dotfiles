@@ -22,13 +22,10 @@ This repository contains:
 
 ### Installing a clean copy of macOS
 
-1. Setup macOS with an admin and a non-privileged user
 1. Update macOS to the latest version
 1. Turn on FileVault and Firewall
-1. Set a [firmware password](https://support.apple.com/en-au/HT204455)
-1. Log into the App Store and download Xcode, open it and accept the license agreement
 1. Install macOS Command Line Tools by running `xcode-select --install`
-1. Copy my public and private SSH keys to `~/.ssh` and make sure they're set to `600`
+2. Install Homebrew by running `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 1. Clone this repo to `~/.dotfiles`
 1. Run `./install` to start the installation
 1. Configure Sync and wait for the 'Backup' folder to download

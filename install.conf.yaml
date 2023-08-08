@@ -1,24 +1,22 @@
 #- clean: ['~','~/Homestead']
 
 - shell:
-    - [ git submodule update --init --recursive, Installing submodules ]
-    - [ touch $HOME/.hushlogin ]
+  - [ git submodule update --init --recursive, Installing submodules ]
+  - [ touch $HOME/.hushlogin ]
+  - [ /opt/homebrew/bin/brew bundle --file=$HOME/.dotfiles/Brewfile, Installing brew packages ]
 
-- brewfile:
-    - homebrew/Brewfile
+- link:
+  ~/.config/fish/aliases: fish/aliases
+  ~/.config/fish/config.fish: fish/config.fish
+  ~/.config/fish/fish_plugins: fish/fish_plugins
+  ~/.composer/composer.json: composer/composer.json
+  ~/.gitignore_global: git/gitignore
+  ~/.mackup.cfg: mackup/.mackup.cfg
+  ~/.mackup: mackup/.mackup
+  ~/.config/karabiner: karabiner
 
-#- link:
-#    ~/.config/fish/aliases: fish/aliases
-#    ~/.config/fish/config.fish: fish/config.fish
-#    ~/.config/fish/fish_plugins: fish/fish_plugins
-#    ~/.composer/composer.json: composer/composer.json
-#    ~/.gitignore_global: git/gitignore
-#    ~/.mackup.cfg: mackup/.mackup.cfg
-#    ~/.mackup: mackup/.mackup
-#    ~/.config/karabiner: karabiner
-
-# - shell:
-    # - [ "curl https://get.volta.sh | bash", Installing Volta ]
+- shell:
+  - [ "curl https://get.volta.sh | bash", Installing Volta ]
 
 # - shell:
     # - [ "./composer/install.sh", Installing composer ]

@@ -4,8 +4,6 @@
 tap 'homebrew/bundle'
 tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-drivers'
-tap 'homebrew/cask-versions'
 tap 'homebrew/services'
 
 # Binaries
@@ -42,14 +40,14 @@ cask '1password'
 #cask 'aerial'
 #cask 'adobe-creative-cloud'
 #cask 'aldente-pro'
-cask 'atext'
+#cask 'atext'
 cask 'backblaze'
 cask 'bartender'
 cask 'bunch'
 #cask 'carbon-copy-cloner'
 cask 'cleanmymac'
 #cask 'cryptomator'
-cask 'dash'
+#cask 'dash'
 cask 'dbngin'
 cask 'dictcc-en-de-dictionary-plugin'
 #cask 'discord'
@@ -62,7 +60,7 @@ cask 'google-chrome'
 cask 'gpg-suite'
 cask 'hazel'
 #cask 'iconjar'
-cask 'insomnia'
+#cask 'insomnia'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'logi-options-plus'
@@ -167,7 +165,7 @@ mas 'PDFify', id: 1435055351
 mas 'Pixelmator Pro', id: 1289583905
 mas 'Pocket', id: 568494494
 mas 'Poolsuite FM', id: 1514817810
-mas 'Pomy', id: 1422640635
+#mas 'Pomy', id: 1422640635
 mas 'Pure Paste', id: 1611378436
 mas 'Reeder', id: 1529448980
 mas 'Save to Pocket', id: 1477385213

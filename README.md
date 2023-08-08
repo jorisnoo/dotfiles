@@ -27,7 +27,10 @@ This repository contains:
 1. Install macOS Command Line Tools by running `xcode-select --install`
 2. Install Homebrew by running `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 1. Clone this repo to `~/.dotfiles`
+2. Sign into the Mac App Store and download Xcode
+3. Accept the Xcode license agreement by running `sudo xcodebuild -license accept`
 1. Run `./install` to start the installation
+2. Install AlDente from `https://apphousekitchen.com/downloads/AlDente-Pro.dmg`
 1. Configure Sync and wait for the 'Backup' folder to download
 1. Restore preferences by running `mackup restore`
 1. Run `./macos/.macos` to apply "sensible macOS default" settings

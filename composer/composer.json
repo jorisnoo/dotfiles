@@ -1,9 +1,4 @@
 {
     "require": {
-        "laravel/installer": "^4.2",
-        "laravel/forge-cli": "^1.1",
-        "laravel/valet": "^4.0",
-        "spatie/visit": "^1.0",
-        "anystack-sh/porter": "^0.0.8"
     }
 }

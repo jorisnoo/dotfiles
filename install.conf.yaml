@@ -1,33 +1,52 @@
-#- clean: ['~','~/Homestead']
+- clean: ['~']
 
 - shell:
-  - [ git submodule update --init --recursive, Installing submodules ]
-  - [ touch $HOME/.hushlogin ]
-  - [ /opt/homebrew/bin/brew bundle --file=$HOME/.dotfiles/Brewfile, Installing brew packages ]
+    - [ git submodule update --init --recursive, Installing submodules ]
+    - [ touch $HOME/.hushlogin ]
+    -
+        command: /opt/homebrew/bin/brew bundle --file=./homebrew/Brewfile
+        stdin: true
+        stdout: true
+        stderr: true
+
+- create:
+    - ~/.composer
+    - ~/.config/fish
 
 - link:
-  ~/.config/fish/aliases: fish/aliases
-  ~/.config/fish/config.fish: fish/config.fish
-  ~/.config/fish/fish_plugins: fish/fish_plugins
-  ~/.composer/composer.json: composer/composer.json
-  ~/.gitignore_global: git/gitignore
-  ~/.mackup.cfg: mackup/.mackup.cfg
-  ~/.mackup: mackup/.mackup
-  ~/.config/karabiner: karabiner
+    ~/.config/fish/aliases: fish/aliases
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/fish_plugins: fish/fish_plugins
+    ~/.composer/composer.json: composer/composer.json
+    ~/.gitignore_global: git/gitignore
+    ~/.mackup.cfg: mackup/.mackup.cfg
+    ~/.mackup: mackup/.mackup
+    ~/.config/karabiner: karabiner
 
 - shell:
-  - [ "curl https://get.volta.sh | bash", Installing Volta ]
+    - [ "curl https://get.volta.sh | bash", Installing Volta ]
+#    -
+#        command: curl https://get.volta.sh | bash
+#        description: Installing volta
+#        stdin: true
+#        stdout: true
+#        stderr: true
 
-# - shell:
-    # - [ "./composer/install.sh", Installing composer ]
-    # - [ "curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher", Installing fisher ]
-    # - [ "composer global install", Installing global composer packages ]
-    # - [ "$HOME/.composer/vendor/bin/valet install", Installing laravel valet ]
+      # - shell:
+      # - [ "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update", Installing fisher ]
+      # - [ "curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish", Installing fisher ]
 
-# - shell:
-    # - [ "n stable", Install node ]
-    # - [ "npm install npm-check-updates --global" ]
-    # - [ "npm install npm-check --global" ]
+      # - [ "mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock" ]
+
+
+      # - [ "./composer/install.sh", Installing composer ]
+      # - [ "composer global install", Installing global composer packages ]
+      # - [ "$HOME/.composer/vendor/bin/valet install", Installing laravel valet ]
+
+      # - shell:
+      # - [ "n stable", Install node ]
+      # - [ "npm install npm-check-updates --global" ]
+      # - [ "npm install npm-check --global" ]
     # - [ "npm install netlify-cli --global" ]
 
 #- shell:

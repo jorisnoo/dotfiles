@@ -60,16 +60,18 @@ cask 'firefox-developer-edition'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'hazel'
+cask 'herd'
 #cask 'iconjar'
 #cask 'insomnia'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
+cask 'karabiner-elements'
 cask 'logi-options-plus'
 #cask 'loom'
 #cask 'microsoft-teams'
 #cask 'mmhmm'
 cask 'monitorcontrol'
-#cask 'mos'
+cask 'mos'
 cask 'mountain-duck'
 cask 'neofinder'
 cask 'notion'
@@ -77,6 +79,7 @@ cask 'numi'
 cask 'optimage'
 #cask 'phpmon'
 cask 'pixelsnap'
+cask 'protonvpn'
 cask 'ray'
 cask 'raycast'
 #cask 'rightfont'
@@ -85,8 +88,8 @@ cask 'safari-technology-preview'
 cask 'selfcontrol'
 cask 'shifty'
 cask 'signal'
-cask 'slack'
-cask 'smoothscroll'
+#cask 'slack'
+#cask 'smoothscroll'
 #cask 'soundcleod'
 cask 'spotify'
 cask 'sync'
@@ -98,7 +101,7 @@ cask 'tower'
 cask 'transmission'
 cask 'transmit'
 #cask 'tripmode'
-#cask 'visual-studio-code'
+cask 'visual-studio-code'
 cask 'vlc'
 cask 'wavebox'
 cask 'zoom'
@@ -106,11 +109,12 @@ cask 'zotero'
 
 # Quicklook: Check which ones are still working
 #cask 'qlcolorcode'
+#cask 'qlstephen'
 #cask 'qlmarkdown'
 #cask 'quicklook-json'
-#cask 'quicklook-csv'
-#cask 'qlstephen'
 #cask 'qlimagesize'
+#cask 'suspicious-package'
+#cask 'apparency'
 #cask 'quicklookase'
 #cask 'qlvideo'
 
@@ -137,7 +141,8 @@ mas 'Amphetamine', id: 937984704
 mas 'Bike', id: 1588292384
 mas 'Color Picker', id: 1545870783
 mas 'Cookie', id: 1473091386
-mas 'Dark Mode Wallpaper', id: 1488154568
+#mas 'Dark Mode Wallpaper', id: 1488154568
+mas 'DevCleaner', id: 1388020431
 mas 'EasyLetter', id: 1495179755
 mas 'Endel', id: 1484348796
 #mas 'Final Cut Pro', id: 424389933
@@ -155,6 +160,8 @@ mas 'LINE', id: 539883307
 mas 'Little Snitch Mini', id: 1629008763
 mas 'Magnet', id: 441258766
 mas 'Mela', id: 1568924476
+mas 'Microsoft Excel', id: 462058435
+mas 'Microsoft Word', id: 462054704
 mas 'Muse', id: 1501563902
 # mas 'Name Mangler', id: 603637384
 mas 'NextDNS', id: 1464122853
@@ -163,6 +170,7 @@ mas 'Noteship', id: 1571711347
 mas 'Pages', id: 409201541
 mas 'Pandan', id: 1569600264
 mas 'PDFify', id: 1435055351
+mas 'Peek', id: 1554235898
 mas 'Pixelmator Pro', id: 1289583905
 mas 'Pocket', id: 568494494
 mas 'Poolsuite FM', id: 1514817810

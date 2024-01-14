@@ -9,8 +9,10 @@ brew cleanup
 # brew uninstall node --ignore-dependencies
 
 # Update Applications
-mas outdated
-mas upgrade
+# mas outdated
+# mas upgrade
+
+bun upgrade
 
 # Update git repositories
 cd ~/.dotfiles && git pull --recurse-submodules
@@ -23,8 +25,8 @@ cd ~/.dotfiles && git pull --recurse-submodules
 # valet install
 
 # Upgrade global npm modules
-ncu -g -u
-npm upgrade --location=global
+# ncu -g -u
+# npm upgrade --location=global
 
 # Cleanup node versions
 # n prune

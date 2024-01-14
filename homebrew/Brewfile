@@ -14,6 +14,7 @@ brew 'curl'
 brew 'ffmpeg'
 brew 'fish'
 brew 'git'
+brew 'git-delta'
 brew 'git-lfs'
 brew 'gh'
 brew 'gitui'
@@ -25,8 +26,9 @@ brew 'lsd'
 #brew 'n'
 brew 'mackup'
 brew 'mas'
+brew 'mysql-client'
 brew 'openssl'
-#brew 'php'
+brew 'php'
 brew 'pinentry'
 brew 'supervisor'
 brew 'svn'
@@ -43,14 +45,14 @@ cask '1password'
 #cask 'aldente-pro'
 #cask 'atext'
 cask 'backblaze'
-cask 'bartender'
+# cask 'bartender'
 cask 'bunch'
 #cask 'carbon-copy-cloner'
 cask 'cleanmymac'
 #cask 'cryptomator'
 #cask 'dash'
 cask 'dbngin'
-cask 'dictcc-en-de-dictionary-plugin'
+#cask 'dictcc-en-de-dictionary-plugin'
 #cask 'discord'
 #cask 'deckset'
 cask 'figma'
@@ -84,13 +86,14 @@ cask 'ray'
 cask 'raycast'
 #cask 'rightfont'
 cask 'recordit'
+cask 'remarkable'
 cask 'safari-technology-preview'
 cask 'selfcontrol'
+cask 'setapp'
 cask 'shifty'
 cask 'signal'
-#cask 'slack'
+cask 'slack'
 #cask 'smoothscroll'
-#cask 'soundcleod'
 cask 'spotify'
 cask 'sync'
 cask 'tableplus'
@@ -106,17 +109,6 @@ cask 'vlc'
 cask 'wavebox'
 cask 'zoom'
 cask 'zotero'
-
-# Quicklook: Check which ones are still working
-#cask 'qlcolorcode'
-#cask 'qlstephen'
-#cask 'qlmarkdown'
-#cask 'quicklook-json'
-#cask 'qlimagesize'
-#cask 'suspicious-package'
-#cask 'apparency'
-#cask 'quicklookase'
-#cask 'qlvideo'
 
 # Fonts
 cask 'font-fira-code'
@@ -140,13 +132,13 @@ mas '1Password for Safari', id: 1569813296
 mas 'Amphetamine', id: 937984704
 mas 'Bike', id: 1588292384
 mas 'Color Picker', id: 1545870783
-mas 'Cookie', id: 1473091386
+mas 'Cookie', id: 6452017315
 #mas 'Dark Mode Wallpaper', id: 1488154568
 mas 'DevCleaner', id: 1388020431
 mas 'EasyLetter', id: 1495179755
-mas 'Endel', id: 1484348796
+mas 'Endel', id: 1346247457
 #mas 'Final Cut Pro', id: 424389933
-#mas 'Gestimer', id: 990588172
+mas 'Gestimer', id: 6447125648
 #mas 'Gifski', id: 1351639930
 mas 'Harvest', id: 506189836
 mas 'Hue Menu Bar', id: 1500678169
@@ -172,7 +164,6 @@ mas 'Pandan', id: 1569600264
 mas 'PDFify', id: 1435055351
 mas 'Peek', id: 1554235898
 mas 'Pixelmator Pro', id: 1289583905
-mas 'Pocket', id: 568494494
 mas 'Poolsuite FM', id: 1514817810
 #mas 'Pomy', id: 1422640635
 mas 'Pure Paste', id: 1611378436

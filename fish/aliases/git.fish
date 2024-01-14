@@ -17,3 +17,10 @@ function release
     git merge --no-edit main
 end
 
+function nah
+    git reset --hard
+    git clean -df
+    if [ -d ".git/rebase-apply" ] || [ -d ".git/rebase-merge" ]
+        git rebase --abort
+    end
+end

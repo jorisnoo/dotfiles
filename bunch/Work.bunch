@@ -2,18 +2,15 @@
 # before launching the rest of the bunch
 @@
 
-# _PhpStorm
+_PhpStorm
 iTerm
 Harvest
 _Firefox Developer Edition
-DBngin
-Ray
+_Ray
 # Tinkerwell
-_PixelSnap 2
+# _PixelSnap 2
 @iTerm
 !Calendar
-
-# < Docker.snippet ?"Start Docker?"
 
 # Close when closing bunch
 !!!Slack
@@ -21,18 +18,15 @@ _PixelSnap 2
 !!!Transmit
 !!!Wavebox
 !!!JetBrains Toolbox
-!!!PixelSnap 2
+#!!!PixelSnap 2
 !!!Tinkerwell
 !!!Ray
 !!!PHP Monitor
-!!!DBngin
 !!!Visual Studio Code
-!!!Docker
 !!!iTerm
 !!!Google Chrome
 !!!Firefox Developer Edition
 !!!Safari Technology Preview
 !!!PhpStorm
 !!!Harvest
-!!!Insomnia
 !!!HELO

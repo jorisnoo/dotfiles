@@ -1,0 +1,30 @@
+{
+    "title": "F19 Lock Screen",
+    "rules": [
+        {
+            "description": "F19 Lock Screen",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f19",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "modifiers": [
+                                "left_gui",
+                                "left_control"
+                            ],
+                            "key_code": "q"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

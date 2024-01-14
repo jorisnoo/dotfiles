@@ -9,3 +9,6 @@ alias nrl='npm run lint'
 alias nrs='npm run serve'
 alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
+
+alias brd='bun run dev'
+alias brb='bun run build'

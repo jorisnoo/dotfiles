@@ -22,11 +22,11 @@ brew 'gnupg'
 brew 'grep'
 brew 'htop'
 brew 'httpie'
-brew 'lsd'
+# brew 'lsd'
 #brew 'n'
 brew 'mackup'
 brew 'mas'
-brew 'mysql-client'
+# brew 'mysql-client'
 brew 'openssl'
 brew 'php'
 brew 'pinentry'
@@ -36,23 +36,21 @@ brew 'tig'
 brew 'trash'
 brew 'tree'
 brew 'wget'
-brew 'youtube-dl'
 
 # Apps
 cask '1password'
-#cask 'aerial'
 #cask 'adobe-creative-cloud'
 #cask 'aldente-pro'
-#cask 'atext'
 cask 'backblaze'
 # cask 'bartender'
+cask 'betterdisplay'
 cask 'bunch'
 #cask 'carbon-copy-cloner'
 cask 'cleanmymac'
 #cask 'cryptomator'
 #cask 'dash'
 cask 'dbngin'
-#cask 'dictcc-en-de-dictionary-plugin'
+cask 'dictcc-en-de-dictionary-plugin'
 #cask 'discord'
 #cask 'deckset'
 cask 'figma'
@@ -63,8 +61,6 @@ cask 'google-chrome'
 cask 'gpg-suite'
 cask 'hazel'
 cask 'herd'
-#cask 'iconjar'
-#cask 'insomnia'
 cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'karabiner-elements'
@@ -72,7 +68,7 @@ cask 'logi-options-plus'
 #cask 'loom'
 #cask 'microsoft-teams'
 #cask 'mmhmm'
-cask 'monitorcontrol'
+# cask 'monitorcontrol'
 cask 'mos'
 cask 'mountain-duck'
 cask 'neofinder'
@@ -86,24 +82,20 @@ cask 'ray'
 cask 'raycast'
 #cask 'rightfont'
 cask 'recordit'
-cask 'remarkable'
 cask 'safari-technology-preview'
 cask 'selfcontrol'
 cask 'setapp'
 cask 'shifty'
 cask 'signal'
 cask 'slack'
-#cask 'smoothscroll'
 cask 'spotify'
 cask 'sync'
 cask 'tableplus'
 cask 'telegram'
 cask 'tinkerwell'
-#cask 'the-archive'
 cask 'tower'
 cask 'transmission'
 cask 'transmit'
-#cask 'tripmode'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'wavebox'
@@ -133,7 +125,6 @@ mas 'Amphetamine', id: 937984704
 mas 'Bike', id: 1588292384
 mas 'Color Picker', id: 1545870783
 mas 'Cookie', id: 6452017315
-#mas 'Dark Mode Wallpaper', id: 1488154568
 mas 'DevCleaner', id: 1388020431
 mas 'EasyLetter', id: 1495179755
 mas 'Endel', id: 1346247457
@@ -146,7 +137,7 @@ mas 'Hush', id: 1544743900
 mas 'iA Writer', id: 775737590
 mas 'Infuse', id: 1136220934
 #mas 'Jiffy', id: 1502527999
-mas 'Kagi Inc.', id: 1622835804
+mas 'Kagi Search', id: 1622835804
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
 mas 'Little Snitch Mini', id: 1629008763
@@ -168,6 +159,7 @@ mas 'Poolsuite FM', id: 1514817810
 #mas 'Pomy', id: 1422640635
 mas 'Pure Paste', id: 1611378436
 mas 'Reeder', id: 1529448980
+mas 'reMarkable', id: 1276493162
 mas 'Save to Pocket', id: 1477385213
 mas 'SiteSucker', id: 442168834
 mas 'Speediness', id: 1596706466
@@ -177,7 +169,6 @@ mas 'TestFlight', id: 899247664
 mas 'The Clock', id: 488764545
 mas 'Things', id: 904280696
 mas 'ToothFairy', id: 1191449274
-mas 'Ulysses', id: 1225570693
 mas 'Velja', id: 1607635845
 mas 'WiFi Explorer', id: 494803304
 mas 'Wipr', id: 1320666476

@@ -21,15 +21,12 @@ cd ~/.dotfiles && git pull --recurse-submodules
 # sudo composer self-update
 # composer global update
 
-# Update Laravel Valet
-# valet install
-
 # Upgrade global npm modules
-# ncu -g -u
-# npm upgrade --location=global
+npm upgrade --location=global
+ncu -g -u
 
 # Cleanup node versions
-# n prune
+n prune
 
 # Change back to the original directory
 cd "$cwd" || exit

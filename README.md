@@ -3,7 +3,7 @@
 A home for my mac configuration.
 
 This repository contains:
-- a list of [software I use](homebrew/Brewfile) — installed through [Homebrew](https://brew.sh/)
+- a list of [software I use](homebrew/Brewfile)
 - globally installed [composer](https://getcomposer.org/) [packages](composer/composer.json)
 - my [aliases](fish/aliases) for [fish shell](https://fishshell.com)
 - [configuration](mackup) for [mackup](https://github.com/lra/mackup)
@@ -23,7 +23,7 @@ This repository contains:
 ### Installing a clean copy of macOS
 
 1. Update macOS to the latest version
-1. Turn on FileVault and Firewall
+1. Turn on FileVault and Firewall (Stealth mode)
 1. Install macOS Command Line Tools by running `xcode-select --install`
 2. Install Homebrew by running `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 1. Clone this repo to `~/.dotfiles`
@@ -35,6 +35,7 @@ This repository contains:
 1. Restore preferences by running `mackup restore`
 1. Run `./macos/.macos` to apply "sensible macOS default" settings
 1. Restart computer to finalize the process
+2. https://prosupport.logi.com/hc/en-us/articles/10991109278871-Logitech-Options-Offline-Installer
 
 ## Reading
 

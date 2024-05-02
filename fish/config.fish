@@ -4,7 +4,7 @@ set -x N_PREFIX "$HOME/.local"
 set -gx HOMEBREW_NO_AUTO_UPDATE "1"
 set -gx PROJECT_PATHS "$HOME/Sites/projects" "$HOME/Sites/xcode" "$HOME/Sites/packages" "$HOME/Sites/projects/manythingsandlife"
 set -gx PHP_INI_SCAN_DIR "$HOME/Library/Application Support/Herd/config/php/"
-set -gx SSH_AUTH_SOCK "$HOME/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+set -gx SSH_AUTH_SOCK "$HOME/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
 fish_add_path -a "$N_PREFIX/bin"
 fish_add_path -a "/opt/homebrew/opt/mysql-client/bin"

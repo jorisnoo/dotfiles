@@ -24,7 +24,7 @@
     ~/.config/karabiner: karabiner
 
 - shell:
-    - [ "curl https://get.volta.sh | bash", Installing Volta ]
+#    - [ "curl https://get.volta.sh | bash", Installing Volta ]
 #    -
 #        command: curl https://get.volta.sh | bash
 #        description: Installing volta

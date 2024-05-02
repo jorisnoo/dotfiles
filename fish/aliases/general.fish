@@ -9,5 +9,5 @@ alias hash='htpasswd -nbBC 10 USER '
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
 alias weather='curl wttr.in'
 alias o='open .'
-alias tp='SSH_AUTH_SOCK=~/.1password/agent.sock open -a /Applications/TablePlus.app'
+# alias tp='SSH_AUTH_SOCK=~/.1password/agent.sock open -a /Applications/TablePlus.app'
 # alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"

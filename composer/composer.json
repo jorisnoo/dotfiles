@@ -1,6 +1,5 @@
 {
     "require": {
-        "laravel/pint": "^1.13",
-        "beyondcode/expose": "^2.6"
+        "laravel/pint": "^1.15"
     }
 }

@@ -23,7 +23,7 @@ brew 'grep'
 brew 'htop'
 brew 'httpie'
 # brew 'lsd'
-#brew 'n'
+brew 'n'
 brew 'mackup'
 brew 'mas'
 # brew 'mysql-client'
@@ -39,24 +39,24 @@ brew 'wget'
 
 # Apps
 cask '1password'
-#cask 'adobe-creative-cloud'
-#cask 'aldente-pro'
+# cask 'adobe-creative-cloud'
+# cask 'aldente-pro'
 cask 'backblaze'
 # cask 'bartender'
 cask 'betterdisplay'
 # cask 'bunch'
-#cask 'carbon-copy-cloner'
+# cask 'carbon-copy-cloner'
 cask 'cleanmymac'
-#cask 'cryptomator'
-#cask 'dash'
+# cask 'cryptomator'
+# cask 'dash'
 cask 'dbngin'
 cask 'dictcc-en-de-dictionary-plugin'
-#cask 'discord'
-#cask 'deckset'
+# cask 'discord'
+# cask 'deckset'
 cask 'figma'
 cask 'firefox'
 cask 'firefox-developer-edition'
-#cask 'gitfox'
+# cask 'gitfox'
 cask 'google-chrome'
 cask 'gpg-suite'
 cask 'hazel'
@@ -65,21 +65,21 @@ cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'karabiner-elements'
 # cask 'logi-options-plus'
-#cask 'loom'
-#cask 'microsoft-teams'
-#cask 'monitorcontrol'
+# cask 'loom'
+# cask 'microsoft-teams'
+# cask 'monitorcontrol'
 cask 'mos'
 cask 'mountain-duck'
 # cask 'neofinder'
 cask 'notion'
 cask 'numi'
+cask 'obsidian'
 cask 'optimage'
 # cask 'pixelsnap'
 cask 'protonvpn'
 cask 'ray'
 cask 'raycast'
-#cask 'rightfont'
-#cask 'recordit'
+# cask 'recordit'
 cask 'safari-technology-preview'
 cask 'selfcontrol'
 cask 'setapp'
@@ -111,10 +111,10 @@ cask 'font-playfair-display'
 cask 'font-lato'
 cask 'font-dm-sans'
 
-#cask 'font-ia-writer-duo'
-#cask 'font-ia-writer-duospace'
-#cask 'font-ia-writer-mono'
-#cask 'font-ia-writer-quattro'
+# cask 'font-ia-writer-duo'
+# cask 'font-ia-writer-duospace'
+# cask 'font-ia-writer-mono'
+# cask 'font-ia-writer-quattro'
 
 # Mac App Store
 mas '1Password for Safari', id: 1569813296
@@ -129,15 +129,15 @@ mas 'DaftCloud', id: 1320450034
 mas 'DevCleaner', id: 1388020431
 mas 'EasyLetter', id: 1495179755
 mas 'Endel', id: 1346247457
-#mas 'Final Cut Pro', id: 424389933
+# mas 'Final Cut Pro', id: 424389933
 mas 'Gestimer', id: 6447125648
-#mas 'Gifski', id: 1351639930
+# mas 'Gifski', id: 1351639930
 mas 'Harvest', id: 506189836
 mas 'Hue Menu Bar', id: 1500678169
 mas 'Hush', id: 1544743900
 mas 'iA Writer', id: 775737590
 mas 'Infuse', id: 1136220934
-#mas 'Jiffy', id: 1502527999
+# mas 'Jiffy', id: 1502527999
 mas 'Kagi Search', id: 1622835804
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
@@ -158,7 +158,7 @@ mas 'Peek', id: 1554235898
 mas 'Pixelmator Pro', id: 1289583905
 # mas 'Photomator', id: 1444636541
 # mas 'Poolsuite FM', id: 1514817810
-#mas 'Pomy', id: 1422640635
+# mas 'Pomy', id: 1422640635
 mas 'Pure Paste', id: 1611378436
 mas 'Reeder', id: 1529448980
 mas 'reMarkable', id: 1276493162

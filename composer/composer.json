@@ -1,5 +1,8 @@
 {
     "require": {
         "laravel/pint": "^1.15"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     }
 }

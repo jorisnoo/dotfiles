@@ -8,7 +8,7 @@ brew cleanup
 
 # brew uninstall node --ignore-dependencies
 
-# Update Applications
+# Update Applications:
 # mas outdated
 # mas upgrade
 
@@ -18,8 +18,8 @@ bun upgrade
 cd ~/.dotfiles && git pull --recurse-submodules
 
 # Update global composer packages
-# sudo composer self-update
-# composer global update
+composer self-update
+composer global update
 
 # Upgrade global npm modules
 npm upgrade --location=global

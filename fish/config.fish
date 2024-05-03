@@ -26,7 +26,7 @@ end
 #> set --erase --universal fish_user_paths[1]
 
 # The next line updates PATH for Netlify's Git Credential Helper.
-test -f '/Users/jorge/Library/Preferences/netlify/helper/path.fish.inc' && source '/Users/jorge/Library/Preferences/netlify/helper/path.fish.inc'
+test -f "$HOME/Library/Preferences/netlify/helper/path.fish.inc" && source "$HOME/Library/Preferences/netlify/helper/path.fish.inc"
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"

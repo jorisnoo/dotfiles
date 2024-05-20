@@ -61,11 +61,12 @@ cask 'google-chrome'
 cask 'gpg-suite'
 cask 'hazel'
 cask 'herd'
-cask 'iterm2'
+# cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'karabiner-elements'
 # cask 'logi-options-plus'
 # cask 'loom'
+cask 'mac-mouse-fix'
 # cask 'microsoft-teams'
 # cask 'monitorcontrol'
 cask 'mos'
@@ -95,6 +96,7 @@ cask 'transmission'
 cask 'transmit'
 cask 'visual-studio-code'
 # cask 'vlc'
+cask 'warp'
 cask 'wavebox'
 # cask 'zoom'
 cask 'zotero'
@@ -119,7 +121,8 @@ cask 'font-dm-sans'
 # Mac App Store
 mas '1Password for Safari', id: 1569813296
 mas 'Amphetamine', id: 937984704
-mas 'Aspen', id: 6475777033
+# mas 'Aspen', id: 6475777033
+mas 'Baking Soda', id: 1601151613
 mas 'Bookmarks', id: 1503569422
 mas 'Bike', id: 1588292384
 mas 'Color Picker', id: 1545870783
@@ -133,7 +136,7 @@ mas 'Endel', id: 1346247457
 mas 'Gestimer', id: 6447125648
 # mas 'Gifski', id: 1351639930
 mas 'Harvest', id: 506189836
-mas 'Hue Menu Bar', id: 1500678169
+# mas 'Hue Menu Bar', id: 1500678169
 mas 'Hush', id: 1544743900
 mas 'iA Writer', id: 775737590
 mas 'Infuse', id: 1136220934
@@ -173,7 +176,8 @@ mas 'The Clock', id: 488764545
 mas 'Things', id: 904280696
 # mas 'ToothFairy', id: 1191449274
 mas 'Velja', id: 1607635845
-mas 'WiFi Explorer', id: 494803304
+mas 'Week Number', id: 6502579523
+# mas 'WiFi Explorer', id: 494803304
 mas 'Wipr', id: 1320666476
 mas 'Vinegar', id: 1591303229
 mas 'Xcode', id: 497799835

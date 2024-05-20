@@ -9,7 +9,7 @@ This repository contains:
 - [configuration](mackup) for [mackup](https://github.com/lra/mackup)
 - [adjusted](macos/.macos) list of [sensible macOS defaults](https://mths.be/macos)
 - a [maintenance script](maintenance.fish) that updates installed packages 
-- an [install script](install.conf.yaml) to set up all the above on a new machine using [dotbot](https://github.com/anishathalye/dotbot)
+- an [installation script](install.conf.yaml) to set up all the above on a new machine using [dotbot](https://github.com/anishathalye/dotbot)
 
 ## Usage: Setting up a new machine
 
@@ -18,7 +18,6 @@ This repository contains:
 - [ ] Did I commit and push any changes/branches to my git repositories?
 - [ ] Did I save all important documents from local directories?
 - [ ] Did I update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
-- [ ] Did I back up my [Wavebox](https://wavebox.io) settings?
 
 ### Installing a clean copy of macOS
 
@@ -35,7 +34,6 @@ This repository contains:
 1. Restore preferences by running `mackup restore`
 1. Run `./macos/.macos` to apply "sensible macOS default" settings
 1. Restart computer to finalize the process
-2. https://prosupport.logi.com/hc/en-us/articles/10991109278871-Logitech-Options-Offline-Installer
 
 ## Reading
 

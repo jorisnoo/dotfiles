@@ -3,10 +3,10 @@
 -   shell:
         - [ git submodule update --init --recursive, Installing submodules ]
         - [ touch $HOME/.hushlogin ]
-        -   command: /opt/homebrew/bin/brew bundle --file=./homebrew/Brewfile
-            stdin: true
-            stdout: true
-            stderr: true
+#        -   command: /opt/homebrew/bin/brew bundle --file=./homebrew/Brewfile
+#            stdin: true
+#            stdout: true
+#            stderr: true
 
 -   create:
         - ~/.composer
@@ -22,7 +22,7 @@
         ~/.mackup: mackup/.mackup
         ~/.config/karabiner: karabiner
 
--   shell:
+#-   shell:
     # - shell:
     # - [ "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update", Installing fisher ]
     # - [ "curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish", Installing fisher ]

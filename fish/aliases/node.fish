@@ -7,6 +7,7 @@ alias nrg='npm run generate'
 # alias nrh='npm run hot'
 # alias nrl='npm run lint'
 alias nrs='npm run serve'
+alias nrt='npm run test'
 # alias nlg='npm -g list --depth=0'
 alias ncs='npm-check --skip-unused'
 

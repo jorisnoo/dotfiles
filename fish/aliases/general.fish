@@ -7,8 +7,8 @@ alias brewupdate='brew update; brew upgrade; brew cleanup'
 alias mtnc='fish ~/.dotfiles/maintenance.fish'
 alias hash='htpasswd -nbBC 10 USER '
 alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder'
-alias weather='curl wttr.in'
+alias wttr='curl wttr.in'
 alias o='open .'
+alias ipinfo='curl ipinfo.io'
 
-alias tp='open -a /Applications/TablePlus.app'
-# alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+alias tp='open -a ~/Applications/Setapp/TablePlus.app/'

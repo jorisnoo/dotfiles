@@ -12,7 +12,8 @@ brew cleanup
 # mas outdated
 # mas upgrade
 
-bun upgrade
+# bun upgrade
+curl -fsSL https://bun.sh/install | bash
 
 # Update git repositories
 # cd /Users/jorge/.dotfiles && git pull --recurse-submodules

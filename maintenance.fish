@@ -23,7 +23,7 @@ composer self-update
 composer global update
 
 # Backup
-mackup backup --force && mackup uninstall
+# mackup backup --force && mackup uninstall
 
 # Upgrade global npm modules
 npm upgrade --location=global

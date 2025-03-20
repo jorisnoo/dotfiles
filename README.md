@@ -29,10 +29,10 @@ This repository contains:
 1. Clone this repo to `~/.dotfiles`
 2. Sign into the Mac App Store and download Xcode
 3. Accept the Xcode license agreement by running `sudo xcodebuild -license accept`
-1. Run `./install` to start the installation
+// 1. Run `./install` to start the installation
 2. Install AlDente from `https://apphousekitchen.com/downloads/AlDente-Pro.dmg`
 3. Switch the default shell to fish
-1. Restore preferences by running `mackup restore`
+// 1. Restore preferences by running `mackup restore`
 1. Run `./macos/.macos` to apply "sensible macOS default" settings
 1. Restart computer to finalize the process
 

@@ -1,7 +1,7 @@
 -   clean: [ '~' ]
 
 -   shell:
-        - [ git submodule update --init --recursive, Installing submodules ]
+#        - [ git submodule update --init --recursive, Installing submodules ]
         - [ touch $HOME/.hushlogin ]
 #        -   command: /opt/homebrew/bin/brew bundle --file=./homebrew/Brewfile
 #            stdin: true

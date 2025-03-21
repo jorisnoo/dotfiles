@@ -32,6 +32,7 @@ brew 'pinentry'
 brew 'rsync'
 brew 'supervisor'
 brew 'svn'
+brew 'stow'
 brew 'tig'
 brew 'trash'
 brew 'tree'
@@ -154,7 +155,7 @@ mas 'Micro Snitch', id: 972028355
 # mas 'NextDNS', id: 1464122853
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
-mas 'Pandan', id: 1569600264
+# mas 'Pandan', id: 1569600264
 # mas 'PDFify', id: 1435055351
 mas 'Peek', id: 1554235898
 # mas 'Pixelmator Pro', id: 1289583905

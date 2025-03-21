@@ -4,12 +4,11 @@ A home for my mac configuration.
 
 This repository contains:
 - a list of [software I use](homebrew/Brewfile)
-- globally installed [composer](https://getcomposer.org/) [packages](composer/composer.json)
-- my [aliases](fish/aliases) for [fish shell](https://fishshell.com)
-- [configuration](mackup) for [mackup](https://github.com/lra/mackup)
+- globally installed [composer](https://getcomposer.org/) [packages](config/.composer/composer.json)
+- my [aliases](.config/fish/aliases) for [fish shell](https://fishshell.com)
 - [adjusted](macos/.macos) list of [sensible macOS defaults](https://mths.be/macos)
 - a [maintenance script](maintenance.fish) that updates installed packages 
-- an [installation script](install.conf.yaml) to set up all the above on a new machine using [dotbot](https://github.com/anishathalye/dotbot)
+- an [installation script](install.sh) to set up all the above on a new machine
 
 ## Usage: Setting up a new machine
 
@@ -18,21 +17,19 @@ This repository contains:
 - [ ] Did I commit and push any changes/branches to my git repositories?
 - [ ] Did I save all important documents from local directories?
 - [ ] Did I backup all local databases?
-- [ ] Did I update [mackup](https://github.com/lra/mackup) to the latest version and ran `mackup backup`?
+- [ ] Did i copy all `.env` files?
 
 ### Installing a clean copy of macOS
 
 1. Update macOS to the latest version
 1. Turn on FileVault and Firewall (Stealth mode)
 1. Install macOS Command Line Tools by running `xcode-select --install`
-2. Install Homebrew by running `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+1. Install Homebrew by running `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 1. Clone this repo to `~/.dotfiles`
-2. Sign into the Mac App Store and download Xcode
-3. Accept the Xcode license agreement by running `sudo xcodebuild -license accept`
-// 1. Run `./install` to start the installation
-2. Install AlDente from `https://apphousekitchen.com/downloads/AlDente-Pro.dmg`
-3. Switch the default shell to fish
-// 1. Restore preferences by running `mackup restore`
+1. Sign in to the Mac App Store and download Xcode
+1. Accept the Xcode licence agreement by running `sudo xcodebuild -license accept`
+1. Run `. install.sh` to start the installation
+1. Switch the default shell to fish using `echo /usr/local/bin/fish | sudo tee -a /etc/shells && chsh -s /usr/local/bin/fish`
 1. Run `./macos/.macos` to apply "sensible macOS default" settings
 1. Restart computer to finalize the process
 

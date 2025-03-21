@@ -25,6 +25,8 @@ composer global update
 # Backup
 # mackup backup --force && mackup uninstall
 
+fisher update
+
 # Upgrade global npm modules
 npm upgrade --location=global
 ncu -g -u

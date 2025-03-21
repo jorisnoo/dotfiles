@@ -2,6 +2,7 @@ jorgebucaran/fisher
 jethrokuan/z
 jethrokuan/fzf
 adriaanzon/fish-artisan-completion
-pure-fish/pure
 shinriyo/breeze
+pure-fish/pure
+kenchou/fish-plugin-pj
 jhillyerd/plugin-git

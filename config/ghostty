@@ -1,0 +1,10 @@
+# theme = Builtin Light
+theme = catppuccin-latte
+font-size = 16
+adjust-cell-height = 16
+
+keybind = global:§=toggle_visibility
+keybind = cmd+right=next_tab
+keybind = cmd+left=previous_tab
+
+# font-family = JetBrains Mono

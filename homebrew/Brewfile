@@ -21,10 +21,10 @@ brew 'htop'
 brew 'httpie'
 brew 'just'
 brew 'lsd'
-brew 'n'
-# brew 'mackup'
 brew 'mas'
 brew 'mysql-client'
+brew 'n'
+brew 'neon'
 brew 'oha' # https://github.com/hatoo/oha
 brew 'openssl'
 brew 'php'
@@ -124,7 +124,7 @@ mas 'Amphetamine', id: 937984704
 # mas 'Aspen', id: 6475777033
 mas 'Baking Soda', id: 1601151613
 mas 'Bookmarks', id: 1503569422
-# mas 'Bike', id: 1588292384
+mas 'Bike', id: 1588292384
 mas 'Color Picker', id: 1545870783
 mas 'Command X', id: 6448461551
 mas 'Cookie', id: 6452017315
@@ -160,7 +160,6 @@ mas 'Peek', id: 1554235898
 # mas 'Pixelmator Pro', id: 1289583905
 # mas 'Photomator', id: 1444636541
 # mas 'Poolsuite FM', id: 1514817810
-# mas 'Pomy', id: 1422640635
 mas 'Pure Paste', id: 1611378436
 mas 'Reeder', id: 1529448980
 mas 'reMarkable', id: 1276493162

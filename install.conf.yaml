@@ -25,7 +25,6 @@
 #-   shell:
     # - shell:
     # - [ "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher update", Installing fisher ]
-    # - [ "curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish", Installing fisher ]
 
     # - [ "mkdir -p ~/.1password && ln -s ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock ~/.1password/agent.sock" ]
 

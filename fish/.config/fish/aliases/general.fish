@@ -1,4 +1,4 @@
-alias p='cd ~/Sites/projects'
+abbr -a p 'cd ~/Sites/projects'
 alias pg='cd ~/Sites/playground'
 alias s='cd ~/Sites'
 alias dot='phpstorm ~/.dotfiles'

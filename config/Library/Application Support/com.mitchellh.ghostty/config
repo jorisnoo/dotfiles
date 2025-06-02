@@ -7,6 +7,6 @@ keybind = global:§=toggle_visibility
 keybind = cmd+right=next_tab
 keybind = cmd+left=previous_tab
 
-confirm-close-surface = true
+confirm-close-surface = false
 
 # font-family = JetBrains Mono

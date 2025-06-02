@@ -17,6 +17,7 @@ This repository contains:
 - [ ] Did I commit and push any changes/branches to my git repositories?
 - [ ] Did I save all important documents from local directories?
 - [ ] Did I backup all local databases?
+- [ ] Did I export Little Snitch Rules
 - [ ] Did i copy all `.env` files?
 
 ### Installing a clean copy of macOS

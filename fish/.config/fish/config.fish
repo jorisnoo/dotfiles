@@ -1,4 +1,4 @@
-for aliasfile in /Users/jorge/.dotfiles/fish/aliases/*.fish
+for aliasfile in /Users/jorge/.dotfiles/config/.config/fish/aliases/*.fish
     source $aliasfile
 end
 

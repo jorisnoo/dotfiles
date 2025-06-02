@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 # Taps
-tap 'homebrew/bundle'
-tap 'homebrew/services'
+# tap 'homebrew/bundle'
+# tap 'homebrew/services'
 
 # Binaries
 brew 'bluetoothconnector'
@@ -24,12 +24,12 @@ brew 'lsd'
 brew 'mas'
 brew 'mysql-client'
 brew 'n'
-brew 'neon'
 brew 'oha' # https://github.com/hatoo/oha
 brew 'openssl'
 brew 'php'
-brew 'pinentry'
+brew 'pinentry-mac'
 brew 'rsync'
+brew 'speedtest-cli'
 brew 'supervisor'
 brew 'svn'
 brew 'stow'
@@ -37,16 +37,17 @@ brew 'tig'
 brew 'trash'
 brew 'tree'
 brew 'wget'
+brew 'ykman'
 
 # Apps
 cask '1password'
 # cask 'aldente-pro'
-cask 'backblaze'
+# cask 'backblaze'
 cask 'betterdisplay'
 # cask 'bunch'
 # cask 'carbon-copy-cloner'
 # cask 'cryptomator'
-cask 'claude'
+# cask 'claude'
 cask 'dbngin'
 cask 'dictcc-en-de-dictionary-plugin'
 # cask 'do-not-disturb'
@@ -55,11 +56,12 @@ cask 'figma'
 cask 'firefox'
 cask 'firefox@developer-edition'
 # cask 'gitfox'
-cask 'google-chrome'
+cask 'ghostty'
+# cask 'google-chrome'
 cask 'gpg-suite'
 cask 'hazel'
 cask 'herd'
-cask 'iterm2'
+# cask 'iterm2'
 cask 'jetbrains-toolbox'
 cask 'jordanbaird-ice'
 cask 'karabiner-elements'
@@ -69,8 +71,9 @@ cask 'karabiner-elements'
 cask 'mac-mouse-fix'
 # cask 'microsoft-teams'
 # cask 'monitorcontrol'
-cask 'mos'
-cask 'mountain-duck'
+# cask 'monarch'
+# cask 'mos'
+# cask 'mountain-duck'
 cask 'neofinder'
 cask 'notion'
 # cask 'obsidian'
@@ -86,15 +89,16 @@ cask 'screen-studio'
 cask 'shifty'
 cask 'signal'
 cask 'spotify'
+cask 'sublime-text'
 cask 'sync'
 cask 'tailscale'
 cask 'telegram'
 cask 'tinkerwell'
 cask 'tower'
-cask 'transmission'
+# cask 'transmission'
 cask 'transmit'
-cask 'visual-studio-code'
-cask 'vlc'
+# cask 'visual-studio-code'
+# cask 'vlc'
 cask 'wavebox'
 cask 'zotero'
 
@@ -156,7 +160,6 @@ mas 'Micro Snitch', id: 972028355
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 # mas 'Pandan', id: 1569600264
-# mas 'PDFify', id: 1435055351
 mas 'Peek', id: 1554235898
 # mas 'Pixelmator Pro', id: 1289583905
 # mas 'Photomator', id: 1444636541
@@ -164,8 +167,8 @@ mas 'Peek', id: 1554235898
 mas 'Pure Paste', id: 1611378436
 mas 'Reeder', id: 1529448980
 mas 'reMarkable', id: 1276493162
-mas 'Save to Pocket', id: 1477385213
-mas 'SiteSucker', id: 442168834
+# mas 'Save to Pocket', id: 1477385213
+# mas 'SiteSucker', id: 442168834
 mas 'Slack', id: 803453959
 # mas 'Speediness', id: 1596706466
 # mas 'Tampermonkey', id: 1482490089

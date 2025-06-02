@@ -2,9 +2,11 @@
 
 touch ~/.hushlogin
 
-rm -f ~/.gitignore_global
-ln -sf "$(pwd)/git/.gitignore_global" ~/.gitignore_global
-
 brew bundle --file="$(pwd)/homebrew/Brewfile"
 
+# Install Composer
+wget https://raw.githubusercontent.com/composer/getcomposer.org/main/web/installer -O - -q | php -- --quiet
+
 stow config
+stow fish
+stow mackup

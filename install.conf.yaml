@@ -1,26 +1,5 @@
 -   clean: [ '~' ]
 
--   shell:
-#        - [ git submodule update --init --recursive, Installing submodules ]
-        - [ touch $HOME/.hushlogin ]
-#        -   command: /opt/homebrew/bin/brew bundle --file=./homebrew/Brewfile
-#            stdin: true
-#            stdout: true
-#            stderr: true
-
--   create:
-        - ~/.composer
-        - ~/.config/fish
-
--   link:
-        ~/.config/fish/aliases: fish/aliases
-        ~/.config/fish/config.fish: fish/config.fish
-        ~/.config/fish/fish_plugins: fish/fish_plugins
-        ~/.composer/composer.json: composer/composer.json
-        ~/.gitignore_global: git/gitignore
-        ~/.mackup.cfg: mackup/.mackup.cfg
-        ~/.mackup: mackup/.mackup
-        ~/.config/karabiner: karabiner
 
 #-   shell:
     # - shell:
@@ -30,7 +9,6 @@
 
     # - [ "./composer/install.sh", Installing composer ]
     # - [ "composer global install", Installing global composer packages ]
-    # - [ "$HOME/.composer/vendor/bin/valet install", Installing laravel valet ]
 
     # - shell:
     # - [ "n stable", Install node ]

@@ -9,3 +9,5 @@ alias cda='composer dump-autoload'
 alias cr='composer require'
 
 alias ops='phpstorm .'
+
+alias dep='vendor/bin/dep'

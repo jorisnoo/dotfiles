@@ -12,3 +12,5 @@ alias ipinfo='curl ipinfo.io'
 alias o='open .'
 
 alias tp='open -a ~/Applications/Setapp/TablePlus.app/'
+
+alias 'mackup-backup'='mackup backup --force && mackup uninstall --force'

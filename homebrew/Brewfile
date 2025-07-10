@@ -3,11 +3,13 @@
 # Taps
 # tap 'homebrew/bundle'
 # tap 'homebrew/services'
+tap 'exoscale/tap'
 
 # Binaries
 brew 'bluetoothconnector'
 brew 'coreutils'
 brew 'curl'
+brew 'exoscale-cli'
 brew 'ffmpeg'
 brew 'fish'
 brew 'git'
@@ -42,12 +44,11 @@ brew 'ykman'
 # Apps
 cask '1password'
 # cask 'aldente-pro'
-# cask 'backblaze'
 cask 'betterdisplay'
 # cask 'bunch'
 # cask 'carbon-copy-cloner'
 # cask 'cryptomator'
-# cask 'claude'
+cask 'claude'
 cask 'dbngin'
 cask 'dictcc-en-de-dictionary-plugin'
 # cask 'do-not-disturb'
@@ -95,9 +96,9 @@ cask 'tailscale'
 cask 'telegram'
 cask 'tinkerwell'
 cask 'tower'
-# cask 'transmission'
+cask 'transmission'
 cask 'transmit'
-# cask 'visual-studio-code'
+cask 'visual-studio-code'
 # cask 'vlc'
 cask 'wavebox'
 cask 'zotero'
@@ -135,7 +136,6 @@ mas 'Command X', id: 6448461551
 mas 'Cookie', id: 6452017315
 mas 'DaftCloud', id: 1320450034
 # mas 'DevCleaner', id: 1388020431
-# mas 'EasyLetter', id: 1495179755
 mas 'Endel', id: 1346247457
 # mas 'Final Cut Pro', id: 424389933
 mas 'Flighty', id: 1358823008
@@ -160,8 +160,8 @@ mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 # mas 'Pandan', id: 1569600264
 mas 'Peek', id: 1554235898
-# mas 'Pixelmator Pro', id: 1289583905
-# mas 'Photomator', id: 1444636541
+mas 'Pixelmator Pro', id: 1289583905
+mas 'Photomator', id: 1444636541
 # mas 'Poolsuite FM', id: 1514817810
 mas 'Pure Paste', id: 1611378436
 mas 'Reeder', id: 1529448980
